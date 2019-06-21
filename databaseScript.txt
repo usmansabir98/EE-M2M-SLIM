@@ -1,0 +1,73 @@
+//create database 
+
+create database assignment_db;
+
+//create table 1
+
+DROP TABLE IF EXISTS assignment_db.message
+
+create table message(
+srcMSISDN VARCHAR(20) NOT NULL,
+destMSISDN VARCHAR(20),
+receivedDate DATETIME NOT NULL,
+bearer VARCHAR(5),
+messageRef VARCHAR(20),
+id VARCHAR(10),
+switch1 INT,
+switch2 INT,
+switch3 INT,
+switch4 INT,
+fan INT,
+forward INT,
+reverse INT,
+heater INT,
+temperature DECIMAL(5,2),
+keypad INT,
+CONSTRAINT message_PK PRIMARY KEY(srcMSISDN,receivedDate));
+
+//create table 2
+
+DROP TABLE IF EXISTS assignment_db.users
+
+create table users(
+User_ID INT(100) NOT NULL,
+Username VARCHAR(255),
+Password VARCHAR(255),
+Email VARCHAR(255),
+CONSTRAINT users_PK PRIMARY KEY(User_ID));
+
+//create table 3
+
+DROP TABLE IF EXISTS assignment_db.log
+
+create table log(
+ID int NOT NULL AUTO_INCREMENT,
+date TIMESTAMP NOT NULL,
+userID INT,
+msg  VARCHAR(255),
+CONSTRAINT log_PK PRIMARY KEY(ID));
+
+//event for deleting info from log
+DELIMITER $$
+CREATE EVENT delete_event
+ON SCHEDULE AT CURRENT_TIMESTAMP + INTERVAL 1 DAY
+ON COMPLETION PRESERVE
+
+DO BEGIN
+      DELETE FROM log WHERE date < DATE_SUB(NOW(), INTERVAL 7 DAY);
+END;
+$$
+
+//create user 
+
+CREATE USER 'p14166609_web'@'localhost' IDENTIFIED BY 'sQuat=51';
+
+//grant permission to user
+
+GRANT SELECT ON assignment_db.users TO 'p14166609_web'@'localhost';
+GRANT INSERT ON assignment_db.users TO 'p14166609_web'@'localhost';
+GRANT SELECT ON assignment_db.message TO 'p14166609_web'@'localhost';
+GRANT INSERT ON assignment_db.message TO 'p14166609_web'@'localhost';
+GRANT SELECT ON assignment_db.log TO 'p14166609_web'@'localhost';
+GRANT INSERT ON assignment_db.log TO 'p14166609_web'@'localhost';
+GRANT DELETE ON assignment_db.log TO 'p14166609_web'@'localhost';

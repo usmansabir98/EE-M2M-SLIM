@@ -1,0 +1,297 @@
+body {
+	margin: 0 auto;
+	width: 100%;
+	background-color: #007B85;
+	font-family: sans-serif, Times, serif;
+}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#navbar {
+	width: 100%;
+	color: white;
+	background-color: black;
+	overflow: hidden;
+	-webkit-box-shadow: -1px 4px 16px -3px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 4px 16px -3px rgba(0,0,0,0.75);
+	box-shadow: -1px 4px 16px -3px rgba(0,0,0,0.75);
+}
+
+#navbar input {
+	float: right;
+}
+
+#navbar #navbar_form {
+	margin-top: 1%;
+	margin-right: 6%;
+	width: 30%;
+	float: right;
+}
+
+#navbar form {
+	width: 100%;
+}
+
+.navbar #formbar form {
+	width: 50%;
+}
+
+.navbar #formbar form button {
+	width: 80%;
+	height: 100px;
+	border-radius: 0px;
+  letter-spacing: 2px;
+  text-align: center;
+  background: #026870;
+  border: 1px solid #fff;
+  color: #FFF;
+}
+
+.navbar #formbar form button:hover, .navbar #formbar form button:active
+{
+  text-decoration: none;
+  color: #026870;
+  border-color: #026870;
+  background: #FFF;
+}
+
+.navbar #formbar form button:last-child {
+	margin-right: 2%;
+}
+
+#navbar form input {
+	width: 40%;
+	height: 30px;
+}
+
+#navbar #admin p {
+	float: left;
+	margin-top: 1%;
+	margin-left: 6%;
+	font-size: 1.5em;
+	display: inline-block;
+}
+
+.navbar #formbar h1 {
+	margin-bottom: 5%;
+}
+
+.navbar #formbar {
+	margin-top: 5%;
+}
+
+.login #formbar {
+	margin-top: 8%;
+}
+
+.register #formbar {
+	margin-top: 5%;
+}
+
+.message #formbar {
+	margin-top: 14%;
+}
+
+#formbar {
+	margin-top: 15%;
+}
+
+#formbar form p {
+	text-align: left;
+}
+
+#formbar input[type="submit"] {
+	margin-left: 7px;
+}
+
+/*#eef442 - yellow */
+
+form {
+	margin: 0 auto;
+	width: 30%;
+	text-align: center;
+	overflow: hidden;
+}
+
+form h1 {
+	font-size: 3em;
+	margin-bottom: 10%;
+	color: white;
+}
+
+form p {
+	font-size: 1.5em;
+	color: white;
+}
+
+form input:focus {
+	outline: none;
+}
+
+form input {
+	font-size: 1em;
+	width: 90%;
+	height: 50px;
+	border-radius: 0px;
+	margin-bottom: 5%;
+	padding-left: 2%;
+  letter-spacing: 2px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #026870;
+  color: #026870;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  padding: 10px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  padding: 10px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  padding: 10px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  padding: 10px;
+}
+
+form input[type="submit"] {
+	font-size: 1em;
+	width: 90%;
+	height: 50px;
+	border-radius: 0px;
+	margin-bottom: 5%;
+	padding-left: 2%;
+	text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  background: #026870;
+  border: 1px solid #fff;
+  color: #FFF;
+}
+
+form input[type="submit"]:hover {
+	text-decoration: none;
+  color: #026870;
+  border-color: #026870;
+  background: #FFF;
+}
+
+form button {
+	font-size: 1em;
+	width: 100%;
+	height: 50px;
+	border-radius: 0px;
+	margin-bottom: 5%;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: center;
+	background: #026870;
+	border: 1px solid #fff;
+	color: #FFF;
+}
+
+form button:hover {
+	text-decoration: none;
+  color: #026870;
+  border-color: #026870;
+  background: #FFF;
+}
+
+#information-content {
+	width: 50%;
+	margin: 0 auto;
+		margin-top: 5%;
+}
+
+.navbar #formbar h2 {
+	margin-bottom: 5%;
+	text-align: center;
+	font-size: 1em;
+	color: white;
+}
+
+#information-content h2 {
+	text-align: center;
+	font-size: 1em;
+	color: white;
+}
+
+#information-content p {
+	padding: 2%;
+	font-size: 1.5em;
+	color: white;
+}
+
+#ret_home {
+	margin-top: 1%;
+	font-size: 1.2em;
+}
+
+#ret_home a {
+	color: white;
+	text-decoration: none;
+}
+
+#ret_home a:hover {
+	color: #026870;
+	text-decoration: none;
+}
+
+#warning {
+	text-align: center;
+	margin-bottom: 2%;
+	font-size: 1em;
+	color: white;
+}
+
+#displayHeader {
+	text-align: center;
+	font-size: 3em;
+	margin-top: 2%;
+	color: white;
+}
+
+#show-information {
+	width: 80%;
+	height: 450px;
+	margin: 0 auto;
+	margin-top: 4%;
+	overflow: scroll;
+	overflow-x: hidden;
+	border: 1px solid #026870;
+	background: #fff;
+}
+
+.messageContainer {
+	float: right;
+	width: 50%;
+	clear: both;
+	margin: 2%;
+	padding: 1%;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	text-align: left;
+	background: #026870;
+	border: 1px solid #fff;
+	border-radius: 5%;
+	color: #FFF;
+}
+
+.messages {
+	margin-left: 3%;
+	padding: 0.5%;
+}
+
+#valid-xhtml {
+	background: url("../images/xhtml10.png") no-repeat;
+	width: 90px;
+	height:30px;
+	float: right;
+	margin-top: 10%;
+	margin-bottom: 2%;
+	margin-right: 2%;
+}

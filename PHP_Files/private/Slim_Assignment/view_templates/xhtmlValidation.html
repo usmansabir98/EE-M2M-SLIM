@@ -1,0 +1,227 @@
+<!-- THIS PAGE IS ONLY FOR THE MARKER TO TEST THE VALIDATION -->
+<!-- ALL MARKUP WITHIN THIS PAGE IS THE RESULT OF THE HTML FILES WITHIN THE view_templates folder -->
+<!-- ALL CONTAINED IN ONE FILE -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="en-gb" />
+    <meta name="author" content="P14184295" />
+    <?php
+      $string = '';
+      $string .= '<link rel="stylesheet" href="' . $css_stylesheet['reset'] . '" type="text/css" />';
+      $string .= '<link rel="stylesheet" href="' . $css_stylesheet['style'] . '" type="text/css" />';
+      echo $string;
+    ?>
+    <title><?php echo $page_title?></title>
+</head>
+
+<body>
+
+  <div id="navbar">
+    <div id="admin"><p><?php echo $admin?></p></div>
+    <div id="navbar_form">
+      <?php
+        $string = '';
+        $string .= '<form method="' . $method . '" action="' . $action2 . '">';
+        $string .= '<input type="submit" value="Logout">';
+        $string .= '</form>';
+        echo $string;
+      ?>
+    </div>
+  </div>
+
+  <div class="navbar wrapper">
+    <div id="d">
+
+      <div id="formbar">
+        <?php
+          $string = '';
+          $string .= '<form method="' . $method . '" action="' . $action . '">';
+          $string .= '<h1>Welcome to EE Client</h1>';
+          $string .= '<button name="feature" value="download_ee_form">Download EE Server Content</button> &nbsp;&nbsp;';
+          $string .= '<button name="feature" value="review_ee_form">Review EE Server Content</button>';
+          $string .= '</form>';
+          echo $string;
+        ?>
+      </div>
+
+      <div id="information-content">
+
+        <h1>Select the above options so you can: </h1>
+        <p>1. Download Data from the EE Server.</p>
+        <p>2. Review EE Server content that was downloaded.</p>
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="message wrapper">
+    <div id="ormbar">
+    <?php
+      $string = '';
+      $string .= '<form method="' . $method . '" action="' . $action . '">';
+      $string .= '<h1>Enter MSISDN:</h1>';
+      $string .= '<p><input name="message-id" type="text" id="message-id" size="12" value="" maxsize="12"/></p>';
+      $string .= '<p><input type="submit" /></p>';
+      $string .= '</form>';
+      echo $string;
+    ?>
+  </div>
+</div>
+
+  <div class="register wrapper">
+    <div id="e">
+        <?php
+          $string = '';
+          $string = '<p id="ret_home"><a href="' . $landing_page . '">&#8592; Return Home</a></p>';
+          echo $string;
+        ?>
+        <div id="rmbar">
+            <?php
+              $string = '';
+              $string .= '<form method="' . $method . '" action="' . $action  . '" enctype="multipart/form-data">';
+              $string .= '<h1>Register</h1>';
+              $string .= '<p>Username: <input type="text" name="reg_username"></p>  <br />';
+              $string .= '<p>Password: <input type="password" name="reg_password"></p> <br />';
+              $string .= '<p>E-mail: <input type="text" name="reg_email"></p> <br /><br />';
+              $string .= '<p><input type="submit" value="Submit" name="submit"></p>';
+              $string .= '</form>';
+              echo $string;
+            ?>
+        </div>
+    </div>
+  </div>
+
+  <div class="register wrapper">
+    <div id="selecti">
+        <?php
+          $string = '';
+          $string = '<p id="ret_home"><a href="' . $landing_page . '">&#8592; Return Home</a></p>';
+          echo $string;
+        ?>
+        <div id="mbar">
+            <?php
+              $string = '';
+              $string .= '<form method="' . $method . '" action="' . $action  . '" enctype="multipart/form-data">';
+              $string .= '<h1>Register</h1>';
+
+              if(isset($_SESSION['warning'])) {
+                echo '<p id="warning">';
+                echo $_SESSION['warning'];
+                echo '</p>';
+                unset($_SESSION['warning']);
+              }
+
+              $string .= '<p>Username: <input type="text" name="reg_username"></p>  <br />';
+              $string .= '<p>Password: <input type="password" name="reg_password"></p> <br />';
+              $string .= '<p>E-mail: <input type="text" name="reg_email"></p> <br /><br />';
+              $string .= '<p><input type="submit" value="Submit" name="submit"></p>';
+              $string .= '</form>';
+              echo $string;
+            ?>
+        </div>
+    </div>
+  </div>
+
+  <div class="login wrapper">
+    <div id="sel">
+        <?php
+          $string = '';
+          $string = '<p id="ret_home"><a href="' . $landing_page . '">&#8592; Return Home</a></p>';
+          echo $string;
+        ?>
+        <div id="bar">
+            <?php $string = '';
+              $string .= '<form method="' . $method . '" action="' . $action . '" enctype="multipart/form-data">';
+              $string .= '<h1>Login</h1>';
+
+              $string .= '<p>Username: <input type="text" name="username" /></p> <br />';
+              $string .= '<p>Password: <input type="password" name="password" /></p> <br /><br />';
+              $string .= '<p><input type="submit" name="submit" value="Submit" /></p>';
+              $string .= '</form>';
+
+              echo $string;
+
+              ?>
+        </div>
+    </div>
+  </div>
+
+  <div class="login wrapper">
+    <div id="s">
+        <?php
+          $string = '';
+          $string = '<p id="ret_home"><a href="' . $landing_page . '">&#8592; Return Home</a></p>';
+          echo $string;
+        ?>
+        <div id="ar">
+            <?php $string = '';
+              $string .= '<form method="' . $method . '" action="' . $action . '" enctype="multipart/form-data">';
+              $string .= '<h1>Login</h1>';
+
+              if(isset($_SESSION['warning'])) {
+                echo '<p id="warning">';
+                echo $_SESSION['warning'];
+                echo '</p>';
+                unset($_SESSION['warning']);
+              }
+
+              $string .= '<p>Username: <input type="text" name="username" /></p> <br />';
+              $string .= '<p>Password: <input type="password" name="password" /></p> <br /><br />';
+              $string .= '<p><input type="submit" name="submit" value="Submit" /></p>';
+              $string .= '</form>';
+
+              echo $string;
+
+              ?>
+        </div>
+    </div>
+  </div>
+
+  <div class="authentication wrapper">
+    <div id="selectio">
+        <div id="r">
+          <?php
+            $string = '';
+            $string .= '<form method="' . $method . '" action="' . $action . '">';
+            $string .= '<h1>EE Client</h1>';
+            $string .= '<p><button name="feature" value="login" autcomplete="off">Login</button></p> &nbsp;&nbsp;';
+            $string .= '<p><button name="feature" value="register" autcomplete="off">Register</button></p>';
+            $string .= '</form>';
+            echo $string;
+          ?>
+        </div>
+    </div>
+  </div>
+
+  <h1 id="displayHeader">EE Client - Review Stored Data</h1>
+  <div id="show-information">
+      <?php
+
+        $i = 0;
+        foreach ($meta as $key1 => $value1) {
+          $arr[$i] = $value1;
+          $i++;
+        }
+
+        $i = 0;
+        $string = '';
+        foreach ($messages as $key => $value) {
+          $string .= '<div class="messageContainer">';
+          foreach ($value as $key2 => $value2){
+              $string .= '<p class="messages">' . $arr[$i] . ' ' . $value2 . '</p>';
+              $i++;
+          }
+          $string .= '</div> <br />';
+          $i = 0;
+        }
+
+        echo $string;
+      ?>
+  </div>
+  </body>
+  </html>

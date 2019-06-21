@@ -1,0 +1,18671 @@
+version: 1
+creator: xdebug 2.5.0rc1 (PHP 7.0.14-dev)
+cmd: C:\xampp\htdocs\PHP\public_php\assignment\index.php
+part: 1
+positions: line
+
+events: Time
+
+fl=(1) php:internal
+fn=(1) php::ini_set
+16 3
+
+fl=(1)
+fn=(1)
+17 1
+
+fl=(1)
+fn=(1)
+18 2
+
+fl=(1)
+fn=(2) php::xdebug_start_trace
+19 334
+
+fl=(1)
+fn=(3) php::session_start
+15 237
+
+fl=(1)
+fn=(4) php::extension_loaded
+36 3
+
+fl=(2) C:\xampp\htdocs\PHP\includes\Slim\Slim.php
+fn=(5) require_once::C:\xampp\htdocs\PHP\includes\Slim\Slim.php
+1 82
+cfl=(1)
+cfn=(4)
+calls=1 0 0
+36 3
+
+fl=(1)
+fn=(6) php::spl_autoload_register
+140 8
+
+fl=(2)
+fn=(7) Slim\Slim::registerAutoloader
+138 50
+cfl=(1)
+cfn=(6)
+calls=1 0 0
+140 8
+
+fl=(1)
+fn=(8) php::define
+21 2
+
+fl=(1)
+fn=(9) php::str_replace
+112 0
+
+fl=(1)
+fn=(10) php::strlen
+116 0
+
+fl=(1)
+fn=(11) php::substr
+116 0
+
+fl=(1)
+fn=(10)
+117 0
+
+fl=(1)
+fn=(11)
+117 0
+
+fl=(1)
+fn=(12) php::ltrim
+120 1
+
+fl=(1)
+fn=(13) php::strripos
+123 1
+
+fl=(1)
+fn=(11)
+124 0
+
+fl=(1)
+fn=(11)
+125 0
+
+fl=(1)
+fn=(9)
+126 1
+
+fl=(1)
+fn=(9)
+128 0
+
+fl=(1)
+fn=(14) php::file_exists
+130 154
+
+fl=(3) C:\xampp\htdocs\PHP\includes\Slim\Helper\Set.php
+fn=(15) require::C:\xampp\htdocs\PHP\includes\Slim\Helper\Set.php
+1 11
+
+fl=(2)
+fn=(16) Slim\Slim::autoload
+110 925
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+112 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(12)
+calls=1 0 0
+120 1
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+123 1
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+124 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+125 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+126 1
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+128 0
+cfl=(1)
+cfn=(14)
+calls=1 0 0
+130 154
+cfl=(3)
+cfn=(15)
+calls=1 0 0
+131 11
+
+fl=(1)
+fn=(17) php::spl_autoload_call
+154 123
+cfl=(2)
+cfn=(16)
+calls=1 0 0
+154 1102
+
+fl=(3)
+fn=(18) Slim\Helper\Set->replace
+98 1
+
+fl=(3)
+fn=(19) Slim\Helper\Set->__construct
+47 44
+cfl=(3)
+cfn=(18)
+calls=1 0 0
+49 1
+
+fl=(1)
+fn=(9)
+112 0
+
+fl=(1)
+fn=(10)
+116 0
+
+fl=(1)
+fn=(11)
+116 0
+
+fl=(1)
+fn=(10)
+117 0
+
+fl=(1)
+fn=(11)
+117 0
+
+fl=(1)
+fn=(12)
+120 0
+
+fl=(1)
+fn=(13)
+123 2
+
+fl=(1)
+fn=(11)
+124 0
+
+fl=(1)
+fn=(11)
+125 0
+
+fl=(1)
+fn=(9)
+126 0
+
+fl=(1)
+fn=(9)
+128 0
+
+fl=(1)
+fn=(14)
+130 109
+
+fl=(4) C:\xampp\htdocs\PHP\includes\Slim\Log.php
+fn=(20) require::C:\xampp\htdocs\PHP\includes\Slim\Log.php
+1 1
+
+fl=(2)
+fn=(16)
+110 1044
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+112 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(12)
+calls=1 0 0
+120 0
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+123 2
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+124 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+125 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+126 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+128 0
+cfl=(1)
+cfn=(14)
+calls=1 0 0
+130 109
+cfl=(4)
+cfn=(20)
+calls=1 0 0
+131 1
+
+fl=(1)
+fn=(17)
+294 114
+cfl=(2)
+cfn=(16)
+calls=1 0 0
+294 1160
+
+fl=(2)
+fn=(21) Slim\Slim::getDefaultSettings
+285 51
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+294 1275
+
+fl=(1)
+fn=(22) php::array_merge
+155 3
+
+fl=(3)
+fn=(23) Slim\Helper\Set->normalizeKey
+62 2
+
+fl=(3)
+fn=(24) Slim\Helper\Set->set
+72 30
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+74 2
+
+fl=(3)
+fn=(25) Slim\Helper\Set->offsetSet
+188 36
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+190 32
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(24)
+72 20
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+74 0
+
+fl=(3)
+fn=(26) Slim\Helper\Set->singleton
+222 24
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+232 21
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(3)
+fn=(24)
+72 19
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+74 1
+
+fl=(3)
+fn=(26)
+222 22
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+232 20
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(24)
+72 20
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+74 0
+
+fl=(3)
+fn=(26)
+222 22
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+232 20
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(24)
+72 20
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+74 0
+
+fl=(3)
+fn=(26)
+222 22
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+232 20
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(24)
+72 21
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+74 0
+
+fl=(3)
+fn=(26)
+222 24
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+232 21
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(24)
+72 20
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+74 0
+
+fl=(3)
+fn=(26)
+222 21
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+232 20
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(24)
+72 28
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+74 0
+
+fl=(3)
+fn=(26)
+222 30
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+232 28
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(3)
+fn=(24)
+72 19
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+74 1
+
+fl=(3)
+fn=(25)
+188 21
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+190 20
+
+fl=(1)
+fn=(9)
+112 0
+
+fl=(1)
+fn=(10)
+116 0
+
+fl=(1)
+fn=(11)
+116 0
+
+fl=(1)
+fn=(10)
+117 0
+
+fl=(1)
+fn=(11)
+117 0
+
+fl=(1)
+fn=(12)
+120 1
+
+fl=(1)
+fn=(13)
+123 1
+
+fl=(1)
+fn=(11)
+124 0
+
+fl=(1)
+fn=(11)
+125 0
+
+fl=(1)
+fn=(9)
+126 0
+
+fl=(1)
+fn=(9)
+128 0
+
+fl=(1)
+fn=(14)
+130 87
+
+fl=(1)
+fn=(9)
+112 2
+
+fl=(1)
+fn=(10)
+116 0
+
+fl=(1)
+fn=(11)
+116 0
+
+fl=(1)
+fn=(10)
+117 0
+
+fl=(1)
+fn=(11)
+117 0
+
+fl=(1)
+fn=(12)
+120 1
+
+fl=(1)
+fn=(13)
+123 1
+
+fl=(1)
+fn=(11)
+124 0
+
+fl=(1)
+fn=(11)
+125 0
+
+fl=(1)
+fn=(9)
+126 1
+
+fl=(1)
+fn=(9)
+128 0
+
+fl=(1)
+fn=(14)
+130 88
+
+fl=(5) C:\xampp\htdocs\PHP\includes\Slim\Middleware.php
+fn=(27) require::C:\xampp\htdocs\PHP\includes\Slim\Middleware.php
+1 0
+
+fl=(2)
+fn=(16)
+110 438
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+112 2
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(12)
+calls=1 0 0
+120 1
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+123 1
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+124 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+125 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+126 1
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+128 0
+cfl=(1)
+cfn=(14)
+calls=1 0 0
+130 88
+cfl=(5)
+cfn=(27)
+calls=1 0 0
+131 0
+
+fl=(1)
+fn=(17)
+48 62
+cfl=(2)
+cfn=(16)
+calls=1 0 0
+48 537
+
+fl=(6) C:\xampp\htdocs\PHP\includes\Slim\Middleware\Flash.php
+fn=(28) require::C:\xampp\htdocs\PHP\includes\Slim\Middleware\Flash.php
+1 32
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+48 599
+
+fl=(2)
+fn=(16)
+110 599
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+112 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(12)
+calls=1 0 0
+120 1
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+123 1
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+124 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+125 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+126 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+128 0
+cfl=(1)
+cfn=(14)
+calls=1 0 0
+130 87
+cfl=(6)
+cfn=(28)
+calls=1 0 0
+131 632
+
+fl=(1)
+fn=(17)
+223 59
+cfl=(2)
+cfn=(16)
+calls=1 0 0
+223 1324
+
+fl=(1)
+fn=(22)
+66 1
+
+fl=(6)
+fn=(29) Slim\Middleware\Flash->__construct
+64 20
+cfl=(1)
+cfn=(22)
+calls=1 0 0
+66 1
+
+fl=(1)
+fn=(30) php::in_array
+1271 0
+
+fl=(5)
+fn=(31) Slim\Middleware->setApplication
+62 0
+
+fl=(5)
+fn=(32) Slim\Middleware->setNextMiddleware
+89 0
+
+fl=(1)
+fn=(33) php::array_unshift
+1277 1
+
+fl=(2)
+fn=(34) Slim\Slim->add
+1269 93
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+1271 0
+cfl=(5)
+cfn=(31)
+calls=1 0 0
+1275 0
+cfl=(5)
+cfn=(32)
+calls=1 0 0
+1276 0
+cfl=(1)
+cfn=(33)
+calls=1 0 0
+1277 1
+
+fl=(1)
+fn=(9)
+112 0
+
+fl=(1)
+fn=(10)
+116 0
+
+fl=(1)
+fn=(11)
+116 0
+
+fl=(1)
+fn=(10)
+117 0
+
+fl=(1)
+fn=(11)
+117 0
+
+fl=(1)
+fn=(12)
+120 0
+
+fl=(1)
+fn=(13)
+123 2
+
+fl=(1)
+fn=(11)
+124 1
+
+fl=(1)
+fn=(11)
+125 0
+
+fl=(1)
+fn=(9)
+126 0
+
+fl=(1)
+fn=(9)
+128 0
+
+fl=(1)
+fn=(14)
+130 80
+
+fl=(7) C:\xampp\htdocs\PHP\includes\Slim\Middleware\MethodOverride.php
+fn=(35) require::C:\xampp\htdocs\PHP\includes\Slim\Middleware\MethodOverride.php
+1 1
+
+fl=(2)
+fn=(16)
+110 463
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+112 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(12)
+calls=1 0 0
+120 0
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+123 2
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+124 1
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+125 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+126 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+128 0
+cfl=(1)
+cfn=(14)
+calls=1 0 0
+130 80
+cfl=(7)
+cfn=(35)
+calls=1 0 0
+131 1
+
+fl=(1)
+fn=(17)
+224 92
+cfl=(2)
+cfn=(16)
+calls=1 0 0
+224 552
+
+fl=(1)
+fn=(22)
+62 0
+
+fl=(7)
+fn=(36) Slim\Middleware\MethodOverride->__construct
+60 22
+cfl=(1)
+cfn=(22)
+calls=1 0 0
+62 0
+
+fl=(1)
+fn=(30)
+1271 0
+
+fl=(5)
+fn=(31)
+62 2
+
+fl=(5)
+fn=(32)
+89 1
+
+fl=(1)
+fn=(33)
+1277 0
+
+fl=(2)
+fn=(34)
+1269 96
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+1271 0
+cfl=(5)
+cfn=(31)
+calls=1 0 0
+1275 2
+cfl=(5)
+cfn=(32)
+calls=1 0 0
+1276 1
+cfl=(1)
+cfn=(33)
+calls=1 0 0
+1277 0
+
+fl=(2)
+fn=(37) Slim\Slim::getInstance
+257 1
+
+fl=(1)
+fn=(38) php::is_null
+227 0
+
+fl=(2)
+fn=(39) Slim\Slim->setName
+266 1
+
+fl=(2)
+fn=(40) Slim\Slim->__construct
+151 705
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+154 1226
+cfl=(3)
+cfn=(19)
+calls=1 0 0
+154 46
+cfl=(2)
+cfn=(21)
+calls=1 0 0
+155 1326
+cfl=(1)
+cfn=(22)
+calls=1 0 0
+155 3
+cfl=(3)
+cfn=(25)
+calls=1 0 0
+155 69
+cfl=(3)
+cfn=(26)
+calls=1 0 0
+160 46
+cfl=(3)
+cfn=(26)
+calls=1 0 0
+165 43
+cfl=(3)
+cfn=(26)
+calls=1 0 0
+170 43
+cfl=(3)
+cfn=(26)
+calls=1 0 0
+175 43
+cfl=(3)
+cfn=(26)
+calls=1 0 0
+185 46
+cfl=(3)
+cfn=(26)
+calls=1 0 0
+192 42
+cfl=(3)
+cfn=(26)
+calls=1 0 0
+203 59
+cfl=(3)
+cfn=(25)
+calls=1 0 0
+206 42
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+223 1384
+cfl=(6)
+cfn=(29)
+calls=1 0 0
+223 22
+cfl=(2)
+cfn=(34)
+calls=1 0 0
+223 97
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+224 644
+cfl=(7)
+cfn=(36)
+calls=1 0 0
+224 23
+cfl=(2)
+cfn=(34)
+calls=1 0 0
+224 102
+cfl=(2)
+cfn=(37)
+calls=1 0 0
+227 1
+cfl=(1)
+cfn=(38)
+calls=1 0 0
+227 0
+cfl=(2)
+cfn=(39)
+calls=1 0 0
+228 1
+
+fl=(1)
+fn=(41) php::is_array
+340 0
+
+fl=(1)
+fn=(42) php::func_num_args
+346 0
+
+fl=(3)
+fn=(23)
+62 3
+
+fl=(1)
+fn=(43) php::array_key_exists
+130 1
+
+fl=(3)
+fn=(44) Slim\Helper\Set->has
+128 148
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 3
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45) php::is_object
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46) Slim\Helper\Set->get
+83 99
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 153
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47) Slim\Helper\Set->offsetGet
+183 39
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 255
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 38
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(45)
+86 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 2404
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 38
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 1
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 1
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 33
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 2447
+
+fl=(2)
+fn=(48) Slim\Slim->config
+336 134
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 0
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 294
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 2480
+
+fl=(8) C:\xampp\htdocs\PHP\includes\Slim_Assignment\wrappers\HTML_Wrapper.php
+fn=(49) require_once::C:\xampp\htdocs\PHP\includes\Slim_Assignment\wrappers\HTML_Wrapper.php
+1 3
+
+fl=(1)
+fn=(50) php::func_get_args
+471 0
+
+fl=(1)
+fn=(51) php::array_shift
+441 0
+
+fl=(1)
+fn=(52) php::array_pop
+442 0
+
+fl=(1)
+fn=(9)
+112 1
+
+fl=(1)
+fn=(10)
+116 0
+
+fl=(1)
+fn=(11)
+116 0
+
+fl=(1)
+fn=(10)
+117 0
+
+fl=(1)
+fn=(11)
+117 0
+
+fl=(1)
+fn=(12)
+120 0
+
+fl=(1)
+fn=(13)
+123 1
+
+fl=(1)
+fn=(11)
+124 1
+
+fl=(1)
+fn=(11)
+125 0
+
+fl=(1)
+fn=(9)
+126 0
+
+fl=(1)
+fn=(9)
+128 0
+
+fl=(1)
+fn=(14)
+130 204
+
+fl=(9) C:\xampp\htdocs\PHP\includes\Slim\Route.php
+fn=(53) require::C:\xampp\htdocs\PHP\includes\Slim\Route.php
+1 1
+
+fl=(2)
+fn=(16)
+110 881
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+112 1
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(12)
+calls=1 0 0
+120 0
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+123 1
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+124 1
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+125 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+126 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+128 0
+cfl=(1)
+cfn=(14)
+calls=1 0 0
+130 204
+cfl=(9)
+cfn=(53)
+calls=1 0 0
+131 1
+
+fl=(1)
+fn=(17)
+443 63
+cfl=(2)
+cfn=(16)
+calls=1 0 0
+443 1096
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 1
+
+fl=(3)
+fn=(44)
+128 39
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 79
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 41
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54) Slim\Slim->__get
+232 30
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 121
+
+fl=(9)
+fn=(55) Slim\Route->setPattern
+143 0
+
+fl=(1)
+fn=(56) php::is_string
+165 0
+
+fl=(1)
+fn=(57) php::is_callable
+177 0
+
+fl=(9)
+fn=(58) Slim\Route->setCallable
+162 36
+cfl=(1)
+cfn=(56)
+calls=1 0 0
+165 0
+cfl=(1)
+cfn=(57)
+calls=1 0 0
+177 0
+
+fl=(9)
+fn=(59) Slim\Route::getDefaultConditions
+125 1
+
+fl=(9)
+fn=(60) Slim\Route->setConditions
+197 0
+
+fl=(9)
+fn=(61) Slim\Route->__construct
+104 102
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+106 0
+cfl=(9)
+cfn=(58)
+calls=1 0 0
+107 37
+cfl=(9)
+cfn=(59)
+calls=1 0 0
+108 1
+cfl=(9)
+cfn=(60)
+calls=1 0 0
+108 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62) php::method_exists
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(9)
+112 0
+
+fl=(1)
+fn=(10)
+116 0
+
+fl=(1)
+fn=(11)
+116 0
+
+fl=(1)
+fn=(10)
+117 1
+
+fl=(1)
+fn=(11)
+117 0
+
+fl=(1)
+fn=(12)
+120 0
+
+fl=(1)
+fn=(13)
+123 0
+
+fl=(1)
+fn=(11)
+124 0
+
+fl=(1)
+fn=(11)
+125 0
+
+fl=(1)
+fn=(9)
+126 0
+
+fl=(1)
+fn=(9)
+128 0
+
+fl=(1)
+fn=(14)
+130 116
+
+fl=(10) C:\xampp\htdocs\PHP\includes\Slim\Router.php
+fn=(63) require::C:\xampp\htdocs\PHP\includes\Slim\Router.php
+1 0
+
+fl=(2)
+fn=(16)
+110 550
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+112 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+117 1
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(12)
+calls=1 0 0
+120 0
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+123 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+124 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+125 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+126 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+128 0
+cfl=(1)
+cfn=(14)
+calls=1 0 0
+130 116
+cfl=(10)
+cfn=(63)
+calls=1 0 0
+131 0
+
+fl=(1)
+fn=(17)
+174 57
+cfl=(2)
+cfn=(16)
+calls=1 0 0
+174 673
+
+fl=(10)
+fn=(64) Slim\Router->__construct
+74 0
+
+fl=(2)
+fn=(65) Slim\Slim->Slim\{closure}
+173 45
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+174 730
+cfl=(10)
+cfn=(64)
+calls=1 0 0
+174 0
+
+fl=(3)
+fn=(66) Slim\Helper\Set->Slim\Helper\{closure}
+224 25
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+228 777
+
+fl=(3)
+fn=(46)
+83 137
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 802
+
+fl=(2)
+fn=(54)
+232 36
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 978
+
+fl=(10)
+fn=(67) Slim\Router->processGroups
+143 2
+
+fl=(9)
+fn=(68) Slim\Route->getPattern
+134 0
+
+fl=(9)
+fn=(55)
+143 0
+
+fl=(10)
+fn=(69) Slim\Router->map
+126 61
+cfl=(10)
+cfn=(67)
+calls=1 0 0
+128 2
+cfl=(9)
+cfn=(68)
+calls=1 0 0
+130 0
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+130 0
+
+fl=(1)
+fn=(70) php::count
+445 0
+
+fl=(2)
+fn=(71) Slim\Slim->mapRoute
+439 217
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+441 0
+cfl=(1)
+cfn=(52)
+calls=1 0 0
+442 0
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+443 1160
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+443 151
+cfl=(9)
+cfn=(61)
+calls=1 0 0
+443 144
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+444 1014
+cfl=(10)
+cfn=(69)
+calls=1 0 0
+444 65
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+445 0
+
+fl=(1)
+fn=(9)
+112 1
+
+fl=(1)
+fn=(10)
+116 0
+
+fl=(1)
+fn=(11)
+116 0
+
+fl=(1)
+fn=(10)
+117 0
+
+fl=(1)
+fn=(11)
+117 0
+
+fl=(1)
+fn=(12)
+120 0
+
+fl=(1)
+fn=(13)
+123 0
+
+fl=(1)
+fn=(11)
+124 0
+
+fl=(1)
+fn=(11)
+125 0
+
+fl=(1)
+fn=(9)
+126 0
+
+fl=(1)
+fn=(9)
+128 0
+
+fl=(1)
+fn=(14)
+130 83
+
+fl=(11) C:\xampp\htdocs\PHP\includes\Slim\Http\Request.php
+fn=(72) require::C:\xampp\htdocs\PHP\includes\Slim\Http\Request.php
+1 0
+
+fl=(2)
+fn=(16)
+110 746
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+112 1
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(12)
+calls=1 0 0
+120 0
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+123 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+124 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+125 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+126 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+128 0
+cfl=(1)
+cfn=(14)
+calls=1 0 0
+130 83
+cfl=(11)
+cfn=(72)
+calls=1 0 0
+131 0
+
+fl=(1)
+fn=(17)
+473 58
+cfl=(2)
+cfn=(16)
+calls=1 0 0
+473 834
+
+fl=(1)
+fn=(50)
+303 0
+
+fl=(1)
+fn=(70)
+304 0
+
+fl=(1)
+fn=(41)
+304 0
+
+fl=(1)
+fn=(22)
+307 0
+
+fl=(9)
+fn=(73) Slim\Route->via
+301 73
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+303 0
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(22)
+calls=1 0 0
+307 0
+
+fl=(2)
+fn=(74) Slim\Slim->get
+469 169
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+471 0
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+473 2756
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+473 893
+cfl=(9)
+cfn=(73)
+calls=1 0 0
+473 74
+
+fl=(9)
+fn=(75) Slim\Route->setName
+215 0
+
+fl=(9)
+fn=(76) Slim\Route->name
+434 20
+cfl=(9)
+cfn=(75)
+calls=1 0 0
+436 0
+
+fl=(12) C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\authentication.php
+fn=(77) require::C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\authentication.php
+1 859
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+19 2911
+cfl=(8)
+cfn=(49)
+calls=1 0 0
+20 3
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+42 3893
+cfl=(9)
+cfn=(76)
+calls=1 0 0
+42 20
+
+fl=(1)
+fn=(41)
+340 0
+
+fl=(1)
+fn=(42)
+346 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 77
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 38
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 116
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 39
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 74
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 39
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 27
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 115
+
+fl=(2)
+fn=(48)
+336 97
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 0
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 154
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 143
+
+fl=(1)
+fn=(41)
+340 0
+
+fl=(1)
+fn=(42)
+346 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 33
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 1
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 73
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 26
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 110
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 102
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 29
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 138
+
+fl=(2)
+fn=(48)
+336 77
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 0
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 137
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 167
+
+fl=(13) C:\xampp\htdocs\PHP\includes\Slim_Assignment\classes\ValidateModel.php
+fn=(78) require_once::C:\xampp\htdocs\PHP\includes\Slim_Assignment\classes\ValidateModel.php
+1 1
+
+fl=(1)
+fn=(41)
+340 0
+
+fl=(1)
+fn=(42)
+346 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 114
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 37
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 28
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 154
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 34
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 85
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 28
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 123
+
+fl=(2)
+fn=(48)
+336 95
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 1
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 182
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 151
+
+fl=(14) C:\xampp\htdocs\PHP\includes\Slim_Assignment\wrappers\MCrypt_Wrapper.php
+fn=(79) require_once::C:\xampp\htdocs\PHP\includes\Slim_Assignment\wrappers\MCrypt_Wrapper.php
+1 0
+
+fl=(15) C:\xampp\htdocs\PHP\includes\Slim_Assignment\wrappers\SQL_Wrapper.php
+fn=(80) require_once::C:\xampp\htdocs\PHP\includes\Slim_Assignment\wrappers\SQL_Wrapper.php
+1 0
+
+fl=(16) C:\xampp\htdocs\PHP\includes\Slim_Assignment\classes\LoginModel.php
+fn=(81) require_once::C:\xampp\htdocs\PHP\includes\Slim_Assignment\classes\LoginModel.php
+1 508
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+21 432
+cfl=(14)
+cfn=(79)
+calls=1 0 0
+23 0
+cfl=(15)
+cfn=(80)
+calls=1 0 0
+24 0
+
+fl=(17) C:\xampp\htdocs\PHP\includes\Slim_Assignment\classes\SessionModel.php
+fn=(82) require_once::C:\xampp\htdocs\PHP\includes\Slim_Assignment\classes\SessionModel.php
+1 1
+
+fl=(1)
+fn=(41)
+340 0
+
+fl=(1)
+fn=(42)
+346 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 77
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 37
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 29
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 115
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 79
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 26
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 115
+
+fl=(2)
+fn=(48)
+336 107
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 0
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 144
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 142
+
+fl=(18) C:\xampp\htdocs\PHP\includes\Slim_Assignment\classes\AppLoggerModel.php
+fn=(83) require_once::C:\xampp\htdocs\PHP\includes\Slim_Assignment\classes\AppLoggerModel.php
+1 37
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+10 395
+
+fl=(1)
+fn=(41)
+340 0
+
+fl=(1)
+fn=(42)
+346 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 65
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 78
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 66
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 27
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 145
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 34
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 75
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 28
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 110
+
+fl=(2)
+fn=(48)
+336 81
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 0
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 173
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 138
+
+fl=(19) C:\xampp\htdocs\PHP\includes\Slim_Assignment\wrappers\Session_Wrapper.php
+fn=(84) require_once::C:\xampp\htdocs\PHP\includes\Slim_Assignment\wrappers\Session_Wrapper.php
+1 35
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+18 394
+
+fl=(20) C:\xampp\htdocs\PHP\includes\Slim_Assignment\wrappers\MySQL_Wrapper.php
+fn=(85) require_once::C:\xampp\htdocs\PHP\includes\Slim_Assignment\wrappers\MySQL_Wrapper.php
+1 0
+
+fl=(1)
+fn=(50)
+483 0
+
+fl=(1)
+fn=(51)
+441 0
+
+fl=(1)
+fn=(52)
+442 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 81
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 28
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 118
+
+fl=(9)
+fn=(55)
+143 0
+
+fl=(1)
+fn=(56)
+165 0
+
+fl=(1)
+fn=(57)
+177 1
+
+fl=(9)
+fn=(58)
+162 33
+cfl=(1)
+cfn=(56)
+calls=1 0 0
+165 0
+cfl=(1)
+cfn=(57)
+calls=1 0 0
+177 1
+
+fl=(9)
+fn=(59)
+125 0
+
+fl=(9)
+fn=(60)
+197 0
+
+fl=(9)
+fn=(61)
+104 106
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+106 0
+cfl=(9)
+cfn=(58)
+calls=1 0 0
+107 35
+cfl=(9)
+cfn=(59)
+calls=1 0 0
+108 0
+cfl=(9)
+cfn=(60)
+calls=1 0 0
+108 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 46
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 1
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(62)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(66)
+224 1
+
+fl=(3)
+fn=(46)
+83 140
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 48
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 1
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 1
+
+fl=(2)
+fn=(54)
+232 36
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 192
+
+fl=(10)
+fn=(67)
+143 1
+
+fl=(9)
+fn=(68)
+134 0
+
+fl=(9)
+fn=(55)
+143 0
+
+fl=(10)
+fn=(69)
+126 55
+cfl=(10)
+cfn=(67)
+calls=1 0 0
+128 1
+cfl=(9)
+cfn=(68)
+calls=1 0 0
+130 0
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+130 0
+
+fl=(1)
+fn=(70)
+445 1
+
+fl=(2)
+fn=(71)
+439 146
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+441 0
+cfl=(1)
+cfn=(52)
+calls=1 0 0
+442 0
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+443 146
+cfl=(9)
+cfn=(61)
+calls=1 0 0
+443 144
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+444 229
+cfl=(10)
+cfn=(69)
+calls=1 0 0
+444 57
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+445 1
+
+fl=(1)
+fn=(50)
+303 0
+
+fl=(1)
+fn=(70)
+304 0
+
+fl=(1)
+fn=(41)
+304 1
+
+fl=(1)
+fn=(22)
+307 0
+
+fl=(9)
+fn=(73)
+301 63
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+303 0
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+304 1
+cfl=(1)
+cfn=(22)
+calls=1 0 0
+307 0
+
+fl=(2)
+fn=(86) Slim\Slim->post
+481 87
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+483 0
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+485 726
+cfl=(9)
+cfn=(73)
+calls=1 0 0
+485 66
+
+fl=(9)
+fn=(75)
+215 0
+
+fl=(9)
+fn=(76)
+434 18
+cfl=(9)
+cfn=(75)
+calls=1 0 0
+436 0
+
+fl=(21) C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\login.php
+fn=(87) require::C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\login.php
+1 1873
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+18 396
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+19 381
+cfl=(13)
+cfn=(78)
+calls=1 0 0
+21 1
+cfl=(16)
+cfn=(81)
+calls=1 0 0
+22 941
+cfl=(17)
+cfn=(82)
+calls=1 0 0
+23 1
+cfl=(18)
+cfn=(83)
+calls=1 0 0
+24 432
+cfl=(19)
+cfn=(84)
+calls=1 0 0
+26 429
+cfl=(20)
+cfn=(85)
+calls=1 0 0
+27 0
+cfl=(2)
+cfn=(86)
+calls=1 0 0
+90 881
+cfl=(9)
+cfn=(76)
+calls=1 0 0
+90 19
+
+fl=(1)
+fn=(41)
+340 0
+
+fl=(1)
+fn=(42)
+346 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 1
+
+fl=(3)
+fn=(44)
+128 49
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 77
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 51
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 32
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 129
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 1
+
+fl=(3)
+fn=(44)
+128 34
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 74
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 26
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 111
+
+fl=(2)
+fn=(48)
+336 123
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 0
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 162
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 138
+
+fl=(1)
+fn=(41)
+340 0
+
+fl=(1)
+fn=(42)
+346 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 33
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 74
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 34
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 28
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 108
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 76
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 27
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 111
+
+fl=(2)
+fn=(48)
+336 74
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 0
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 137
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 138
+
+fl=(1)
+fn=(41)
+340 0
+
+fl=(1)
+fn=(42)
+346 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 77
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 38
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 115
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 74
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 28
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 111
+
+fl=(2)
+fn=(48)
+336 129
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 0
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 154
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 139
+
+fl=(22) C:\xampp\htdocs\PHP\includes\Slim_Assignment\classes\RegisterModel.php
+fn=(88) require_once::C:\xampp\htdocs\PHP\includes\Slim_Assignment\classes\RegisterModel.php
+1 42
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+20 423
+
+fl=(1)
+fn=(50)
+483 0
+
+fl=(1)
+fn=(51)
+441 0
+
+fl=(1)
+fn=(52)
+442 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 34
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 77
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 27
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 112
+
+fl=(9)
+fn=(55)
+143 0
+
+fl=(1)
+fn=(56)
+165 0
+
+fl=(1)
+fn=(57)
+177 1
+
+fl=(9)
+fn=(58)
+162 33
+cfl=(1)
+cfn=(56)
+calls=1 0 0
+165 0
+cfl=(1)
+cfn=(57)
+calls=1 0 0
+177 1
+
+fl=(9)
+fn=(59)
+125 3
+
+fl=(9)
+fn=(60)
+197 0
+
+fl=(9)
+fn=(61)
+104 107
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+106 0
+cfl=(9)
+cfn=(58)
+calls=1 0 0
+107 35
+cfl=(9)
+cfn=(59)
+calls=1 0 0
+108 3
+cfl=(9)
+cfn=(60)
+calls=1 0 0
+108 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 33
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 1
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(62)
+86 1
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(3)
+fn=(66)
+224 0
+
+fl=(3)
+fn=(46)
+83 126
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 1
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 1
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 1
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 36
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 168
+
+fl=(10)
+fn=(67)
+143 1
+
+fl=(9)
+fn=(68)
+134 0
+
+fl=(9)
+fn=(55)
+143 0
+
+fl=(10)
+fn=(69)
+126 55
+cfl=(10)
+cfn=(67)
+calls=1 0 0
+128 1
+cfl=(9)
+cfn=(68)
+calls=1 0 0
+130 0
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+130 0
+
+fl=(1)
+fn=(70)
+445 0
+
+fl=(2)
+fn=(71)
+439 148
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+441 0
+cfl=(1)
+cfn=(52)
+calls=1 0 0
+442 0
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+443 139
+cfl=(9)
+cfn=(61)
+calls=1 0 0
+443 146
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+444 204
+cfl=(10)
+cfn=(69)
+calls=1 0 0
+444 57
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+445 0
+
+fl=(1)
+fn=(50)
+303 0
+
+fl=(1)
+fn=(70)
+304 0
+
+fl=(1)
+fn=(41)
+304 0
+
+fl=(1)
+fn=(22)
+307 0
+
+fl=(9)
+fn=(73)
+301 66
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+303 0
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(22)
+calls=1 0 0
+307 0
+
+fl=(2)
+fn=(86)
+481 84
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+483 0
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+485 697
+cfl=(9)
+cfn=(73)
+calls=1 0 0
+485 66
+
+fl=(23) C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\register.php
+fn=(89) require::C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\register.php
+1 488
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+18 424
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+19 350
+cfl=(22)
+cfn=(88)
+calls=1 0 0
+22 466
+cfl=(2)
+cfn=(86)
+calls=1 0 0
+92 849
+
+fl=(1)
+fn=(41)
+340 0
+
+fl=(1)
+fn=(42)
+346 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 37
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 102
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 38
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 38
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 141
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(3)
+fn=(46)
+83 75
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 1
+
+fl=(3)
+fn=(47)
+183 27
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 113
+
+fl=(2)
+fn=(48)
+336 97
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 0
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 180
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 140
+
+fl=(1)
+fn=(50)
+471 0
+
+fl=(1)
+fn=(51)
+441 1
+
+fl=(1)
+fn=(52)
+442 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 34
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 76
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 34
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 28
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 112
+
+fl=(9)
+fn=(55)
+143 0
+
+fl=(1)
+fn=(56)
+165 0
+
+fl=(1)
+fn=(57)
+177 0
+
+fl=(9)
+fn=(58)
+162 33
+cfl=(1)
+cfn=(56)
+calls=1 0 0
+165 0
+cfl=(1)
+cfn=(57)
+calls=1 0 0
+177 0
+
+fl=(9)
+fn=(59)
+125 0
+
+fl=(9)
+fn=(60)
+197 0
+
+fl=(9)
+fn=(61)
+104 80
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+106 0
+cfl=(9)
+cfn=(58)
+calls=1 0 0
+107 34
+cfl=(9)
+cfn=(59)
+calls=1 0 0
+108 0
+cfl=(9)
+cfn=(60)
+calls=1 0 0
+108 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(66)
+224 1
+
+fl=(3)
+fn=(46)
+83 129
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 1
+
+fl=(2)
+fn=(54)
+232 35
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 169
+
+fl=(10)
+fn=(67)
+143 1
+
+fl=(9)
+fn=(68)
+134 0
+
+fl=(9)
+fn=(55)
+143 0
+
+fl=(10)
+fn=(69)
+126 54
+cfl=(10)
+cfn=(67)
+calls=1 0 0
+128 1
+cfl=(9)
+cfn=(68)
+calls=1 0 0
+130 0
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+130 0
+
+fl=(1)
+fn=(70)
+445 0
+
+fl=(2)
+fn=(71)
+439 157
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+441 1
+cfl=(1)
+cfn=(52)
+calls=1 0 0
+442 0
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+443 140
+cfl=(9)
+cfn=(61)
+calls=1 0 0
+443 114
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+444 204
+cfl=(10)
+cfn=(69)
+calls=1 0 0
+444 56
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+445 0
+
+fl=(1)
+fn=(50)
+303 0
+
+fl=(1)
+fn=(70)
+304 0
+
+fl=(1)
+fn=(41)
+304 0
+
+fl=(1)
+fn=(22)
+307 0
+
+fl=(9)
+fn=(73)
+301 66
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+303 0
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(22)
+calls=1 0 0
+307 0
+
+fl=(2)
+fn=(74)
+469 97
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+471 0
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+473 674
+cfl=(9)
+cfn=(73)
+calls=1 0 0
+473 66
+
+fl=(9)
+fn=(75)
+215 0
+
+fl=(9)
+fn=(76)
+434 18
+cfl=(9)
+cfn=(75)
+calls=1 0 0
+436 0
+
+fl=(1)
+fn=(50)
+471 0
+
+fl=(1)
+fn=(51)
+441 0
+
+fl=(1)
+fn=(52)
+442 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 74
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 1
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 27
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 112
+
+fl=(9)
+fn=(55)
+143 0
+
+fl=(1)
+fn=(56)
+165 0
+
+fl=(1)
+fn=(57)
+177 0
+
+fl=(9)
+fn=(58)
+162 59
+cfl=(1)
+cfn=(56)
+calls=1 0 0
+165 0
+cfl=(1)
+cfn=(57)
+calls=1 0 0
+177 0
+
+fl=(9)
+fn=(59)
+125 0
+
+fl=(9)
+fn=(60)
+197 0
+
+fl=(9)
+fn=(61)
+104 80
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+106 0
+cfl=(9)
+cfn=(58)
+calls=1 0 0
+107 60
+cfl=(9)
+cfn=(59)
+calls=1 0 0
+108 0
+cfl=(9)
+cfn=(60)
+calls=1 0 0
+108 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(66)
+224 1
+
+fl=(3)
+fn=(46)
+83 128
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 1
+
+fl=(2)
+fn=(54)
+232 36
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 166
+
+fl=(10)
+fn=(67)
+143 0
+
+fl=(9)
+fn=(68)
+134 0
+
+fl=(9)
+fn=(55)
+143 1
+
+fl=(10)
+fn=(69)
+126 53
+cfl=(10)
+cfn=(67)
+calls=1 0 0
+128 0
+cfl=(9)
+cfn=(68)
+calls=1 0 0
+130 0
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+130 1
+
+fl=(1)
+fn=(70)
+445 0
+
+fl=(2)
+fn=(71)
+439 159
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+441 0
+cfl=(1)
+cfn=(52)
+calls=1 0 0
+442 0
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+443 139
+cfl=(9)
+cfn=(61)
+calls=1 0 0
+443 142
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+444 202
+cfl=(10)
+cfn=(69)
+calls=1 0 0
+444 56
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+445 0
+
+fl=(1)
+fn=(50)
+303 0
+
+fl=(1)
+fn=(70)
+304 1
+
+fl=(1)
+fn=(41)
+304 0
+
+fl=(1)
+fn=(22)
+307 0
+
+fl=(9)
+fn=(73)
+301 87
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+303 0
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+304 1
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(22)
+calls=1 0 0
+307 0
+
+fl=(2)
+fn=(74)
+469 92
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+471 0
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+473 700
+cfl=(9)
+cfn=(73)
+calls=1 0 0
+473 90
+
+fl=(9)
+fn=(75)
+215 0
+
+fl=(9)
+fn=(76)
+434 19
+cfl=(9)
+cfn=(75)
+calls=1 0 0
+436 0
+
+fl=(24) C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\homepage.php
+fn=(90) require::C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\homepage.php
+1 135
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+20 419
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+64 839
+cfl=(9)
+cfn=(76)
+calls=1 0 0
+64 19
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+104 884
+cfl=(9)
+cfn=(76)
+calls=1 0 0
+104 19
+
+fl=(1)
+fn=(41)
+340 0
+
+fl=(1)
+fn=(42)
+346 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 104
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 1
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 28
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 143
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 33
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 1
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 77
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 26
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 112
+
+fl=(2)
+fn=(48)
+336 83
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 0
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 171
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 138
+
+fl=(1)
+fn=(41)
+340 0
+
+fl=(1)
+fn=(42)
+346 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 43
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 1
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 83
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 46
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 35
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 129
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 33
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 1
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 75
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 28
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 111
+
+fl=(2)
+fn=(48)
+336 79
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 0
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 164
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 140
+
+fl=(1)
+fn=(50)
+471 0
+
+fl=(1)
+fn=(51)
+441 0
+
+fl=(1)
+fn=(52)
+442 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 78
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 48
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 116
+
+fl=(9)
+fn=(55)
+143 0
+
+fl=(1)
+fn=(56)
+165 0
+
+fl=(1)
+fn=(57)
+177 0
+
+fl=(9)
+fn=(58)
+162 34
+cfl=(1)
+cfn=(56)
+calls=1 0 0
+165 0
+cfl=(1)
+cfn=(57)
+calls=1 0 0
+177 0
+
+fl=(9)
+fn=(59)
+125 0
+
+fl=(9)
+fn=(60)
+197 0
+
+fl=(9)
+fn=(61)
+104 80
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+106 0
+cfl=(9)
+cfn=(58)
+calls=1 0 0
+107 34
+cfl=(9)
+cfn=(59)
+calls=1 0 0
+108 0
+cfl=(9)
+cfn=(60)
+calls=1 0 0
+108 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(66)
+224 0
+
+fl=(3)
+fn=(46)
+83 128
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 36
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 165
+
+fl=(10)
+fn=(67)
+143 1
+
+fl=(9)
+fn=(68)
+134 0
+
+fl=(9)
+fn=(55)
+143 0
+
+fl=(10)
+fn=(69)
+126 77
+cfl=(10)
+cfn=(67)
+calls=1 0 0
+128 1
+cfl=(9)
+cfn=(68)
+calls=1 0 0
+130 0
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+130 0
+
+fl=(1)
+fn=(70)
+445 0
+
+fl=(2)
+fn=(71)
+439 149
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+441 0
+cfl=(1)
+cfn=(52)
+calls=1 0 0
+442 1
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+443 164
+cfl=(9)
+cfn=(61)
+calls=1 0 0
+443 114
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+444 201
+cfl=(10)
+cfn=(69)
+calls=1 0 0
+444 80
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+445 0
+
+fl=(1)
+fn=(50)
+303 0
+
+fl=(1)
+fn=(70)
+304 0
+
+fl=(1)
+fn=(41)
+304 0
+
+fl=(1)
+fn=(22)
+307 0
+
+fl=(9)
+fn=(73)
+301 72
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+303 0
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(22)
+calls=1 0 0
+307 0
+
+fl=(2)
+fn=(74)
+469 87
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+471 0
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+473 713
+cfl=(9)
+cfn=(73)
+calls=1 0 0
+473 74
+
+fl=(25) C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\process.php
+fn=(91) require::C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\process.php
+1 111
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+18 394
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+19 385
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+55 875
+
+fl=(1)
+fn=(41)
+340 0
+
+fl=(1)
+fn=(42)
+346 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 39
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 1
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 86
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 41
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 31
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 128
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 38
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 87
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 38
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 1
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 30
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 127
+
+fl=(2)
+fn=(48)
+336 105
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 0
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 159
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 158
+
+fl=(1)
+fn=(41)
+340 1
+
+fl=(1)
+fn=(42)
+346 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 37
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(3)
+fn=(46)
+83 82
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 38
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 1
+
+fl=(3)
+fn=(47)
+183 30
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 123
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 38
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 83
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 39
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 30
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 125
+
+fl=(2)
+fn=(48)
+336 81
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 1
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 0
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 153
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 156
+
+fl=(1)
+fn=(41)
+340 0
+
+fl=(1)
+fn=(42)
+346 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 39
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 85
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 39
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 30
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 126
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 38
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 87
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 38
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 1
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 32
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 128
+
+fl=(2)
+fn=(48)
+336 87
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 0
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 157
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 160
+
+fl=(26) C:\xampp\htdocs\PHP\includes\Slim_Assignment\classes\LogoutModel.php
+fn=(92) require_once::C:\xampp\htdocs\PHP\includes\Slim_Assignment\classes\LogoutModel.php
+1 40
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+19 406
+
+fl=(1)
+fn=(50)
+471 0
+
+fl=(1)
+fn=(51)
+441 0
+
+fl=(1)
+fn=(52)
+442 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 40
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 97
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 42
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 32
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 139
+
+fl=(9)
+fn=(55)
+143 0
+
+fl=(1)
+fn=(56)
+165 0
+
+fl=(1)
+fn=(57)
+177 0
+
+fl=(9)
+fn=(58)
+162 38
+cfl=(1)
+cfn=(56)
+calls=1 0 0
+165 0
+cfl=(1)
+cfn=(57)
+calls=1 0 0
+177 0
+
+fl=(9)
+fn=(59)
+125 0
+
+fl=(9)
+fn=(60)
+197 0
+
+fl=(9)
+fn=(61)
+104 88
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+106 0
+cfl=(9)
+cfn=(58)
+calls=1 0 0
+107 39
+cfl=(9)
+cfn=(59)
+calls=1 0 0
+108 0
+cfl=(9)
+cfn=(60)
+calls=1 0 0
+108 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 40
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(66)
+224 1
+
+fl=(3)
+fn=(46)
+83 139
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 41
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 1
+
+fl=(2)
+fn=(54)
+232 38
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 186
+
+fl=(10)
+fn=(67)
+143 3
+
+fl=(9)
+fn=(68)
+134 0
+
+fl=(9)
+fn=(55)
+143 0
+
+fl=(10)
+fn=(69)
+126 62
+cfl=(10)
+cfn=(67)
+calls=1 0 0
+128 3
+cfl=(9)
+cfn=(68)
+calls=1 0 0
+130 0
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+130 0
+
+fl=(1)
+fn=(70)
+445 0
+
+fl=(2)
+fn=(71)
+439 181
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+441 0
+cfl=(1)
+cfn=(52)
+calls=1 0 0
+442 0
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+443 172
+cfl=(9)
+cfn=(61)
+calls=1 0 0
+443 129
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+444 225
+cfl=(10)
+cfn=(69)
+calls=1 0 0
+444 66
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+445 0
+
+fl=(1)
+fn=(50)
+303 0
+
+fl=(1)
+fn=(70)
+304 0
+
+fl=(1)
+fn=(41)
+304 0
+
+fl=(1)
+fn=(22)
+307 0
+
+fl=(9)
+fn=(73)
+301 74
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+303 0
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(22)
+calls=1 0 0
+307 0
+
+fl=(2)
+fn=(74)
+469 101
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+471 0
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+473 777
+cfl=(9)
+cfn=(73)
+calls=1 0 0
+473 76
+
+fl=(9)
+fn=(75)
+215 0
+
+fl=(9)
+fn=(76)
+434 20
+cfl=(9)
+cfn=(75)
+calls=1 0 0
+436 0
+
+fl=(27) C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\logout.php
+fn=(93) require::C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\logout.php
+1 394
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+15 424
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+16 391
+cfl=(26)
+cfn=(92)
+calls=1 0 0
+18 447
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+52 955
+cfl=(9)
+cfn=(76)
+calls=1 0 0
+52 21
+
+fl=(1)
+fn=(41)
+340 0
+
+fl=(1)
+fn=(42)
+346 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 38
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 1
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 83
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 41
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 32
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 126
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 37
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 83
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 38
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 30
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 123
+
+fl=(2)
+fn=(48)
+336 97
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 0
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 159
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 154
+
+fl=(1)
+fn=(50)
+471 0
+
+fl=(1)
+fn=(51)
+441 0
+
+fl=(1)
+fn=(52)
+442 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 1
+
+fl=(3)
+fn=(44)
+128 37
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 82
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 40
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 31
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 123
+
+fl=(9)
+fn=(55)
+143 0
+
+fl=(1)
+fn=(56)
+165 0
+
+fl=(1)
+fn=(57)
+177 0
+
+fl=(9)
+fn=(58)
+162 87
+cfl=(1)
+cfn=(56)
+calls=1 0 0
+165 0
+cfl=(1)
+cfn=(57)
+calls=1 0 0
+177 0
+
+fl=(9)
+fn=(59)
+125 1
+
+fl=(9)
+fn=(60)
+197 0
+
+fl=(9)
+fn=(61)
+104 190
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+106 0
+cfl=(9)
+cfn=(58)
+calls=1 0 0
+107 88
+cfl=(9)
+cfn=(59)
+calls=1 0 0
+108 1
+cfl=(9)
+cfn=(60)
+calls=1 0 0
+108 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 1
+
+fl=(3)
+fn=(44)
+128 78
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 1
+
+fl=(3)
+fn=(23)
+62 2
+
+fl=(1)
+fn=(45)
+86 36
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(66)
+224 2
+
+fl=(3)
+fn=(46)
+83 429
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 81
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 2
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 1
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 2
+
+fl=(2)
+fn=(54)
+232 54
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 555
+
+fl=(10)
+fn=(67)
+143 6
+
+fl=(9)
+fn=(68)
+134 1
+
+fl=(9)
+fn=(55)
+143 1
+
+fl=(10)
+fn=(69)
+126 89
+cfl=(10)
+cfn=(67)
+calls=1 0 0
+128 6
+cfl=(9)
+cfn=(68)
+calls=1 0 0
+130 1
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+130 1
+
+fl=(1)
+fn=(70)
+445 0
+
+fl=(2)
+fn=(71)
+439 246
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+441 0
+cfl=(1)
+cfn=(52)
+calls=1 0 0
+442 0
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+443 155
+cfl=(9)
+cfn=(61)
+calls=1 0 0
+443 283
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+444 610
+cfl=(10)
+cfn=(69)
+calls=1 0 0
+444 99
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+445 0
+
+fl=(1)
+fn=(50)
+303 1
+
+fl=(1)
+fn=(70)
+304 0
+
+fl=(1)
+fn=(41)
+304 0
+
+fl=(1)
+fn=(22)
+307 1
+
+fl=(9)
+fn=(73)
+301 105
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+303 1
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(22)
+calls=1 0 0
+307 1
+
+fl=(2)
+fn=(74)
+469 105
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+471 0
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+473 1398
+cfl=(9)
+cfn=(73)
+calls=1 0 0
+473 108
+
+fl=(9)
+fn=(75)
+215 0
+
+fl=(9)
+fn=(76)
+434 21
+cfl=(9)
+cfn=(75)
+calls=1 0 0
+436 0
+
+fl=(1)
+fn=(50)
+471 0
+
+fl=(1)
+fn=(51)
+441 0
+
+fl=(1)
+fn=(52)
+442 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 94
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 37
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 46
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 133
+
+fl=(9)
+fn=(55)
+143 1
+
+fl=(1)
+fn=(56)
+165 0
+
+fl=(1)
+fn=(57)
+177 0
+
+fl=(9)
+fn=(58)
+162 35
+cfl=(1)
+cfn=(56)
+calls=1 0 0
+165 0
+cfl=(1)
+cfn=(57)
+calls=1 0 0
+177 0
+
+fl=(9)
+fn=(59)
+125 1
+
+fl=(9)
+fn=(60)
+197 1
+
+fl=(9)
+fn=(61)
+104 77
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+106 1
+cfl=(9)
+cfn=(58)
+calls=1 0 0
+107 36
+cfl=(9)
+cfn=(59)
+calls=1 0 0
+108 1
+cfl=(9)
+cfn=(60)
+calls=1 0 0
+108 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(66)
+224 1
+
+fl=(3)
+fn=(46)
+83 155
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 1
+
+fl=(2)
+fn=(54)
+232 38
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 194
+
+fl=(10)
+fn=(67)
+143 2
+
+fl=(9)
+fn=(68)
+134 0
+
+fl=(9)
+fn=(55)
+143 0
+
+fl=(10)
+fn=(69)
+126 65
+cfl=(10)
+cfn=(67)
+calls=1 0 0
+128 2
+cfl=(9)
+cfn=(68)
+calls=1 0 0
+130 0
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+130 0
+
+fl=(1)
+fn=(70)
+445 0
+
+fl=(2)
+fn=(71)
+439 169
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+441 0
+cfl=(1)
+cfn=(52)
+calls=1 0 0
+442 0
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+443 180
+cfl=(9)
+cfn=(61)
+calls=1 0 0
+443 118
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+444 232
+cfl=(10)
+cfn=(69)
+calls=1 0 0
+444 69
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+445 0
+
+fl=(1)
+fn=(50)
+303 0
+
+fl=(1)
+fn=(70)
+304 0
+
+fl=(1)
+fn=(41)
+304 0
+
+fl=(1)
+fn=(22)
+307 0
+
+fl=(9)
+fn=(73)
+301 91
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+303 0
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(22)
+calls=1 0 0
+307 0
+
+fl=(2)
+fn=(74)
+469 108
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+471 0
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+473 771
+cfl=(9)
+cfn=(73)
+calls=1 0 0
+473 92
+
+fl=(9)
+fn=(75)
+215 0
+
+fl=(9)
+fn=(76)
+434 18
+cfl=(9)
+cfn=(75)
+calls=1 0 0
+436 0
+
+fl=(28) C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\login_error.php
+fn=(94) require::C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\login_error.php
+1 165
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+21 411
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+48 1612
+cfl=(9)
+cfn=(76)
+calls=1 0 0
+48 22
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+73 971
+cfl=(9)
+cfn=(76)
+calls=1 0 0
+73 19
+
+fl=(1)
+fn=(41)
+340 0
+
+fl=(1)
+fn=(42)
+346 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 79
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 30
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 116
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 34
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 73
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 28
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 110
+
+fl=(2)
+fn=(48)
+336 85
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 0
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 146
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 138
+
+fl=(1)
+fn=(50)
+471 1
+
+fl=(1)
+fn=(51)
+441 0
+
+fl=(1)
+fn=(52)
+442 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 75
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 29
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 112
+
+fl=(9)
+fn=(55)
+143 0
+
+fl=(1)
+fn=(56)
+165 0
+
+fl=(1)
+fn=(57)
+177 0
+
+fl=(9)
+fn=(58)
+162 33
+cfl=(1)
+cfn=(56)
+calls=1 0 0
+165 0
+cfl=(1)
+cfn=(57)
+calls=1 0 0
+177 0
+
+fl=(9)
+fn=(59)
+125 0
+
+fl=(9)
+fn=(60)
+197 0
+
+fl=(9)
+fn=(61)
+104 89
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+106 0
+cfl=(9)
+cfn=(58)
+calls=1 0 0
+107 34
+cfl=(9)
+cfn=(59)
+calls=1 0 0
+108 0
+cfl=(9)
+cfn=(60)
+calls=1 0 0
+108 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(62)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(66)
+224 1
+
+fl=(3)
+fn=(46)
+83 151
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 1
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 1
+
+fl=(2)
+fn=(54)
+232 35
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 191
+
+fl=(10)
+fn=(67)
+143 0
+
+fl=(9)
+fn=(68)
+134 0
+
+fl=(9)
+fn=(55)
+143 0
+
+fl=(10)
+fn=(69)
+126 55
+cfl=(10)
+cfn=(67)
+calls=1 0 0
+128 0
+cfl=(9)
+cfn=(68)
+calls=1 0 0
+130 0
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+130 0
+
+fl=(1)
+fn=(70)
+445 0
+
+fl=(2)
+fn=(71)
+439 214
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+441 0
+cfl=(1)
+cfn=(52)
+calls=1 0 0
+442 1
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+443 141
+cfl=(9)
+cfn=(61)
+calls=1 0 0
+443 126
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+444 226
+cfl=(10)
+cfn=(69)
+calls=1 0 0
+444 56
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+445 0
+
+fl=(1)
+fn=(50)
+303 0
+
+fl=(1)
+fn=(70)
+304 0
+
+fl=(1)
+fn=(41)
+304 0
+
+fl=(1)
+fn=(22)
+307 0
+
+fl=(9)
+fn=(73)
+301 66
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+303 0
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(22)
+calls=1 0 0
+307 0
+
+fl=(2)
+fn=(74)
+469 86
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+471 1
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+473 768
+cfl=(9)
+cfn=(73)
+calls=1 0 0
+473 67
+
+fl=(9)
+fn=(75)
+215 0
+
+fl=(9)
+fn=(76)
+434 17
+cfl=(9)
+cfn=(75)
+calls=1 0 0
+436 0
+
+fl=(1)
+fn=(50)
+471 0
+
+fl=(1)
+fn=(51)
+441 0
+
+fl=(1)
+fn=(52)
+442 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 77
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 27
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 114
+
+fl=(9)
+fn=(55)
+143 0
+
+fl=(1)
+fn=(56)
+165 0
+
+fl=(1)
+fn=(57)
+177 0
+
+fl=(9)
+fn=(58)
+162 31
+cfl=(1)
+cfn=(56)
+calls=1 0 0
+165 0
+cfl=(1)
+cfn=(57)
+calls=1 0 0
+177 0
+
+fl=(9)
+fn=(59)
+125 0
+
+fl=(9)
+fn=(60)
+197 0
+
+fl=(9)
+fn=(61)
+104 76
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+106 0
+cfl=(9)
+cfn=(58)
+calls=1 0 0
+107 33
+cfl=(9)
+cfn=(59)
+calls=1 0 0
+108 0
+cfl=(9)
+cfn=(60)
+calls=1 0 0
+108 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 1
+
+fl=(3)
+fn=(44)
+128 34
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(66)
+224 0
+
+fl=(3)
+fn=(46)
+83 128
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 1
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 36
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 165
+
+fl=(10)
+fn=(67)
+143 1
+
+fl=(9)
+fn=(68)
+134 0
+
+fl=(9)
+fn=(55)
+143 0
+
+fl=(10)
+fn=(69)
+126 54
+cfl=(10)
+cfn=(67)
+calls=1 0 0
+128 1
+cfl=(9)
+cfn=(68)
+calls=1 0 0
+130 0
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+130 0
+
+fl=(1)
+fn=(70)
+445 0
+
+fl=(2)
+fn=(71)
+439 167
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+441 0
+cfl=(1)
+cfn=(52)
+calls=1 0 0
+442 0
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+443 142
+cfl=(9)
+cfn=(61)
+calls=1 0 0
+443 113
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+444 202
+cfl=(10)
+cfn=(69)
+calls=1 0 0
+444 56
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+445 0
+
+fl=(1)
+fn=(50)
+303 0
+
+fl=(1)
+fn=(70)
+304 0
+
+fl=(1)
+fn=(41)
+304 0
+
+fl=(1)
+fn=(22)
+307 0
+
+fl=(9)
+fn=(73)
+301 65
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+303 0
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(22)
+calls=1 0 0
+307 0
+
+fl=(2)
+fn=(74)
+469 79
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+471 0
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+473 683
+cfl=(9)
+cfn=(73)
+calls=1 0 0
+473 66
+
+fl=(9)
+fn=(75)
+215 0
+
+fl=(9)
+fn=(76)
+434 30
+cfl=(9)
+cfn=(75)
+calls=1 0 0
+436 0
+
+fl=(29) C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\register_error.php
+fn=(95) require::C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\register_error.php
+1 138
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+19 370
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+46 923
+cfl=(9)
+cfn=(76)
+calls=1 0 0
+46 17
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+71 831
+cfl=(9)
+cfn=(76)
+calls=1 0 0
+71 30
+
+fl=(1)
+fn=(41)
+340 0
+
+fl=(1)
+fn=(42)
+346 1
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(43)
+130 1
+
+fl=(3)
+fn=(44)
+128 62
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 1
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 108
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 65
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 29
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 174
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 33
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 1
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 76
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 34
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 26
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 112
+
+fl=(2)
+fn=(48)
+336 82
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 1
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 203
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 138
+
+fl=(1)
+fn=(41)
+340 0
+
+fl=(1)
+fn=(42)
+346 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 74
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 1
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 27
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 111
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 33
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 74
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 34
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 1
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 26
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 111
+
+fl=(2)
+fn=(48)
+336 74
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 0
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 138
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 138
+
+fl=(30) C:\xampp\htdocs\PHP\includes\Slim_Assignment\classes\XMLparserModel.php
+fn=(96) include::C:\xampp\htdocs\PHP\includes\Slim_Assignment\classes\XMLparserModel.php
+1 0
+
+fl=(31) C:\xampp\htdocs\PHP\includes\Slim_Assignment\classes\DataDownloadModel.php
+fn=(97) require_once::C:\xampp\htdocs\PHP\includes\Slim_Assignment\classes\DataDownloadModel.php
+1 257
+cfl=(30)
+cfn=(96)
+calls=1 0 0
+29 0
+
+fl=(1)
+fn=(41)
+340 0
+
+fl=(1)
+fn=(42)
+346 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(3)
+fn=(46)
+83 76
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 37
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 1
+
+fl=(3)
+fn=(47)
+183 29
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 115
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 74
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 29
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 110
+
+fl=(2)
+fn=(48)
+336 80
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 0
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 145
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 139
+
+fl=(32) C:\xampp\htdocs\PHP\includes\Slim_Assignment\classes\DataStoreModel.php
+fn=(98) require_once::C:\xampp\htdocs\PHP\includes\Slim_Assignment\classes\DataStoreModel.php
+1 46
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+23 366
+
+fl=(33) C:\xampp\htdocs\PHP\includes\Slim_Assignment\wrappers\Soap_Wrapper.php
+fn=(99) require_once::C:\xampp\htdocs\PHP\includes\Slim_Assignment\wrappers\Soap_Wrapper.php
+1 0
+
+fl=(1)
+fn=(50)
+471 0
+
+fl=(1)
+fn=(51)
+441 0
+
+fl=(1)
+fn=(52)
+442 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 78
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 29
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 116
+
+fl=(9)
+fn=(55)
+143 0
+
+fl=(1)
+fn=(56)
+165 0
+
+fl=(1)
+fn=(57)
+177 0
+
+fl=(9)
+fn=(58)
+162 33
+cfl=(1)
+cfn=(56)
+calls=1 0 0
+165 0
+cfl=(1)
+cfn=(57)
+calls=1 0 0
+177 0
+
+fl=(9)
+fn=(59)
+125 0
+
+fl=(9)
+fn=(60)
+197 0
+
+fl=(9)
+fn=(61)
+104 79
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+106 0
+cfl=(9)
+cfn=(58)
+calls=1 0 0
+107 33
+cfl=(9)
+cfn=(59)
+calls=1 0 0
+108 0
+cfl=(9)
+cfn=(60)
+calls=1 0 0
+108 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(66)
+224 0
+
+fl=(3)
+fn=(46)
+83 125
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 1
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 36
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 166
+
+fl=(10)
+fn=(67)
+143 2
+
+fl=(9)
+fn=(68)
+134 0
+
+fl=(9)
+fn=(55)
+143 1
+
+fl=(10)
+fn=(69)
+126 72
+cfl=(10)
+cfn=(67)
+calls=1 0 0
+128 2
+cfl=(9)
+cfn=(68)
+calls=1 0 0
+130 0
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+130 1
+
+fl=(1)
+fn=(70)
+445 0
+
+fl=(2)
+fn=(71)
+439 156
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+441 0
+cfl=(1)
+cfn=(52)
+calls=1 0 0
+442 1
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+443 146
+cfl=(9)
+cfn=(61)
+calls=1 0 0
+443 114
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+444 202
+cfl=(10)
+cfn=(69)
+calls=1 0 0
+444 76
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+445 0
+
+fl=(1)
+fn=(50)
+303 0
+
+fl=(1)
+fn=(70)
+304 0
+
+fl=(1)
+fn=(41)
+304 0
+
+fl=(1)
+fn=(22)
+307 0
+
+fl=(9)
+fn=(73)
+301 66
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+303 0
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(22)
+calls=1 0 0
+307 0
+
+fl=(2)
+fn=(74)
+469 85
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+471 0
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+473 699
+cfl=(9)
+cfn=(73)
+calls=1 0 0
+473 67
+
+fl=(34) C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\downloaddata.php
+fn=(100) require::C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\downloaddata.php
+1 1014
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+17 427
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+18 352
+cfl=(31)
+cfn=(97)
+calls=1 0 0
+21 258
+cfl=(32)
+cfn=(98)
+calls=1 0 0
+22 413
+cfl=(33)
+cfn=(99)
+calls=1 0 0
+24 0
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+150 852
+
+fl=(1)
+fn=(41)
+340 0
+
+fl=(1)
+fn=(42)
+346 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 77
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 1
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 29
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 116
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 34
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 74
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 59
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 110
+
+fl=(2)
+fn=(48)
+336 96
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 0
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 145
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 169
+
+fl=(1)
+fn=(41)
+340 0
+
+fl=(1)
+fn=(42)
+346 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 74
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 29
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 110
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 34
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(3)
+fn=(46)
+83 72
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 34
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 1
+
+fl=(3)
+fn=(47)
+183 29
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 109
+
+fl=(2)
+fn=(48)
+336 86
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 0
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 140
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 138
+
+fl=(1)
+fn=(41)
+340 0
+
+fl=(1)
+fn=(42)
+346 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 77
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 37
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 28
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 115
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 34
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 1
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 102
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 26
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 140
+
+fl=(2)
+fn=(48)
+336 81
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 0
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 144
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 167
+
+fl=(35) C:\xampp\htdocs\PHP\includes\Slim_Assignment\classes\DataDisplayModel.php
+fn=(101) require_once::C:\xampp\htdocs\PHP\includes\Slim_Assignment\classes\DataDisplayModel.php
+1 37
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+17 392
+
+fl=(1)
+fn=(50)
+471 0
+
+fl=(1)
+fn=(51)
+441 0
+
+fl=(1)
+fn=(52)
+442 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 34
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 73
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 29
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 110
+
+fl=(9)
+fn=(55)
+143 0
+
+fl=(1)
+fn=(56)
+165 0
+
+fl=(1)
+fn=(57)
+177 0
+
+fl=(9)
+fn=(58)
+162 33
+cfl=(1)
+cfn=(56)
+calls=1 0 0
+165 0
+cfl=(1)
+cfn=(57)
+calls=1 0 0
+177 0
+
+fl=(9)
+fn=(59)
+125 0
+
+fl=(9)
+fn=(60)
+197 0
+
+fl=(9)
+fn=(61)
+104 80
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+106 0
+cfl=(9)
+cfn=(58)
+calls=1 0 0
+107 34
+cfl=(9)
+cfn=(59)
+calls=1 0 0
+108 0
+cfl=(9)
+cfn=(60)
+calls=1 0 0
+108 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(66)
+224 0
+
+fl=(3)
+fn=(46)
+83 154
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 1
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 35
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 193
+
+fl=(10)
+fn=(67)
+143 2
+
+fl=(9)
+fn=(68)
+134 0
+
+fl=(9)
+fn=(55)
+143 0
+
+fl=(10)
+fn=(69)
+126 54
+cfl=(10)
+cfn=(67)
+calls=1 0 0
+128 2
+cfl=(9)
+cfn=(68)
+calls=1 0 0
+130 0
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+130 0
+
+fl=(1)
+fn=(70)
+445 0
+
+fl=(2)
+fn=(71)
+439 147
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+441 0
+cfl=(1)
+cfn=(52)
+calls=1 0 0
+442 0
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+443 139
+cfl=(9)
+cfn=(61)
+calls=1 0 0
+443 115
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+444 228
+cfl=(10)
+cfn=(69)
+calls=1 0 0
+444 58
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+445 0
+
+fl=(1)
+fn=(50)
+303 1
+
+fl=(1)
+fn=(70)
+304 0
+
+fl=(1)
+fn=(41)
+304 0
+
+fl=(1)
+fn=(22)
+307 0
+
+fl=(9)
+fn=(73)
+301 66
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+303 1
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(22)
+calls=1 0 0
+307 0
+
+fl=(2)
+fn=(74)
+469 82
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+471 0
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+473 689
+cfl=(9)
+cfn=(73)
+calls=1 0 0
+473 67
+
+fl=(36) C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\displayinformation.php
+fn=(102) require::C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\displayinformation.php
+1 416
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+16 413
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+17 365
+cfl=(35)
+cfn=(101)
+calls=1 0 0
+21 430
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+130 839
+
+fl=(1)
+fn=(41)
+340 1
+
+fl=(1)
+fn=(42)
+346 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 1
+
+fl=(3)
+fn=(44)
+128 34
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 80
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 28
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 118
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 34
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(3)
+fn=(46)
+83 74
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 1
+
+fl=(3)
+fn=(47)
+183 28
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 110
+
+fl=(2)
+fn=(48)
+336 78
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 1
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 0
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 146
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 138
+
+fl=(1)
+fn=(50)
+471 0
+
+fl=(1)
+fn=(51)
+441 0
+
+fl=(1)
+fn=(52)
+442 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 34
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(3)
+fn=(46)
+83 75
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 1
+
+fl=(2)
+fn=(54)
+232 26
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 112
+
+fl=(9)
+fn=(55)
+143 0
+
+fl=(1)
+fn=(56)
+165 0
+
+fl=(1)
+fn=(57)
+177 0
+
+fl=(9)
+fn=(58)
+162 35
+cfl=(1)
+cfn=(56)
+calls=1 0 0
+165 0
+cfl=(1)
+cfn=(57)
+calls=1 0 0
+177 0
+
+fl=(9)
+fn=(59)
+125 1
+
+fl=(9)
+fn=(60)
+197 2
+
+fl=(9)
+fn=(61)
+104 93
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+106 0
+cfl=(9)
+cfn=(58)
+calls=1 0 0
+107 35
+cfl=(9)
+cfn=(59)
+calls=1 0 0
+108 1
+cfl=(9)
+cfn=(60)
+calls=1 0 0
+108 2
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(62)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(66)
+224 0
+
+fl=(3)
+fn=(46)
+83 155
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 1
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 36
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 196
+
+fl=(10)
+fn=(67)
+143 0
+
+fl=(9)
+fn=(68)
+134 0
+
+fl=(9)
+fn=(55)
+143 1
+
+fl=(10)
+fn=(69)
+126 55
+cfl=(10)
+cfn=(67)
+calls=1 0 0
+128 0
+cfl=(9)
+cfn=(68)
+calls=1 0 0
+130 0
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+130 1
+
+fl=(1)
+fn=(70)
+445 0
+
+fl=(2)
+fn=(71)
+439 158
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+441 0
+cfl=(1)
+cfn=(52)
+calls=1 0 0
+442 0
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+443 138
+cfl=(9)
+cfn=(61)
+calls=1 0 0
+443 132
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+444 232
+cfl=(10)
+cfn=(69)
+calls=1 0 0
+444 57
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+445 0
+
+fl=(1)
+fn=(50)
+303 0
+
+fl=(1)
+fn=(70)
+304 0
+
+fl=(1)
+fn=(41)
+304 0
+
+fl=(1)
+fn=(22)
+307 0
+
+fl=(9)
+fn=(73)
+301 66
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+303 0
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(22)
+calls=1 0 0
+307 0
+
+fl=(2)
+fn=(74)
+469 82
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+471 0
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+473 720
+cfl=(9)
+cfn=(73)
+calls=1 0 0
+473 66
+
+fl=(9)
+fn=(75)
+215 1
+
+fl=(9)
+fn=(76)
+434 17
+cfl=(9)
+cfn=(75)
+calls=1 0 0
+436 1
+
+fl=(37) C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\error.php
+fn=(103) require::C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\error.php
+1 82
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+15 365
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+41 870
+cfl=(9)
+cfn=(76)
+calls=1 0 0
+41 19
+
+fl=(1)
+fn=(41)
+340 0
+
+fl=(1)
+fn=(42)
+346 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 89
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 1
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 37
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 128
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 77
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 27
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 114
+
+fl=(2)
+fn=(48)
+336 80
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 0
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 165
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 142
+
+fl=(1)
+fn=(50)
+471 0
+
+fl=(1)
+fn=(51)
+441 0
+
+fl=(1)
+fn=(52)
+442 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 34
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 76
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 27
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 111
+
+fl=(9)
+fn=(55)
+143 0
+
+fl=(1)
+fn=(56)
+165 0
+
+fl=(1)
+fn=(57)
+177 0
+
+fl=(9)
+fn=(58)
+162 34
+cfl=(1)
+cfn=(56)
+calls=1 0 0
+165 0
+cfl=(1)
+cfn=(57)
+calls=1 0 0
+177 0
+
+fl=(9)
+fn=(59)
+125 0
+
+fl=(9)
+fn=(60)
+197 0
+
+fl=(9)
+fn=(61)
+104 76
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+106 0
+cfl=(9)
+cfn=(58)
+calls=1 0 0
+107 35
+cfl=(9)
+cfn=(59)
+calls=1 0 0
+108 0
+cfl=(9)
+cfn=(60)
+calls=1 0 0
+108 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(66)
+224 0
+
+fl=(3)
+fn=(46)
+83 147
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 38
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 188
+
+fl=(10)
+fn=(67)
+143 1
+
+fl=(9)
+fn=(68)
+134 0
+
+fl=(9)
+fn=(55)
+143 1
+
+fl=(10)
+fn=(69)
+126 62
+cfl=(10)
+cfn=(67)
+calls=1 0 0
+128 1
+cfl=(9)
+cfn=(68)
+calls=1 0 0
+130 0
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+130 1
+
+fl=(1)
+fn=(70)
+445 1
+
+fl=(2)
+fn=(71)
+439 152
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+441 0
+cfl=(1)
+cfn=(52)
+calls=1 0 0
+442 0
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+443 138
+cfl=(9)
+cfn=(61)
+calls=1 0 0
+443 113
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+444 226
+cfl=(10)
+cfn=(69)
+calls=1 0 0
+444 66
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+445 1
+
+fl=(1)
+fn=(50)
+303 0
+
+fl=(1)
+fn=(70)
+304 0
+
+fl=(1)
+fn=(41)
+304 0
+
+fl=(1)
+fn=(22)
+307 0
+
+fl=(9)
+fn=(73)
+301 93
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+303 0
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(22)
+calls=1 0 0
+307 0
+
+fl=(2)
+fn=(74)
+469 95
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+471 0
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+473 699
+cfl=(9)
+cfn=(73)
+calls=1 0 0
+473 95
+
+fl=(9)
+fn=(75)
+215 0
+
+fl=(9)
+fn=(76)
+434 20
+cfl=(9)
+cfn=(75)
+calls=1 0 0
+436 0
+
+fl=(38) C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\display_error.php
+fn=(104) require::C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\display_error.php
+1 89
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+16 389
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+44 890
+cfl=(9)
+cfn=(76)
+calls=1 0 0
+44 20
+
+fl=(1)
+fn=(41)
+340 0
+
+fl=(1)
+fn=(42)
+346 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 1
+
+fl=(3)
+fn=(44)
+128 38
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 86
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 40
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 33
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 127
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 38
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 82
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 39
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 31
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 122
+
+fl=(2)
+fn=(48)
+336 87
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 0
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 160
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 154
+
+fl=(1)
+fn=(50)
+471 0
+
+fl=(1)
+fn=(51)
+441 0
+
+fl=(1)
+fn=(52)
+442 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 39
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 85
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 39
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 31
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 124
+
+fl=(9)
+fn=(55)
+143 0
+
+fl=(1)
+fn=(56)
+165 1
+
+fl=(1)
+fn=(57)
+177 0
+
+fl=(9)
+fn=(58)
+162 36
+cfl=(1)
+cfn=(56)
+calls=1 0 0
+165 1
+cfl=(1)
+cfn=(57)
+calls=1 0 0
+177 0
+
+fl=(9)
+fn=(59)
+125 0
+
+fl=(9)
+fn=(60)
+197 1
+
+fl=(9)
+fn=(61)
+104 91
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+106 0
+cfl=(9)
+cfn=(58)
+calls=1 0 0
+107 38
+cfl=(9)
+cfn=(59)
+calls=1 0 0
+108 0
+cfl=(9)
+cfn=(60)
+calls=1 0 0
+108 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(66)
+224 1
+
+fl=(3)
+fn=(46)
+83 126
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 1
+
+fl=(2)
+fn=(54)
+232 36
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 166
+
+fl=(10)
+fn=(67)
+143 1
+
+fl=(9)
+fn=(68)
+134 1
+
+fl=(9)
+fn=(55)
+143 0
+
+fl=(10)
+fn=(69)
+126 54
+cfl=(10)
+cfn=(67)
+calls=1 0 0
+128 1
+cfl=(9)
+cfn=(68)
+calls=1 0 0
+130 1
+cfl=(9)
+cfn=(55)
+calls=1 0 0
+130 0
+
+fl=(1)
+fn=(70)
+445 0
+
+fl=(2)
+fn=(71)
+439 176
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+441 0
+cfl=(1)
+cfn=(52)
+calls=1 0 0
+442 0
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+443 156
+cfl=(9)
+cfn=(61)
+calls=1 0 0
+443 133
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+444 203
+cfl=(10)
+cfn=(69)
+calls=1 0 0
+444 58
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+445 0
+
+fl=(1)
+fn=(50)
+303 0
+
+fl=(1)
+fn=(70)
+304 0
+
+fl=(1)
+fn=(41)
+304 0
+
+fl=(1)
+fn=(22)
+307 0
+
+fl=(9)
+fn=(73)
+301 67
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+303 0
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+304 0
+cfl=(1)
+cfn=(22)
+calls=1 0 0
+307 0
+
+fl=(2)
+fn=(74)
+469 96
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+471 0
+cfl=(2)
+cfn=(71)
+calls=1 0 0
+473 729
+cfl=(9)
+cfn=(73)
+calls=1 0 0
+473 67
+
+fl=(9)
+fn=(75)
+215 0
+
+fl=(9)
+fn=(76)
+434 17
+cfl=(9)
+cfn=(75)
+calls=1 0 0
+436 0
+
+fl=(39) C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\download_error.php
+fn=(105) require::C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\download_error.php
+1 90
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+17 401
+cfl=(2)
+cfn=(74)
+calls=1 0 0
+45 895
+cfl=(9)
+cfn=(76)
+calls=1 0 0
+45 18
+
+fl=(40) C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes.php
+fn=(106) require::C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes.php
+1 4206
+cfl=(12)
+cfn=(77)
+calls=1 0 0
+19 7686
+cfl=(21)
+cfn=(87)
+calls=1 0 0
+20 5362
+cfl=(23)
+cfn=(89)
+calls=1 0 0
+21 2578
+cfl=(24)
+cfn=(90)
+calls=1 0 0
+22 2316
+cfl=(25)
+cfn=(91)
+calls=1 0 0
+23 1767
+cfl=(27)
+cfn=(93)
+calls=1 0 0
+24 2635
+cfl=(28)
+cfn=(94)
+calls=1 0 0
+25 3203
+cfl=(29)
+cfn=(95)
+calls=1 0 0
+26 2312
+cfl=(34)
+cfn=(100)
+calls=1 0 0
+27 3319
+cfl=(36)
+cfn=(102)
+calls=1 0 0
+28 2467
+cfl=(37)
+cfn=(103)
+calls=1 0 0
+29 1338
+cfl=(38)
+cfn=(104)
+calls=1 0 0
+30 1390
+cfl=(39)
+cfn=(105)
+calls=1 0 0
+31 1405
+
+fl=(1)
+fn=(107) php::set_error_handler
+1293 2
+
+fl=(1)
+fn=(41)
+340 0
+
+fl=(1)
+fn=(42)
+346 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 1
+
+fl=(3)
+fn=(44)
+128 32
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 77
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 26
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 113
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 31
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 1
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 76
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 33
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 28
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 109
+
+fl=(2)
+fn=(48)
+336 92
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 0
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 139
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 138
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(9)
+112 0
+
+fl=(1)
+fn=(10)
+116 0
+
+fl=(1)
+fn=(11)
+116 0
+
+fl=(1)
+fn=(10)
+117 0
+
+fl=(1)
+fn=(11)
+117 0
+
+fl=(1)
+fn=(12)
+120 0
+
+fl=(1)
+fn=(13)
+123 1
+
+fl=(1)
+fn=(11)
+124 0
+
+fl=(1)
+fn=(11)
+125 0
+
+fl=(1)
+fn=(9)
+126 0
+
+fl=(1)
+fn=(9)
+128 0
+
+fl=(1)
+fn=(14)
+130 91
+
+fl=(41) C:\xampp\htdocs\PHP\includes\Slim\Environment.php
+fn=(108) require::C:\xampp\htdocs\PHP\includes\Slim\Environment.php
+1 6
+
+fl=(2)
+fn=(16)
+110 564
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+112 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(12)
+calls=1 0 0
+120 0
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+123 1
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+124 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+125 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+126 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+128 0
+cfl=(1)
+cfn=(14)
+calls=1 0 0
+130 91
+cfl=(41)
+cfn=(108)
+calls=1 0 0
+131 6
+
+fl=(1)
+fn=(17)
+159 57
+cfl=(2)
+cfn=(16)
+calls=1 0 0
+159 669
+
+fl=(1)
+fn=(38)
+75 0
+
+fl=(1)
+fn=(109) php::strpos
+135 0
+
+fl=(1)
+fn=(110) php::rtrim
+140 0
+
+fl=(1)
+fn=(10)
+144 0
+
+fl=(1)
+fn=(11)
+144 0
+
+fl=(1)
+fn=(10)
+145 0
+
+fl=(1)
+fn=(11)
+145 0
+
+fl=(1)
+fn=(9)
+147 0
+
+fl=(1)
+fn=(12)
+148 0
+
+fl=(1)
+fn=(9)
+112 0
+
+fl=(1)
+fn=(10)
+116 0
+
+fl=(1)
+fn=(11)
+116 0
+
+fl=(1)
+fn=(10)
+117 0
+
+fl=(1)
+fn=(11)
+117 0
+
+fl=(1)
+fn=(12)
+120 0
+
+fl=(1)
+fn=(13)
+123 0
+
+fl=(1)
+fn=(11)
+124 0
+
+fl=(1)
+fn=(11)
+125 0
+
+fl=(1)
+fn=(9)
+126 0
+
+fl=(1)
+fn=(9)
+128 0
+
+fl=(1)
+fn=(14)
+130 73
+
+fl=(42) C:\xampp\htdocs\PHP\includes\Slim\Http\Headers.php
+fn=(111) require::C:\xampp\htdocs\PHP\includes\Slim\Http\Headers.php
+1 1
+
+fl=(2)
+fn=(16)
+110 463
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+112 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(12)
+calls=1 0 0
+120 0
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+123 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+124 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+125 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+126 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+128 0
+cfl=(1)
+cfn=(14)
+calls=1 0 0
+130 73
+cfl=(42)
+cfn=(111)
+calls=1 0 0
+131 1
+
+fl=(1)
+fn=(17)
+161 57
+cfl=(2)
+cfn=(16)
+calls=1 0 0
+161 541
+
+fl=(1)
+fn=(112) php::strtoupper
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 1
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 1
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(112)
+73 1
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(112)
+73 1
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(112)
+73 1
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 1
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(112)
+73 1
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 2
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 1
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 1
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 1
+
+fl=(1)
+fn=(112)
+73 1
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 1
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 1
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 1
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 1
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 1
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 1
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 1
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 1
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 1
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 1
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 1
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 1
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 1
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 1
+
+fl=(42)
+fn=(113) Slim\Http\Headers::extract
+69 2871
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 1
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 1
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 1
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 1
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 1
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 1
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 1
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 2
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 1
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 1
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 1
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 1
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 1
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 1
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 1
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 1
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 1
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 1
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 1
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 1
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 1
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 1
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 1
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 1
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 1
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 1
+
+fl=(1)
+fn=(114) php::file_get_contents
+170 10
+
+fl=(1)
+fn=(115) php::fopen
+177 20
+
+fl=(41)
+fn=(116) Slim\Environment->__construct
+116 715
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+135 0
+cfl=(1)
+cfn=(110)
+calls=1 0 0
+140 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+144 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+144 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+145 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+145 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+147 0
+cfl=(1)
+cfn=(12)
+calls=1 0 0
+148 0
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+161 599
+cfl=(42)
+cfn=(113)
+calls=1 0 0
+161 2952
+cfl=(1)
+cfn=(114)
+calls=1 0 0
+170 10
+cfl=(1)
+cfn=(115)
+calls=1 0 0
+177 20
+
+fl=(41)
+fn=(117) Slim\Environment::getInstance
+73 85
+cfl=(1)
+cfn=(38)
+calls=1 0 0
+75 0
+cfl=(41)
+cfn=(116)
+calls=1 0 0
+76 4302
+
+fl=(2)
+fn=(65)
+158 53
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+159 727
+cfl=(41)
+cfn=(117)
+calls=1 0 0
+159 4388
+
+fl=(3)
+fn=(66)
+224 26
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+228 5169
+
+fl=(3)
+fn=(46)
+83 134
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 5196
+
+fl=(2)
+fn=(54)
+232 36
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 5368
+
+fl=(2)
+fn=(118) Slim\Slim->environment
+672 21
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+674 5404
+
+fl=(41)
+fn=(119) Slim\Environment->offsetExists
+186 0
+
+fl=(41)
+fn=(119)
+186 0
+
+fl=(41)
+fn=(120) Slim\Environment->offsetGet
+194 0
+
+fl=(6)
+fn=(121) Slim\Middleware\Flash->loadMessages
+138 4
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 45
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(66)
+224 1
+
+fl=(3)
+fn=(46)
+83 134
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 46
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 1
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 1
+
+fl=(2)
+fn=(54)
+232 50
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 183
+
+fl=(2)
+fn=(118)
+672 19
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+674 234
+
+fl=(41)
+fn=(122) Slim\Environment->offsetSet
+206 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(66)
+224 0
+
+fl=(3)
+fn=(46)
+83 127
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 1
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 36
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 165
+
+fl=(41)
+fn=(119)
+186 0
+
+fl=(1)
+fn=(38)
+721 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 33
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 1
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 34
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(3)
+fn=(46)
+83 76
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 1
+
+fl=(3)
+fn=(47)
+183 27
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 113
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 34
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 99
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 34
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 26
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 134
+
+fl=(1)
+fn=(9)
+112 0
+
+fl=(1)
+fn=(10)
+116 0
+
+fl=(1)
+fn=(11)
+116 0
+
+fl=(1)
+fn=(10)
+117 0
+
+fl=(1)
+fn=(11)
+117 0
+
+fl=(1)
+fn=(12)
+120 0
+
+fl=(1)
+fn=(13)
+123 1
+
+fl=(1)
+fn=(11)
+124 0
+
+fl=(1)
+fn=(11)
+125 0
+
+fl=(1)
+fn=(9)
+126 0
+
+fl=(1)
+fn=(9)
+128 0
+
+fl=(1)
+fn=(14)
+130 79
+
+fl=(43) C:\xampp\htdocs\PHP\includes\Slim\View.php
+fn=(123) require::C:\xampp\htdocs\PHP\includes\Slim\View.php
+1 0
+
+fl=(2)
+fn=(16)
+110 573
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+112 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(12)
+calls=1 0 0
+120 0
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+123 1
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+124 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+125 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+126 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+128 0
+cfl=(1)
+cfn=(14)
+calls=1 0 0
+130 79
+cfl=(43)
+cfn=(123)
+calls=1 0 0
+131 0
+
+fl=(1)
+fn=(17)
+182 68
+cfl=(2)
+cfn=(16)
+calls=1 0 0
+182 658
+
+fl=(3)
+fn=(18)
+98 0
+
+fl=(3)
+fn=(19)
+47 18
+cfl=(3)
+cfn=(18)
+calls=1 0 0
+49 0
+
+fl=(43)
+fn=(124) Slim\View->__construct
+67 23
+cfl=(3)
+cfn=(19)
+calls=1 0 0
+69 19
+
+fl=(1)
+fn=(110)
+207 0
+
+fl=(43)
+fn=(125) Slim\View->setTemplatesDirectory
+205 19
+cfl=(1)
+cfn=(110)
+calls=1 0 0
+207 0
+
+fl=(2)
+fn=(65)
+178 112
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+179 140
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+180 161
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+182 727
+cfl=(43)
+cfn=(124)
+calls=1 0 0
+182 43
+cfl=(43)
+cfn=(125)
+calls=1 0 0
+183 20
+
+fl=(3)
+fn=(66)
+224 32
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+228 1204
+
+fl=(3)
+fn=(46)
+83 131
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 1237
+
+fl=(2)
+fn=(54)
+232 49
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 1405
+
+fl=(2)
+fn=(126) Slim\Slim->view
+719 43
+cfl=(1)
+cfn=(38)
+calls=1 0 0
+721 0
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+732 1454
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 38
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(66)
+224 0
+
+fl=(3)
+fn=(46)
+83 143
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 40
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 41
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 188
+
+fl=(41)
+fn=(120)
+194 0
+
+fl=(1)
+fn=(50)
+167 0
+
+fl=(1)
+fn=(70)
+168 0
+
+fl=(1)
+fn=(70)
+170 0
+
+fl=(1)
+fn=(45)
+172 0
+
+fl=(1)
+fn=(62)
+172 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(24)
+72 22
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+74 0
+
+fl=(43)
+fn=(127) Slim\View->setData
+165 118
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+167 0
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+168 0
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+170 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+172 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+172 0
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+175 23
+
+fl=(1)
+fn=(70)
+1200 0
+
+fl=(1)
+fn=(50)
+1204 0
+
+fl=(1)
+fn=(51)
+1205 0
+
+fl=(2)
+fn=(128) Slim\Slim->applyHook
+1193 61
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+1200 0
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+1204 0
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+1205 0
+
+fl=(1)
+fn=(129) php::ob_start
+1350 1
+
+fl=(1)
+fn=(70)
+1200 0
+
+fl=(1)
+fn=(50)
+1204 0
+
+fl=(1)
+fn=(51)
+1205 0
+
+fl=(2)
+fn=(128)
+1193 87
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+1200 0
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+1204 0
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+1205 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 42
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 1
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(66)
+224 0
+
+fl=(3)
+fn=(46)
+83 251
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 45
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 56
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 299
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 39
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 167
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(66)
+224 1
+
+fl=(3)
+fn=(46)
+83 220
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 168
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 1
+
+fl=(3)
+fn=(47)
+183 44
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 393
+
+fl=(1)
+fn=(130) php::ArrayIterator->__construct
+226 1
+
+fl=(41)
+fn=(131) Slim\Environment->getIterator
+224 34
+cfl=(1)
+cfn=(130)
+calls=1 0 0
+226 1
+
+fl=(1)
+fn=(112)
+73 1
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 1
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(112)
+73 1
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(112)
+73 2
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(112)
+73 1
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(112)
+73 1
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(112)
+73 1
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(112)
+73 1
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(112)
+73 1
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(112)
+73 2
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 2
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 1
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 0
+
+fl=(1)
+fn=(112)
+73 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(109)
+74 0
+
+fl=(1)
+fn=(30)
+74 1
+
+fl=(42)
+fn=(113)
+69 1295
+cfl=(41)
+cfn=(131)
+calls=1 0 0
+72 36
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 1
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 1
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 1
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 2
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 1
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 1
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 1
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 1
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 1
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 2
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 2
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 1
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(112)
+calls=1 0 0
+73 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+74 0
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+74 1
+
+fl=(1)
+fn=(132) php::strtolower
+96 1
+
+fl=(1)
+fn=(9)
+97 0
+
+fl=(1)
+fn=(133) php::preg_replace
+98 4
+
+fl=(1)
+fn=(134) php::ucwords
+99 0
+
+fl=(1)
+fn=(9)
+100 0
+
+fl=(42)
+fn=(135) Slim\Http\Headers->normalizeKey
+94 91
+cfl=(1)
+cfn=(132)
+calls=1 0 0
+96 1
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+97 0
+cfl=(1)
+cfn=(133)
+calls=1 0 0
+98 4
+cfl=(1)
+cfn=(134)
+calls=1 0 0
+99 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+100 0
+
+fl=(3)
+fn=(24)
+72 36
+cfl=(42)
+cfn=(135)
+calls=1 0 0
+74 98
+
+fl=(1)
+fn=(132)
+96 2
+
+fl=(1)
+fn=(9)
+97 0
+
+fl=(1)
+fn=(133)
+98 1
+
+fl=(1)
+fn=(134)
+99 0
+
+fl=(1)
+fn=(9)
+100 0
+
+fl=(42)
+fn=(135)
+94 83
+cfl=(1)
+cfn=(132)
+calls=1 0 0
+96 2
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+97 0
+cfl=(1)
+cfn=(133)
+calls=1 0 0
+98 1
+cfl=(1)
+cfn=(134)
+calls=1 0 0
+99 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+100 0
+
+fl=(3)
+fn=(24)
+72 32
+cfl=(42)
+cfn=(135)
+calls=1 0 0
+74 89
+
+fl=(1)
+fn=(132)
+96 1
+
+fl=(1)
+fn=(9)
+97 0
+
+fl=(1)
+fn=(133)
+98 0
+
+fl=(1)
+fn=(134)
+99 1
+
+fl=(1)
+fn=(9)
+100 0
+
+fl=(42)
+fn=(135)
+94 81
+cfl=(1)
+cfn=(132)
+calls=1 0 0
+96 1
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+97 0
+cfl=(1)
+cfn=(133)
+calls=1 0 0
+98 0
+cfl=(1)
+cfn=(134)
+calls=1 0 0
+99 1
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+100 0
+
+fl=(3)
+fn=(24)
+72 34
+cfl=(42)
+cfn=(135)
+calls=1 0 0
+74 85
+
+fl=(1)
+fn=(132)
+96 1
+
+fl=(1)
+fn=(9)
+97 0
+
+fl=(1)
+fn=(133)
+98 0
+
+fl=(1)
+fn=(134)
+99 0
+
+fl=(1)
+fn=(9)
+100 0
+
+fl=(42)
+fn=(135)
+94 148
+cfl=(1)
+cfn=(132)
+calls=1 0 0
+96 1
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+97 0
+cfl=(1)
+cfn=(133)
+calls=1 0 0
+98 0
+cfl=(1)
+cfn=(134)
+calls=1 0 0
+99 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+100 0
+
+fl=(3)
+fn=(24)
+72 46
+cfl=(42)
+cfn=(135)
+calls=1 0 0
+74 153
+
+fl=(1)
+fn=(132)
+96 1
+
+fl=(1)
+fn=(9)
+97 0
+
+fl=(1)
+fn=(133)
+98 2
+
+fl=(1)
+fn=(134)
+99 0
+
+fl=(1)
+fn=(9)
+100 0
+
+fl=(42)
+fn=(135)
+94 108
+cfl=(1)
+cfn=(132)
+calls=1 0 0
+96 1
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+97 0
+cfl=(1)
+cfn=(133)
+calls=1 0 0
+98 2
+cfl=(1)
+cfn=(134)
+calls=1 0 0
+99 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+100 0
+
+fl=(3)
+fn=(24)
+72 34
+cfl=(42)
+cfn=(135)
+calls=1 0 0
+74 114
+
+fl=(1)
+fn=(132)
+96 1
+
+fl=(1)
+fn=(9)
+97 0
+
+fl=(1)
+fn=(133)
+98 0
+
+fl=(1)
+fn=(134)
+99 0
+
+fl=(1)
+fn=(9)
+100 0
+
+fl=(42)
+fn=(135)
+94 84
+cfl=(1)
+cfn=(132)
+calls=1 0 0
+96 1
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+97 0
+cfl=(1)
+cfn=(133)
+calls=1 0 0
+98 0
+cfl=(1)
+cfn=(134)
+calls=1 0 0
+99 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+100 0
+
+fl=(3)
+fn=(24)
+72 33
+cfl=(42)
+cfn=(135)
+calls=1 0 0
+74 86
+
+fl=(1)
+fn=(132)
+96 0
+
+fl=(1)
+fn=(9)
+97 0
+
+fl=(1)
+fn=(133)
+98 1
+
+fl=(1)
+fn=(134)
+99 0
+
+fl=(1)
+fn=(9)
+100 0
+
+fl=(42)
+fn=(135)
+94 86
+cfl=(1)
+cfn=(132)
+calls=1 0 0
+96 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+97 0
+cfl=(1)
+cfn=(133)
+calls=1 0 0
+98 1
+cfl=(1)
+cfn=(134)
+calls=1 0 0
+99 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+100 0
+
+fl=(3)
+fn=(24)
+72 32
+cfl=(42)
+cfn=(135)
+calls=1 0 0
+74 88
+
+fl=(1)
+fn=(132)
+96 2
+
+fl=(1)
+fn=(9)
+97 0
+
+fl=(1)
+fn=(133)
+98 0
+
+fl=(1)
+fn=(134)
+99 0
+
+fl=(1)
+fn=(9)
+100 0
+
+fl=(42)
+fn=(135)
+94 81
+cfl=(1)
+cfn=(132)
+calls=1 0 0
+96 2
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+97 0
+cfl=(1)
+cfn=(133)
+calls=1 0 0
+98 0
+cfl=(1)
+cfn=(134)
+calls=1 0 0
+99 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+100 0
+
+fl=(3)
+fn=(24)
+72 33
+cfl=(42)
+cfn=(135)
+calls=1 0 0
+74 85
+
+fl=(1)
+fn=(132)
+96 3
+
+fl=(1)
+fn=(9)
+97 0
+
+fl=(1)
+fn=(133)
+98 0
+
+fl=(1)
+fn=(134)
+99 0
+
+fl=(1)
+fn=(9)
+100 0
+
+fl=(42)
+fn=(135)
+94 83
+cfl=(1)
+cfn=(132)
+calls=1 0 0
+96 3
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+97 0
+cfl=(1)
+cfn=(133)
+calls=1 0 0
+98 0
+cfl=(1)
+cfn=(134)
+calls=1 0 0
+99 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+100 0
+
+fl=(3)
+fn=(24)
+72 31
+cfl=(42)
+cfn=(135)
+calls=1 0 0
+74 87
+
+fl=(3)
+fn=(18)
+98 196
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+101 134
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+101 122
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+101 120
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+101 200
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+101 149
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+101 120
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+101 121
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+101 118
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+101 119
+
+fl=(3)
+fn=(19)
+47 41
+cfl=(3)
+cfn=(18)
+calls=1 0 0
+49 1404
+
+fl=(1)
+fn=(9)
+112 0
+
+fl=(1)
+fn=(10)
+116 0
+
+fl=(1)
+fn=(11)
+116 0
+
+fl=(1)
+fn=(10)
+117 0
+
+fl=(1)
+fn=(11)
+117 0
+
+fl=(1)
+fn=(12)
+120 0
+
+fl=(1)
+fn=(13)
+123 0
+
+fl=(1)
+fn=(11)
+124 0
+
+fl=(1)
+fn=(11)
+125 0
+
+fl=(1)
+fn=(9)
+126 0
+
+fl=(1)
+fn=(9)
+128 0
+
+fl=(1)
+fn=(14)
+130 119
+
+fl=(44) C:\xampp\htdocs\PHP\includes\Slim\Http\Util.php
+fn=(136) require::C:\xampp\htdocs\PHP\includes\Slim\Http\Util.php
+1 1
+
+fl=(2)
+fn=(16)
+110 782
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+112 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(12)
+calls=1 0 0
+120 0
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+123 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+124 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+125 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+126 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+128 0
+cfl=(1)
+cfn=(14)
+calls=1 0 0
+130 119
+cfl=(44)
+cfn=(136)
+calls=1 0 0
+131 1
+
+fl=(1)
+fn=(17)
+87 56
+cfl=(2)
+cfn=(16)
+calls=1 0 0
+87 906
+
+fl=(41)
+fn=(120)
+194 1
+
+fl=(1)
+fn=(110)
+401 0
+
+fl=(1)
+fn=(137) php::preg_split
+402 1
+
+fl=(1)
+fn=(138) php::explode
+404 1
+
+fl=(1)
+fn=(70)
+405 1
+
+fl=(1)
+fn=(139) php::urldecode
+406 0
+
+fl=(1)
+fn=(139)
+407 0
+
+fl=(44)
+fn=(140) Slim\Http\Util::parseCookieHeader
+398 138
+cfl=(1)
+cfn=(110)
+calls=1 0 0
+401 0
+cfl=(1)
+cfn=(137)
+calls=1 0 0
+402 1
+cfl=(1)
+cfn=(138)
+calls=1 0 0
+404 1
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+405 1
+cfl=(1)
+cfn=(139)
+calls=1 0 0
+406 0
+cfl=(1)
+cfn=(139)
+calls=1 0 0
+407 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(24)
+72 20
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+74 0
+
+fl=(3)
+fn=(18)
+98 22
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+101 20
+
+fl=(3)
+fn=(19)
+47 32
+cfl=(3)
+cfn=(18)
+calls=1 0 0
+49 43
+
+fl=(11)
+fn=(141) Slim\Http\Request->__construct
+83 351
+cfl=(42)
+cfn=(113)
+calls=1 0 0
+86 1365
+cfl=(3)
+cfn=(19)
+calls=1 0 0
+86 1446
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+87 963
+cfl=(41)
+cfn=(120)
+calls=1 0 0
+87 1
+cfl=(44)
+cfn=(140)
+calls=1 0 0
+87 145
+cfl=(3)
+cfn=(19)
+calls=1 0 0
+87 76
+
+fl=(2)
+fn=(65)
+163 77
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+164 437
+cfl=(11)
+cfn=(141)
+calls=1 0 0
+164 4349
+
+fl=(3)
+fn=(66)
+224 27
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+228 4865
+
+fl=(3)
+fn=(46)
+83 165
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 40
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 4893
+
+fl=(2)
+fn=(54)
+232 40
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 5100
+
+fl=(41)
+fn=(120)
+194 0
+
+fl=(11)
+fn=(142) Slim\Http\Request->getMethod
+94 20
+cfl=(41)
+cfn=(120)
+calls=1 0 0
+96 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(66)
+224 1
+
+fl=(3)
+fn=(46)
+83 130
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 1
+
+fl=(2)
+fn=(54)
+232 36
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 170
+
+fl=(41)
+fn=(120)
+194 0
+
+fl=(11)
+fn=(143) Slim\Http\Request->getPathInfo
+547 19
+cfl=(41)
+cfn=(120)
+calls=1 0 0
+549 0
+
+fl=(11)
+fn=(144) Slim\Http\Request->getResourceUri
+556 22
+cfl=(11)
+cfn=(143)
+calls=1 0 0
+558 20
+
+fl=(1)
+fn=(38)
+106 0
+
+fl=(1)
+fn=(30)
+319 1
+
+fl=(9)
+fn=(145) Slim\Route->supportsHttpMethod
+317 16
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+319 1
+
+fl=(1)
+fn=(9)
+380 0
+
+fl=(1)
+fn=(146) php::preg_replace_callback
+380 2
+
+fl=(1)
+fn=(11)
+382 0
+
+fl=(1)
+fn=(147) php::preg_match
+393 0
+
+fl=(9)
+fn=(148) Slim\Route->matches
+374 75
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+380 0
+cfl=(1)
+cfn=(146)
+calls=1 0 0
+380 2
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+382 0
+cfl=(1)
+cfn=(147)
+calls=1 0 0
+393 0
+
+fl=(1)
+fn=(30)
+319 0
+
+fl=(9)
+fn=(145)
+317 17
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+319 0
+
+fl=(1)
+fn=(30)
+319 0
+
+fl=(9)
+fn=(145)
+317 15
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+319 0
+
+fl=(1)
+fn=(30)
+319 0
+
+fl=(9)
+fn=(145)
+317 15
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+319 0
+
+fl=(1)
+fn=(30)
+319 0
+
+fl=(9)
+fn=(145)
+317 16
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+319 0
+
+fl=(1)
+fn=(30)
+319 0
+
+fl=(9)
+fn=(145)
+317 19
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+319 0
+
+fl=(1)
+fn=(9)
+380 0
+
+fl=(1)
+fn=(146)
+380 0
+
+fl=(1)
+fn=(11)
+382 0
+
+fl=(1)
+fn=(147)
+393 0
+
+fl=(9)
+fn=(148)
+374 70
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+380 0
+cfl=(1)
+cfn=(146)
+calls=1 0 0
+380 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+382 0
+cfl=(1)
+cfn=(147)
+calls=1 0 0
+393 0
+
+fl=(1)
+fn=(30)
+319 0
+
+fl=(9)
+fn=(145)
+317 15
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+319 0
+
+fl=(1)
+fn=(9)
+380 0
+
+fl=(1)
+fn=(146)
+380 1
+
+fl=(1)
+fn=(11)
+382 0
+
+fl=(1)
+fn=(147)
+393 0
+
+fl=(9)
+fn=(148)
+374 67
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+380 0
+cfl=(1)
+cfn=(146)
+calls=1 0 0
+380 1
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+382 0
+cfl=(1)
+cfn=(147)
+calls=1 0 0
+393 0
+
+fl=(1)
+fn=(30)
+319 0
+
+fl=(9)
+fn=(145)
+317 16
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+319 0
+
+fl=(1)
+fn=(9)
+380 0
+
+fl=(1)
+fn=(146)
+380 0
+
+fl=(1)
+fn=(11)
+382 0
+
+fl=(1)
+fn=(147)
+393 1
+
+fl=(9)
+fn=(148)
+374 70
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+380 0
+cfl=(1)
+cfn=(146)
+calls=1 0 0
+380 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+382 0
+cfl=(1)
+cfn=(147)
+calls=1 0 0
+393 1
+
+fl=(1)
+fn=(30)
+319 0
+
+fl=(9)
+fn=(145)
+317 16
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+319 0
+
+fl=(1)
+fn=(9)
+380 0
+
+fl=(1)
+fn=(146)
+380 0
+
+fl=(1)
+fn=(11)
+382 0
+
+fl=(1)
+fn=(147)
+393 0
+
+fl=(9)
+fn=(148)
+374 77
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+380 0
+cfl=(1)
+cfn=(146)
+calls=1 0 0
+380 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+382 0
+cfl=(1)
+cfn=(147)
+calls=1 0 0
+393 0
+
+fl=(1)
+fn=(30)
+319 0
+
+fl=(9)
+fn=(145)
+317 16
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+319 0
+
+fl=(1)
+fn=(9)
+380 1
+
+fl=(1)
+fn=(146)
+380 0
+
+fl=(1)
+fn=(11)
+382 0
+
+fl=(1)
+fn=(147)
+393 0
+
+fl=(9)
+fn=(148)
+374 67
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+380 1
+cfl=(1)
+cfn=(146)
+calls=1 0 0
+380 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+382 0
+cfl=(1)
+cfn=(147)
+calls=1 0 0
+393 0
+
+fl=(1)
+fn=(30)
+319 0
+
+fl=(9)
+fn=(145)
+317 16
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+319 0
+
+fl=(1)
+fn=(9)
+380 0
+
+fl=(1)
+fn=(146)
+380 1
+
+fl=(1)
+fn=(11)
+382 0
+
+fl=(1)
+fn=(147)
+393 0
+
+fl=(9)
+fn=(148)
+374 66
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+380 0
+cfl=(1)
+cfn=(146)
+calls=1 0 0
+380 1
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+382 0
+cfl=(1)
+cfn=(147)
+calls=1 0 0
+393 0
+
+fl=(1)
+fn=(30)
+319 0
+
+fl=(9)
+fn=(145)
+317 15
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+319 0
+
+fl=(1)
+fn=(9)
+380 0
+
+fl=(1)
+fn=(146)
+380 0
+
+fl=(1)
+fn=(11)
+382 0
+
+fl=(1)
+fn=(147)
+393 0
+
+fl=(9)
+fn=(148)
+374 67
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+380 0
+cfl=(1)
+cfn=(146)
+calls=1 0 0
+380 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+382 0
+cfl=(1)
+cfn=(147)
+calls=1 0 0
+393 0
+
+fl=(1)
+fn=(30)
+319 0
+
+fl=(9)
+fn=(145)
+317 20
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+319 0
+
+fl=(1)
+fn=(9)
+380 0
+
+fl=(1)
+fn=(146)
+380 0
+
+fl=(1)
+fn=(11)
+382 0
+
+fl=(1)
+fn=(147)
+393 0
+
+fl=(9)
+fn=(148)
+374 76
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+380 0
+cfl=(1)
+cfn=(146)
+calls=1 0 0
+380 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+382 0
+cfl=(1)
+cfn=(147)
+calls=1 0 0
+393 0
+
+fl=(1)
+fn=(30)
+319 0
+
+fl=(9)
+fn=(145)
+317 17
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+319 0
+
+fl=(1)
+fn=(9)
+380 0
+
+fl=(1)
+fn=(146)
+380 1
+
+fl=(1)
+fn=(11)
+382 0
+
+fl=(1)
+fn=(147)
+393 0
+
+fl=(9)
+fn=(148)
+374 74
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+380 0
+cfl=(1)
+cfn=(146)
+calls=1 0 0
+380 1
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+382 0
+cfl=(1)
+cfn=(147)
+calls=1 0 0
+393 0
+
+fl=(1)
+fn=(30)
+319 0
+
+fl=(9)
+fn=(145)
+317 17
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+319 0
+
+fl=(1)
+fn=(9)
+380 0
+
+fl=(1)
+fn=(146)
+380 0
+
+fl=(1)
+fn=(11)
+382 0
+
+fl=(1)
+fn=(147)
+393 0
+
+fl=(9)
+fn=(148)
+374 70
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+380 0
+cfl=(1)
+cfn=(146)
+calls=1 0 0
+380 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+382 0
+cfl=(1)
+cfn=(147)
+calls=1 0 0
+393 0
+
+fl=(1)
+fn=(30)
+319 0
+
+fl=(9)
+fn=(145)
+317 16
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+319 0
+
+fl=(1)
+fn=(9)
+380 1
+
+fl=(1)
+fn=(146)
+380 0
+
+fl=(1)
+fn=(11)
+382 0
+
+fl=(1)
+fn=(147)
+393 0
+
+fl=(9)
+fn=(148)
+374 67
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+380 1
+cfl=(1)
+cfn=(146)
+calls=1 0 0
+380 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+382 0
+cfl=(1)
+cfn=(147)
+calls=1 0 0
+393 0
+
+fl=(1)
+fn=(30)
+319 0
+
+fl=(9)
+fn=(145)
+317 15
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+319 0
+
+fl=(1)
+fn=(9)
+380 0
+
+fl=(1)
+fn=(146)
+380 0
+
+fl=(1)
+fn=(11)
+382 0
+
+fl=(1)
+fn=(147)
+393 0
+
+fl=(9)
+fn=(148)
+374 67
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+380 0
+cfl=(1)
+cfn=(146)
+calls=1 0 0
+380 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+382 0
+cfl=(1)
+cfn=(147)
+calls=1 0 0
+393 0
+
+fl=(1)
+fn=(30)
+319 0
+
+fl=(9)
+fn=(145)
+317 16
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+319 0
+
+fl=(1)
+fn=(9)
+380 0
+
+fl=(1)
+fn=(146)
+380 0
+
+fl=(1)
+fn=(11)
+382 0
+
+fl=(1)
+fn=(147)
+393 0
+
+fl=(9)
+fn=(148)
+374 80
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+380 0
+cfl=(1)
+cfn=(146)
+calls=1 0 0
+380 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+382 0
+cfl=(1)
+cfn=(147)
+calls=1 0 0
+393 0
+
+fl=(10)
+fn=(149) Slim\Router->getMatchedRoutes
+104 893
+cfl=(1)
+cfn=(38)
+calls=1 0 0
+106 0
+cfl=(9)
+cfn=(145)
+calls=1 0 0
+109 18
+cfl=(9)
+cfn=(148)
+calls=1 0 0
+113 80
+cfl=(9)
+cfn=(145)
+calls=1 0 0
+109 18
+cfl=(9)
+cfn=(145)
+calls=1 0 0
+109 15
+cfl=(9)
+cfn=(145)
+calls=1 0 0
+109 15
+cfl=(9)
+cfn=(145)
+calls=1 0 0
+109 16
+cfl=(9)
+cfn=(145)
+calls=1 0 0
+109 20
+cfl=(9)
+cfn=(148)
+calls=1 0 0
+113 71
+cfl=(9)
+cfn=(145)
+calls=1 0 0
+109 16
+cfl=(9)
+cfn=(148)
+calls=1 0 0
+113 70
+cfl=(9)
+cfn=(145)
+calls=1 0 0
+109 16
+cfl=(9)
+cfn=(148)
+calls=1 0 0
+113 72
+cfl=(9)
+cfn=(145)
+calls=1 0 0
+109 16
+cfl=(9)
+cfn=(148)
+calls=1 0 0
+113 81
+cfl=(9)
+cfn=(145)
+calls=1 0 0
+109 17
+cfl=(9)
+cfn=(148)
+calls=1 0 0
+113 71
+cfl=(9)
+cfn=(145)
+calls=1 0 0
+109 16
+cfl=(9)
+cfn=(148)
+calls=1 0 0
+113 69
+cfl=(9)
+cfn=(145)
+calls=1 0 0
+109 16
+cfl=(9)
+cfn=(148)
+calls=1 0 0
+113 68
+cfl=(9)
+cfn=(145)
+calls=1 0 0
+109 20
+cfl=(9)
+cfn=(148)
+calls=1 0 0
+113 77
+cfl=(9)
+cfn=(145)
+calls=1 0 0
+109 17
+cfl=(9)
+cfn=(148)
+calls=1 0 0
+113 77
+cfl=(9)
+cfn=(145)
+calls=1 0 0
+109 17
+cfl=(9)
+cfn=(148)
+calls=1 0 0
+113 72
+cfl=(9)
+cfn=(145)
+calls=1 0 0
+109 17
+cfl=(9)
+cfn=(148)
+calls=1 0 0
+113 70
+cfl=(9)
+cfn=(145)
+calls=1 0 0
+109 15
+cfl=(9)
+cfn=(148)
+calls=1 0 0
+113 69
+cfl=(9)
+cfn=(145)
+calls=1 0 0
+109 17
+cfl=(9)
+cfn=(148)
+calls=1 0 0
+113 81
+
+fl=(1)
+fn=(70)
+1200 0
+
+fl=(1)
+fn=(50)
+1204 1
+
+fl=(1)
+fn=(51)
+1205 0
+
+fl=(2)
+fn=(128)
+1193 74
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+1200 0
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+1204 1
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+1205 0
+
+fl=(9)
+fn=(150) Slim\Route->getCallable
+152 0
+
+fl=(9)
+fn=(151) Slim\Route->getParams
+224 0
+
+fl=(1)
+fn=(152) php::array_values
+468 0
+
+fl=(13)
+fn=(153) ValidateModel->__construct
+24 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 34
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 1
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(66)
+224 1
+
+fl=(3)
+fn=(46)
+83 130
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 1
+
+fl=(2)
+fn=(54)
+232 47
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 170
+
+fl=(41)
+fn=(119)
+186 0
+
+fl=(1)
+fn=(154) php::function_exists
+221 0
+
+fl=(41)
+fn=(119)
+186 0
+
+fl=(41)
+fn=(120)
+194 0
+
+fl=(1)
+fn=(155) php::mb_parse_str
+222 9
+
+fl=(1)
+fn=(38)
+60 0
+
+fl=(1)
+fn=(156) php::get_magic_quotes_gpc
+60 0
+
+fl=(44)
+fn=(157) Slim\Http\Util::stripSlashesIfMagicQuotes
+58 35
+cfl=(1)
+cfn=(38)
+calls=1 0 0
+60 0
+cfl=(1)
+cfn=(156)
+calls=1 0 0
+60 0
+
+fl=(41)
+fn=(122)
+206 0
+
+fl=(41)
+fn=(120)
+194 0
+
+fl=(41)
+fn=(120)
+194 0
+
+fl=(11)
+fn=(158) Slim\Http\Request->get
+217 183
+cfl=(41)
+cfn=(119)
+calls=1 0 0
+219 0
+cfl=(1)
+cfn=(154)
+calls=1 0 0
+221 0
+cfl=(41)
+cfn=(119)
+calls=1 0 0
+221 0
+cfl=(41)
+cfn=(120)
+calls=1 0 0
+222 0
+cfl=(1)
+cfn=(155)
+calls=1 0 0
+222 9
+cfl=(44)
+cfn=(157)
+calls=1 0 0
+226 36
+cfl=(41)
+cfn=(122)
+calls=1 0 0
+226 0
+cfl=(41)
+cfn=(120)
+calls=1 0 0
+229 0
+cfl=(41)
+cfn=(120)
+calls=1 0 0
+230 0
+
+fl=(1)
+fn=(30)
+102 0
+
+fl=(13)
+fn=(159) ValidateModel->validate_feature
+98 19
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+102 0
+
+fl=(8)
+fn=(160) HTML_Wrapper->__construct
+40 3
+
+fl=(8)
+fn=(161) HTML_Wrapper->do_header
+298 3
+
+fl=(8)
+fn=(162) HTML_Wrapper->get_header
+68 20
+cfl=(8)
+cfn=(161)
+calls=1 0 0
+69 3
+
+fl=(8)
+fn=(163) HTML_Wrapper->do_review_page
+388 1
+
+fl=(8)
+fn=(164) HTML_Wrapper->get_review_page
+164 21
+cfl=(8)
+cfn=(163)
+calls=1 0 0
+165 1
+
+fl=(8)
+fn=(165) HTML_Wrapper->__destruct
+59 0
+
+fl=(25)
+fn=(166) review_form
+145 90
+cfl=(8)
+cfn=(160)
+calls=1 0 0
+151 3
+cfl=(8)
+cfn=(162)
+calls=1 0 0
+153 24
+cfl=(8)
+cfn=(164)
+calls=1 0 0
+154 23
+cfl=(8)
+cfn=(165)
+calls=1 0 0
+164 0
+
+fl=(1)
+fn=(38)
+753 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(66)
+224 0
+
+fl=(3)
+fn=(46)
+83 132
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 46
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 170
+
+fl=(1)
+fn=(41)
+190 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(24)
+72 19
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+74 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(24)
+72 17
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+74 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(24)
+72 30
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+74 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(24)
+72 26
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+74 0
+
+fl=(3)
+fn=(18)
+98 85
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+101 20
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+101 18
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+101 30
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+101 26
+
+fl=(43)
+fn=(167) Slim\View->appendData
+188 45
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+190 0
+cfl=(3)
+cfn=(18)
+calls=1 0 0
+193 180
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 1
+
+fl=(3)
+fn=(44)
+128 33
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(66)
+224 0
+
+fl=(3)
+fn=(46)
+83 131
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 36
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 169
+
+fl=(1)
+fn=(12)
+226 0
+
+fl=(43)
+fn=(168) Slim\View->getTemplatePathname
+224 18
+cfl=(1)
+cfn=(12)
+calls=1 0 0
+226 0
+
+fl=(1)
+fn=(169) php::is_file
+271 84
+
+fl=(3)
+fn=(170) Slim\Helper\Set->all
+109 0
+
+fl=(1)
+fn=(22)
+275 0
+
+fl=(1)
+fn=(171) php::extract
+276 2
+
+fl=(1)
+fn=(129)
+277 0
+
+fl=(45) C:\xampp\htdocs\PHP\includes\Slim_Assignment\view_templates\header.html
+fn=(172) include::C:\xampp\htdocs\PHP\includes\Slim_Assignment\view_templates\header.html
+1 2
+
+fl=(46) C:\xampp\htdocs\PHP\includes\Slim_Assignment\view_templates\body_header.html
+fn=(173) include::C:\xampp\htdocs\PHP\includes\Slim_Assignment\view_templates\body_header.html
+1 2
+
+fl=(47) C:\xampp\htdocs\PHP\includes\Slim_Assignment\view_templates\select_message_form.html
+fn=(174) include::C:\xampp\htdocs\PHP\includes\Slim_Assignment\view_templates\select_message_form.html
+1 3
+
+fl=(48) C:\xampp\htdocs\PHP\includes\Slim_Assignment\view_templates\display_messageMSISDN.php
+fn=(175) require::C:\xampp\htdocs\PHP\includes\Slim_Assignment\view_templates\display_messageMSISDN.php
+1 873
+cfl=(45)
+cfn=(172)
+calls=1 0 0
+13 2
+cfl=(46)
+cfn=(173)
+calls=1 0 0
+14 2
+cfl=(47)
+cfn=(174)
+calls=1 0 0
+15 3
+
+fl=(1)
+fn=(176) php::ob_get_clean
+280 1
+
+fl=(43)
+fn=(177) Slim\View->render
+268 340
+cfl=(43)
+cfn=(168)
+calls=1 0 0
+270 19
+cfl=(1)
+cfn=(169)
+calls=1 0 0
+271 84
+cfl=(3)
+cfn=(170)
+calls=1 0 0
+275 0
+cfl=(1)
+cfn=(22)
+calls=1 0 0
+275 0
+cfl=(1)
+cfn=(171)
+calls=1 0 0
+276 2
+cfl=(1)
+cfn=(129)
+calls=1 0 0
+277 0
+cfl=(48)
+cfn=(175)
+calls=1 0 0
+278 881
+cfl=(1)
+cfn=(176)
+calls=1 0 0
+280 1
+
+fl=(43)
+fn=(178) Slim\View->fetch
+253 42
+cfl=(43)
+cfn=(177)
+calls=1 0 0
+255 1332
+
+fl=(43)
+fn=(179) Slim\View->display
+241 21
+cfl=(43)
+cfn=(178)
+calls=1 0 0
+243 1374
+
+fl=(2)
+fn=(180) Slim\Slim->render
+751 125
+cfl=(1)
+cfn=(38)
+calls=1 0 0
+753 0
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+756 216
+cfl=(43)
+cfn=(167)
+calls=1 0 0
+756 226
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+757 205
+cfl=(43)
+cfn=(179)
+calls=1 0 0
+757 1396
+
+fl=(13)
+fn=(181) ValidateModel->__destruct
+26 0
+
+fl=(25)
+fn=(182) {closure:C:\xampp\htdocs\PHP\includes\Slim_Assignment\routes\process.php:24-55}
+24 205
+cfl=(13)
+cfn=(153)
+calls=1 0 0
+26 0
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+27 218
+cfl=(11)
+cfn=(158)
+calls=1 0 0
+27 231
+cfl=(13)
+cfn=(159)
+calls=1 0 0
+28 19
+cfl=(25)
+cfn=(166)
+calls=1 0 0
+45 141
+cfl=(2)
+cfn=(180)
+calls=1 0 0
+53 2171
+cfl=(13)
+cfn=(181)
+calls=1 0 0
+55 0
+
+fl=(1)
+fn=(183) php::call_user_func_array:{C:\xampp\htdocs\PHP\includes\Slim\Route.php:468}
+468 42
+cfl=(25)
+cfn=(182)
+calls=1 0 0
+468 2990
+
+fl=(9)
+fn=(184) Slim\Route->dispatch
+462 89
+cfl=(9)
+cfn=(150)
+calls=1 0 0
+468 0
+cfl=(9)
+cfn=(151)
+calls=1 0 0
+468 0
+cfl=(1)
+cfn=(152)
+calls=1 0 0
+468 0
+cfl=(1)
+cfn=(183)
+calls=1 0 0
+468 3032
+
+fl=(1)
+fn=(70)
+1200 0
+
+fl=(1)
+fn=(50)
+1204 0
+
+fl=(1)
+fn=(51)
+1205 1
+
+fl=(2)
+fn=(128)
+1193 55
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+1200 0
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+1204 0
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+1205 1
+
+fl=(1)
+fn=(70)
+1200 0
+
+fl=(1)
+fn=(50)
+1204 0
+
+fl=(1)
+fn=(51)
+1205 0
+
+fl=(2)
+fn=(128)
+1193 51
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+1200 0
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+1204 0
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+1205 0
+
+fl=(1)
+fn=(9)
+112 1
+
+fl=(1)
+fn=(10)
+116 0
+
+fl=(1)
+fn=(11)
+116 0
+
+fl=(1)
+fn=(10)
+117 0
+
+fl=(1)
+fn=(11)
+117 0
+
+fl=(1)
+fn=(12)
+120 0
+
+fl=(1)
+fn=(13)
+123 0
+
+fl=(1)
+fn=(11)
+124 0
+
+fl=(1)
+fn=(11)
+125 0
+
+fl=(1)
+fn=(9)
+126 0
+
+fl=(1)
+fn=(9)
+128 0
+
+fl=(1)
+fn=(14)
+130 81
+
+fl=(49) C:\xampp\htdocs\PHP\includes\Slim\Exception\Stop.php
+fn=(185) require::C:\xampp\htdocs\PHP\includes\Slim\Exception\Stop.php
+1 0
+
+fl=(2)
+fn=(16)
+110 370
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+112 1
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(12)
+calls=1 0 0
+120 0
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+123 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+124 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+125 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+126 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+128 0
+cfl=(1)
+cfn=(14)
+calls=1 0 0
+130 81
+cfl=(49)
+cfn=(185)
+calls=1 0 0
+131 0
+
+fl=(1)
+fn=(17)
+1022 55
+cfl=(2)
+cfn=(16)
+calls=1 0 0
+1022 456
+
+fl=(1)
+fn=(186) php::Exception->__construct
+1022 1
+
+fl=(2)
+fn=(187) Slim\Slim->stop
+1020 131
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+1022 512
+cfl=(1)
+cfn=(186)
+calls=1 0 0
+1022 1
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 49
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(9)
+112 0
+
+fl=(1)
+fn=(10)
+116 0
+
+fl=(1)
+fn=(11)
+116 0
+
+fl=(1)
+fn=(10)
+117 0
+
+fl=(1)
+fn=(11)
+117 0
+
+fl=(1)
+fn=(12)
+120 0
+
+fl=(1)
+fn=(13)
+123 1
+
+fl=(1)
+fn=(11)
+124 0
+
+fl=(1)
+fn=(11)
+125 0
+
+fl=(1)
+fn=(9)
+126 0
+
+fl=(1)
+fn=(9)
+128 0
+
+fl=(1)
+fn=(14)
+130 70
+
+fl=(50) C:\xampp\htdocs\PHP\includes\Slim\Http\Response.php
+fn=(188) require::C:\xampp\htdocs\PHP\includes\Slim\Http\Response.php
+1 5
+
+fl=(2)
+fn=(16)
+110 663
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+112 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(12)
+calls=1 0 0
+120 0
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+123 1
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+124 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+125 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+126 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+128 0
+cfl=(1)
+cfn=(14)
+calls=1 0 0
+130 70
+cfl=(50)
+cfn=(188)
+calls=1 0 0
+131 5
+
+fl=(1)
+fn=(17)
+169 56
+cfl=(2)
+cfn=(16)
+calls=1 0 0
+169 741
+
+fl=(50)
+fn=(189) Slim\Http\Response->setStatus
+156 0
+
+fl=(1)
+fn=(132)
+96 1
+
+fl=(1)
+fn=(9)
+97 0
+
+fl=(1)
+fn=(133)
+98 1
+
+fl=(1)
+fn=(134)
+99 0
+
+fl=(1)
+fn=(9)
+100 0
+
+fl=(42)
+fn=(135)
+94 86
+cfl=(1)
+cfn=(132)
+calls=1 0 0
+96 1
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+97 0
+cfl=(1)
+cfn=(133)
+calls=1 0 0
+98 1
+cfl=(1)
+cfn=(134)
+calls=1 0 0
+99 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+100 0
+
+fl=(3)
+fn=(24)
+72 35
+cfl=(42)
+cfn=(135)
+calls=1 0 0
+74 92
+
+fl=(3)
+fn=(18)
+98 22
+cfl=(3)
+cfn=(24)
+calls=1 0 0
+101 127
+
+fl=(3)
+fn=(19)
+47 21
+cfl=(3)
+cfn=(18)
+calls=1 0 0
+49 150
+
+fl=(3)
+fn=(18)
+98 0
+
+fl=(1)
+fn=(9)
+112 1
+
+fl=(1)
+fn=(10)
+116 0
+
+fl=(1)
+fn=(11)
+116 0
+
+fl=(1)
+fn=(10)
+117 0
+
+fl=(1)
+fn=(11)
+117 0
+
+fl=(1)
+fn=(12)
+120 0
+
+fl=(1)
+fn=(13)
+123 0
+
+fl=(1)
+fn=(11)
+124 0
+
+fl=(1)
+fn=(11)
+125 0
+
+fl=(1)
+fn=(9)
+126 0
+
+fl=(1)
+fn=(9)
+128 0
+
+fl=(1)
+fn=(14)
+130 72
+
+fl=(51) C:\xampp\htdocs\PHP\includes\Slim\Http\Cookies.php
+fn=(190) require::C:\xampp\htdocs\PHP\includes\Slim\Http\Cookies.php
+1 1
+
+fl=(2)
+fn=(16)
+110 411
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+112 1
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+116 0
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+117 0
+cfl=(1)
+cfn=(12)
+calls=1 0 0
+120 0
+cfl=(1)
+cfn=(13)
+calls=1 0 0
+123 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+124 0
+cfl=(1)
+cfn=(11)
+calls=1 0 0
+125 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+126 0
+cfl=(1)
+cfn=(9)
+calls=1 0 0
+128 0
+cfl=(1)
+cfn=(14)
+calls=1 0 0
+130 72
+cfl=(51)
+cfn=(190)
+calls=1 0 0
+131 1
+
+fl=(1)
+fn=(17)
+147 55
+cfl=(2)
+cfn=(16)
+calls=1 0 0
+147 490
+
+fl=(3)
+fn=(18)
+98 1
+
+fl=(3)
+fn=(19)
+47 24
+cfl=(3)
+cfn=(18)
+calls=1 0 0
+49 1
+
+fl=(1)
+fn=(10)
+244 0
+
+fl=(50)
+fn=(191) Slim\Http\Response->write
+237 20
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+244 0
+
+fl=(50)
+fn=(192) Slim\Http\Response->__construct
+142 214
+cfl=(50)
+cfn=(189)
+calls=1 0 0
+144 0
+cfl=(3)
+cfn=(19)
+calls=1 0 0
+145 172
+cfl=(3)
+cfn=(18)
+calls=1 0 0
+146 0
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+147 546
+cfl=(3)
+cfn=(19)
+calls=1 0 0
+147 25
+cfl=(50)
+cfn=(191)
+calls=1 0 0
+148 20
+
+fl=(2)
+fn=(65)
+168 58
+cfl=(1)
+cfn=(17)
+calls=1 0 0
+169 797
+cfl=(50)
+cfn=(192)
+calls=1 0 0
+169 982
+
+fl=(3)
+fn=(66)
+224 25
+cfl=(2)
+cfn=(65)
+calls=1 0 0
+228 1838
+
+fl=(3)
+fn=(46)
+83 148
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 51
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 1863
+
+fl=(2)
+fn=(54)
+232 36
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 2063
+
+fl=(2)
+fn=(193) Slim\Slim->response
+690 22
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+692 2099
+
+fl=(1)
+fn=(176)
+1372 0
+
+fl=(1)
+fn=(10)
+244 0
+
+fl=(50)
+fn=(191)
+237 17
+cfl=(1)
+cfn=(10)
+calls=1 0 0
+244 0
+
+fl=(2)
+fn=(194) Slim\Slim->call
+1343 704
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+1346 201
+cfl=(41)
+cfn=(119)
+calls=1 0 0
+1346 0
+cfl=(2)
+cfn=(126)
+calls=1 0 0
+1347 1497
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+1347 230
+cfl=(41)
+cfn=(120)
+calls=1 0 0
+1347 0
+cfl=(43)
+cfn=(127)
+calls=1 0 0
+1347 144
+cfl=(2)
+cfn=(128)
+calls=1 0 0
+1349 61
+cfl=(1)
+cfn=(129)
+calls=1 0 0
+1350 1
+cfl=(2)
+cfn=(128)
+calls=1 0 0
+1351 87
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+1353 356
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+1353 5141
+cfl=(11)
+cfn=(142)
+calls=1 0 0
+1353 20
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+1353 206
+cfl=(11)
+cfn=(144)
+calls=1 0 0
+1353 42
+cfl=(10)
+cfn=(149)
+calls=1 0 0
+1353 2238
+cfl=(2)
+cfn=(128)
+calls=1 0 0
+1356 77
+cfl=(9)
+cfn=(184)
+calls=1 0 0
+1357 3123
+cfl=(2)
+cfn=(128)
+calls=1 0 0
+1358 56
+cfl=(2)
+cfn=(128)
+calls=1 0 0
+1369 51
+cfl=(2)
+cfn=(187)
+calls=1 0 0
+1370 645
+cfl=(2)
+cfn=(193)
+calls=1 0 0
+1372 2122
+cfl=(1)
+cfn=(176)
+calls=1 0 0
+1372 0
+cfl=(50)
+cfn=(191)
+calls=1 0 0
+1372 17
+
+fl=(6)
+fn=(195) Slim\Middleware\Flash->save
+130 2
+
+fl=(6)
+fn=(196) Slim\Middleware\Flash->call
+77 167
+cfl=(6)
+cfn=(121)
+calls=1 0 0
+80 4
+cfl=(2)
+cfn=(118)
+calls=1 0 0
+83 253
+cfl=(41)
+cfn=(122)
+calls=1 0 0
+84 0
+cfl=(2)
+cfn=(194)
+calls=1 0 0
+85 17034
+cfl=(6)
+cfn=(195)
+calls=1 0 0
+86 2
+
+fl=(7)
+fn=(197) Slim\Middleware\MethodOverride->call
+76 132
+cfl=(2)
+cfn=(118)
+calls=1 0 0
+78 5426
+cfl=(41)
+cfn=(119)
+calls=1 0 0
+79 0
+cfl=(41)
+cfn=(119)
+calls=1 0 0
+83 0
+cfl=(41)
+cfn=(120)
+calls=1 0 0
+83 0
+cfl=(6)
+cfn=(196)
+calls=1 0 0
+92 17462
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(66)
+224 2
+
+fl=(3)
+fn=(46)
+83 128
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 2
+
+fl=(2)
+fn=(54)
+232 36
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 169
+
+fl=(1)
+fn=(30)
+282 0
+
+fl=(50)
+fn=(198) Slim\Http\Response->finalize
+279 20
+cfl=(1)
+cfn=(30)
+calls=1 0 0
+282 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(66)
+224 0
+
+fl=(3)
+fn=(46)
+83 125
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 36
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 164
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 61
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 1
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 76
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 63
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 28
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 139
+
+fl=(1)
+fn=(130)
+213 0
+
+fl=(3)
+fn=(199) Slim\Helper\Set->getIterator
+211 20
+cfl=(1)
+cfn=(130)
+calls=1 0 0
+213 0
+
+fl=(44)
+fn=(200) Slim\Http\Util::serializeCookies
+185 25
+cfl=(3)
+cfn=(199)
+calls=1 0 0
+205 21
+
+fl=(1)
+fn=(201) php::headers_sent
+1311 0
+
+fl=(1)
+fn=(109)
+1313 0
+
+fl=(1)
+fn=(41)
+340 0
+
+fl=(1)
+fn=(42)
+346 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 34
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 1
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 75
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 1
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 26
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 112
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(46)
+83 75
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+
+fl=(3)
+fn=(47)
+183 26
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+185 112
+
+fl=(2)
+fn=(48)
+336 78
+cfl=(1)
+cfn=(41)
+calls=1 0 0
+340 0
+cfl=(1)
+cfn=(42)
+calls=1 0 0
+346 0
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 138
+cfl=(3)
+cfn=(47)
+calls=1 0 0
+347 138
+
+fl=(50)
+fn=(202) Slim\Http\Response::getMessageForCode
+512 1
+
+fl=(1)
+fn=(203) php::sprintf
+1316 0
+
+fl=(1)
+fn=(204) php::header
+1316 2
+
+fl=(1)
+fn=(130)
+213 0
+
+fl=(3)
+fn=(199)
+211 20
+cfl=(1)
+cfn=(130)
+calls=1 0 0
+213 0
+
+fl=(1)
+fn=(138)
+1321 0
+
+fl=(1)
+fn=(204)
+1323 3
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(43)
+130 0
+
+fl=(3)
+fn=(44)
+128 35
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+130 0
+cfl=(1)
+cfn=(43)
+calls=1 0 0
+130 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(45)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(1)
+fn=(62)
+86 0
+
+fl=(3)
+fn=(23)
+62 0
+
+fl=(3)
+fn=(66)
+224 0
+
+fl=(3)
+fn=(46)
+83 139
+cfl=(3)
+cfn=(44)
+calls=1 0 0
+85 36
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(45)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+86 0
+cfl=(1)
+cfn=(62)
+calls=1 0 0
+86 0
+cfl=(3)
+cfn=(23)
+calls=1 0 0
+88 0
+cfl=(3)
+cfn=(66)
+calls=1 0 0
+88 0
+
+fl=(2)
+fn=(54)
+232 47
+cfl=(3)
+cfn=(46)
+calls=1 0 0
+234 178
+
+fl=(41)
+fn=(120)
+194 2
+
+fl=(11)
+fn=(142)
+94 18
+cfl=(41)
+cfn=(120)
+calls=1 0 0
+96 2
+
+fl=(11)
+fn=(205) Slim\Http\Request->isHead
+148 21
+cfl=(11)
+cfn=(142)
+calls=1 0 0
+150 20
+
+fl=(1)
+fn=(70)
+1200 1
+
+fl=(1)
+fn=(50)
+1204 0
+
+fl=(1)
+fn=(51)
+1205 0
+
+fl=(2)
+fn=(128)
+1193 52
+cfl=(1)
+cfn=(70)
+calls=1 0 0
+1200 1
+cfl=(1)
+cfn=(50)
+calls=1 0 0
+1204 0
+cfl=(1)
+cfn=(51)
+calls=1 0 0
+1205 0
+
+fl=(1)
+fn=(206) php::restore_error_handler
+1335 0
+
+fl=(2)
+fn=(207) Slim\Slim->run
+1291 515
+cfl=(1)
+cfn=(107)
+calls=1 0 0
+1293 2
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+1296 371
+cfl=(7)
+cfn=(197)
+calls=1 0 0
+1302 23025
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+1305 205
+cfl=(50)
+cfn=(198)
+calls=1 0 0
+1305 20
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+1308 200
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+1308 168
+cfl=(44)
+cfn=(200)
+calls=1 0 0
+1308 47
+cfl=(1)
+cfn=(201)
+calls=1 0 0
+1311 0
+cfl=(1)
+cfn=(109)
+calls=1 0 0
+1313 0
+cfl=(2)
+cfn=(48)
+calls=1 0 0
+1316 356
+cfl=(50)
+cfn=(202)
+calls=1 0 0
+1316 1
+cfl=(1)
+cfn=(203)
+calls=1 0 0
+1316 0
+cfl=(1)
+cfn=(204)
+calls=1 0 0
+1316 2
+cfl=(3)
+cfn=(199)
+calls=1 0 0
+1320 20
+cfl=(1)
+cfn=(138)
+calls=1 0 0
+1321 0
+cfl=(1)
+cfn=(204)
+calls=1 0 0
+1323 3
+cfl=(2)
+cfn=(54)
+calls=1 0 0
+1329 226
+cfl=(11)
+cfn=(205)
+calls=1 0 0
+1329 42
+cfl=(2)
+cfn=(128)
+calls=1 0 0
+1333 53
+cfl=(1)
+cfn=(206)
+calls=1 0 0
+1335 0
+
+fl=(52) C:\xampp\htdocs\PHP\includes\Slim_Assignment\bootstrap.php
+fn=(208) include_once::C:\xampp\htdocs\PHP\includes\Slim_Assignment\bootstrap.php
+1 3612
+cfl=(1)
+cfn=(3)
+calls=1 0 0
+15 237
+cfl=(2)
+cfn=(5)
+calls=1 0 0
+17 86
+cfl=(2)
+cfn=(7)
+calls=1 0 0
+19 58
+cfl=(1)
+cfn=(8)
+calls=1 0 0
+21 2
+cfl=(2)
+cfn=(40)
+calls=1 0 0
+28 6025
+cfl=(40)
+cfn=(106)
+calls=1 0 0
+38 41993
+cfl=(2)
+cfn=(207)
+calls=1 0 0
+40 25269
+
+fl=(1)
+fn=(209) php::xdebug_stop_trace
+21 186
+
+fl=(53) C:\xampp\htdocs\PHP\public_php\assignment\index.php
+fn=(210) {main}
+
+summary: 78391
+
+1 575
+cfl=(1)
+cfn=(1)
+calls=1 0 0
+16 3
+cfl=(1)
+cfn=(1)
+calls=1 0 0
+17 1
+cfl=(1)
+cfn=(1)
+calls=1 0 0
+18 2
+cfl=(1)
+cfn=(2)
+calls=1 0 0
+19 334
+cfl=(52)
+cfn=(208)
+calls=1 0 0
+20 77286
+cfl=(1)
+cfn=(209)
+calls=1 0 0
+21 186
+
