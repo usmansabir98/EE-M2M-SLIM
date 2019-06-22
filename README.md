@@ -32,7 +32,7 @@ MySQL - Database
 
 ### Important Commands and Steps
 
-1. Turn on the extension for OpenSSL (the steps are similar to that for PDOs and SOAP). Make sure only one extension is turned on, else, an error will come up.
+1. Turn on the extension for OpenSSL (the steps are similar to that for PDOs and SOAP). Make sure only one extension is turned on (for OpenSSL), else, an error will come up.
 
 2. 	Important Info: 	+447817814149 (Won't disclose what it is)
 
