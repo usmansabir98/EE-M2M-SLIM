@@ -24,7 +24,7 @@ require_once $f_wrapper_path . 'MySQL_Wrapper.php';
 require_once $f_wrapper_path . 'Soap_Wrapper.php';
 
 require_once $f_wrapper_path . 'Session_Wrapper.php';
-require_once $f_wrapper_path . 'MCrypt_Wrapper.php';
+require_once $f_wrapper_path . 'OpenSSL_Wrapper.php';
 require_once $f_class_path . 'AppLoggerModel.php';
 
 $app->get('/downloaddata', function() use ($app)
@@ -41,9 +41,8 @@ $app->get('/downloaddata', function() use ($app)
     $f_obj_soap = new Soap_Wrapper();
 
     //------------------Logger
-    // $f_obj_mcrypt_wrapper = new MCrypt_Wrapper();
-    // $f_obj_mcrypt_wrapper->initialise_mcrypt_encryption();
-    // $f_userID = $f_obj_mcrypt_wrapper->decrypt(Session_Wrapper::get_session('username'));
+    $f_obj_openssl_wrapper = new OpenSSLEncr();
+    $f_userID = $f_obj_openssl_wrapper->decrypt(Session_Wrapper::get_session('username'));
     $f_userID = Session_Wrapper::get_session('username');
 
 

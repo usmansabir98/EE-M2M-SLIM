@@ -18,16 +18,15 @@
 require_once $f_class_path . 'LogoutModel.php';                      //variable information is then used for concatenating with the required                          //php files which are required_once and loaded
                                                                       //php files which are required_once and loaded
 require_once $f_wrapper_path . 'Session_Wrapper.php';
-require_once $f_wrapper_path . 'MCrypt_Wrapper.php';
+require_once $f_wrapper_path . 'OpenSSL_Wrapper.php';
 require_once $f_wrapper_path . 'MySQL_Wrapper.php';
 require_once $f_class_path . 'AppLoggerModel.php';
 
 $app->get('/logout', function() use ($app)
  {
      //-----------------Logger initialisation
-     $f_obj_mcrypt_wrapper = new MCrypt_Wrapper();
-     $f_obj_mcrypt_wrapper->initialise_mcrypt_encryption();
-     $f_userID = $f_obj_mcrypt_wrapper->decrypt(Session_Wrapper::get_session('username'));
+     $f_obj_openssl_wrapper = new OpenSSLEncr();
+     $f_userID = $f_obj_openssl_wrapper->decrypt(Session_Wrapper::get_session('username'));
 
 
      $f_obj_MySQL = new MySQL_Wrapper();
