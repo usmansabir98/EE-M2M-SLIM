@@ -1,38 +1,32 @@
-# Secure Web Application Development Project version 2.0 
 
-Message retrieval programme.
-Downloads and views messages downloaded from the EE M2M server by providing a valid MSIDSN
-You can sign up and register to the service using your email and creating a Username and Password which later used for login information.
-Login to the service to access your own personal messages. 
+# M2M Connect; SMS and PHP Processing
 
-http://php.tech.dmu.ac.uk:6789/p14166609/
+## Core Objectives
+This coursework specification is designed to enable you to achieve the following module learning objectives:
 
-Once logged into the service choose :
+    1. Can design and implement a web application that is impervious to the most common web-based attacks
+    2. Can design and implement a web application that accesses and displays data from remote web services
 
-- Download Data from the EE Server to retrieve your messages (enter a number to download specific messages or leave empty to download all messages)
+## Required Technologies 
 
-or 
+SLIM - A micro-framework used to develop robust web applications using PHP.
 
-- Review EE data stored on the database to view your downloaded message 
-(enter a number to display specific messages or leave empty to display all messages)
+MySQL - Database
+
+## Main Objectives
+
+1. The EE-SMS server accepts SMS/GPRS messages and stores them in an XML format. 
+
+2. The EE M2M Connect services allows you to download these messages via the EE-SOAP server. 
+
+3. Once downloaded, the message can be parsed and important information be extracted, sanitised and manipulated to be stored in the local database.
+
+4. Users can demand reports of the stores messages anytime (after successful download and storage).
+
+5. Once an initial web-report has been created and displayed on a user’s browser, AJAX or JSON could be used to dynamically update the reporting web-page when subsequent messages are downloaded and processed. Emails or SMS messages could notify users of the arrival of a message; numerical data such as temperatures could be displayed as a chart, SMS messages could be used to update the status of the circuit board (this will be a simulation).
+
+6. Format of the message string: XML, Plain Text, Compacted Bit String.
 
 
-Once you have finished viewing your messages and your session using the application you can logout by using the logout button present on the homepage. 
 
 
-Group Information
-Sukhwinder Singh
-P Number:     P14184295
-Email:        p14184295@my365.dmu.ac.uk
-
-Rajatt Sodhi
-P Number:     P14166609
-Email:        p14166609@my365.dmu.ac.uk
-
-Faysal Karim 
-P Number:     P14147922
-Email:        p14147922@my365.dmu.ac.uk  
-
-## Get the program
-
-Get the copy of the program through this github page
