@@ -110,6 +110,7 @@ $app->get('/downloaddata', function() use ($app)
     if(!empty($f_obj_model->get_downloaded_message_data())) {
 
 
+
         //*******************************************DOWNLOAD END
 
         //********************************************VALIDATE**********************************
@@ -117,10 +118,16 @@ $app->get('/downloaddata', function() use ($app)
 
         //here the downloaded messages are validated and set
 
-        $f_validate_message_data = $f_obj_validate->validate_size($f_obj_model->get_downloaded_message_data());
-        $f_obj_model->set_downloaded_message_data($f_validate_message_data);
+        // $f_validate_message_data = $f_obj_validate->validate_size($f_obj_model->get_downloaded_message_data());
+        // $f_obj_model->set_downloaded_message_data($f_validate_message_data);
+
+        print_r($f_obj_model->get_downloaded_message_data());
+
         $f_validate_message_data = $f_obj_validate->validate_array_message($f_obj_model->get_downloaded_message_data());
         $f_obj_model->set_downloaded_message_data($f_validate_message_data);
+
+        print_r($f_obj_model->get_downloaded_message_data());
+
 
         //********************************************VALIDATE END
 

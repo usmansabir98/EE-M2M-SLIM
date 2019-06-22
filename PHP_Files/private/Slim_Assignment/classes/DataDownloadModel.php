@@ -180,6 +180,7 @@ class DataDownloadModel
 
 
                 $m_soap_server_get_message_result_error = false;
+                // print_r($m_arr_messages);
 
             }
             catch (SoapFault $m_obj_exception)
@@ -213,6 +214,8 @@ class DataDownloadModel
                 $this->c_arr_download_message_data[$key] = $m_obj_parser->get_parsed_message_data();
             }
         }
+
+        // print_r($this->c_arr_download_message_data);
     }
 
 }
