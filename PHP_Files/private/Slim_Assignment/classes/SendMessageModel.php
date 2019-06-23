@@ -5,9 +5,9 @@
  * Users: P14184295 and P14166609
  * Date: 20/11/2016
  *
- * DataDownloadModel.php
+ * SendMessageModel.php
  *
- * One of the class files used by the system is the DataDownloadModel.php file.
+ * One of the class files used by the system is the SendMessageModel.php file.
  *
  * This file sets a handle which then is used for retrieving the EE messages
  * which are stored on the SOAP Client and uses the getter methods to retrieve
@@ -20,13 +20,6 @@
  *
  * @package stock-quotes
  */
-
-
-//$f_class_path = $app->config('classes.path') . DIRSEP;                //requies path information and stores it in variable
-
-//require_once $f_class_path . 'XMLparserModel.php';                    //variable information is then used for concatenating with the required
-                                                                      //php files which are required_once and loaded
-// include(__DIR__ . '/../classes/XMLparserModel.php');                 //these include is needed for testing purposes, comment above requires for testing
 
 class SendMessageModel
 {
@@ -76,7 +69,7 @@ class SendMessageModel
     }
 
     /**
-     * do_download_message() does the downloading of the messages by connecting to
+     * do_send_message() does the sending of the messages by connecting to
      * the SOAP client. The SOAP Client handle must be passed before connecting.
      *
      * @param - None
@@ -107,7 +100,7 @@ class SendMessageModel
 
 
     /**
-     * do_get_message_data() connects to the SOAP Client and downloads the message data
+     * do_get_message_data() connects to the SOAP Client and sends the message data
      *
      * @param - None
      * @return - returns the boolean value to indicate messages return success
@@ -132,7 +125,7 @@ class SendMessageModel
             }
             catch (SoapFault $m_obj_exception)
             {
-                // Error will already be true i.ie $m_soap_server_send_message_result_error
+                // Error will already be true i.ie $m_soap_server_sent_message_result_error
             }
 
             echo $m_arr_messages;

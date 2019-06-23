@@ -6,5 +6,4 @@
 6. Fixed route in routes.php
 7. Added 'sendMessage' route
 8. Fixed entire form for sendMessage
-9. 
 
