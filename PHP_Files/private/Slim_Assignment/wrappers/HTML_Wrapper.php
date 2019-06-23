@@ -166,6 +166,20 @@ class HTML_Wrapper
     return $this->c_review_page;
   }
 
+    /**
+   * get_send_messgae_page() retrieves the form information that is used within tags in the Template.
+   *
+   * @param - None
+   * @return - returns review page information
+   */
+
+  public function get_send_message_page() {
+    $this->do_send_message_page();
+    return $this->c_send_page;
+  }
+
+
+
   /**
    * get_review_error_page() retrieves the form information that is used within tags in the Template.
    *
@@ -345,15 +359,18 @@ class HTML_Wrapper
   private function do_homepage_page_form() {
     $m_html_output = '';
     $m_html_output .= '<form method=get action=logout>';
+    $m_html_output .= '<p>Do you wish to log out?</p>';
     $m_html_output .= '<input type="submit" value="Logout">';
     $m_html_output .= '</form>';
     $m_html_output2 = '';
     $m_html_output2 .= '<form method=get action=process>';
-    $m_html_output2 .= '<h1>Welcome to EE Client</h1>';
-    $m_html_output2 .= '<h2>Select the below options so you can: </h2>';
-    $m_html_output2 .= '<button name="feature" value="download_ee_form">Download EE Server Content</button> &nbsp;&nbsp;';
-    $m_html_output2 .= '<h2> or </h2>';
-    $m_html_output2 .= '<button name="feature" value="review_ee_form">Review EE Server Content</button>';
+    $m_html_output2 .= '<h1>Welcome to the  EE-M2M Connect Client!</h1>';
+    $m_html_output2 .= '<h2>There are three options presented below. Kindly select one: </h2>';
+    $m_html_output2 .= '<button name="feature" value="download_ee_form">Download content from the EE-Connect Server</button> &nbsp;&nbsp;';
+    $m_html_output2 .= '<h2> OR </h2>';
+    $m_html_output2 .= '<button name="feature" value="review_ee_form">Review Content from the EE-Connect Server</button>';
+    $m_html_output2 .= '<h2> OR </h2>';
+    $m_html_output2 .= '<button name="feature" value="send_ee_message">Send Message VIA EE-Connect</button>';
     $m_html_output2 .= '</form>';
     $this->c_arr_homepage_page_form = array('html_output' => $m_html_output, 'html_output2' => $m_html_output2);
   }
@@ -366,11 +383,13 @@ class HTML_Wrapper
     $m_html_output2 = '';
     $m_html_output2 .= '<p id=warning>Could not log you out, please try again !</p>';
     $m_html_output2 .= '<form method=get action=process>';
-    $m_html_output2 .= '<h1>Welcome to EE Client</h1>';
-    $m_html_output2 .= '<h2>Select the below options so you can: </h2>';
-    $m_html_output2 .= '<button name="feature" value="download_ee_form">Download EE Server Content</button> &nbsp;&nbsp;';
-    $m_html_output2 .= '<h2> or </h2>';
-    $m_html_output2 .= '<button name="feature" value="review_ee_form">Review EE Server Content</button>';
+    $m_html_output2 .= '<h1>Welcome to the  EE-M2M Connect Client!</h1>';
+    $m_html_output2 .= '<h2>There are three options presented below. Kindly select one: </h2>';
+    $m_html_output2 .= '<button name="feature" value="download_ee_form">Download content from the EE-Connect Server</button> &nbsp;&nbsp;';
+    $m_html_output2 .= '<h2> OR </h2>';
+    $m_html_output2 .= '<button name="feature" value="review_ee_form">Review Content from the EE-Connect Server</button>';
+    $m_html_output2 .= '<h2> OR </h2>';
+    $m_html_output2 .= '<button name="feature" value="review_ee_form">Send Message VIA EE-Connect</button>';
     $m_html_output2 .= '</form>';
     $this->c_arr_homepage_page_error_form = array('html_output' => $m_html_output, 'html_output2' => $m_html_output2);
   }
@@ -393,6 +412,28 @@ class HTML_Wrapper
     $m_html_output .= '<p><input type="submit" /></p>';
     $m_html_output .= '</form>';
     $this->c_review_page = $m_html_output;
+  }
+
+
+  private function do_send_message_page() {
+    $m_html_output = '';
+    $m_html_output .= '<form method=get action=sendMessage>';
+    $m_html_output .= '<h1>Enter the following information correctly to send a message: </h1>';
+    $m_html_output .= '<h5>Enter MSISDN:</h5>';
+    $m_html_output .= '<p><input name="message-id" type="text" id="message-id" size="12" value="" maxsize="12"/></p>';
+
+    $m_html_output .= '<h5>Enter your message:</h5>';
+    $m_html_output .= '<p><input name="main-message" type="text" id="main-message"/></p>';
+
+    $m_html_output .= '<h5>Select your delivery report: </h5>';
+    $m_html_output .= '<p><input name="deliver-report" type="checkbox" id="deliver-report"/></p>';
+
+    $m_html_output .= '<h5>Message Bearer: </h5>';
+    $m_html_output .= '<select><option value="" selected>Default</option><option value="SMS">SMS</option><option value="GPRS">Non-urgent GPRS</option><option value="UGRPS">Urgent GPRS</option></select>';
+
+    $m_html_output .= '<p><input type="submit" /></p>';
+    $m_html_output .= '</form>';
+    $this->c_send_page = $m_html_output;
   }
 
     private function do_download_error_page() {

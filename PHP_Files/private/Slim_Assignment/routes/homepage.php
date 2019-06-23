@@ -79,7 +79,7 @@
      $f_admin = $f_obj_openssl_wrapper->decrypt(Session_Wrapper::get_session('username'));
      $f_admin = Session_Wrapper::get_session('username');
 
-     $f_app_name = 'EE Client - Home';                                    //title name of the current page
+     $f_app_name = 'EE-M2M Client';                                    //title name of the current page
 
      $f_script_name = $_SERVER["SCRIPT_NAME"];                            //current scripts path
 

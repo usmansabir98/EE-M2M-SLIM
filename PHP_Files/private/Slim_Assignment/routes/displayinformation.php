@@ -117,6 +117,7 @@ $app->get('/displayinformation', function() use ($app)
             'html_output' => $f_html_output
 
         ];
+        
         $f_obj_logger->do_logging($f_userID,'message displayed');
         $app->render('display_storedmessages.php', $arr);
     }
