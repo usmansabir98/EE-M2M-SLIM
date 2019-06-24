@@ -60,6 +60,7 @@ class XmlParserModel
 
     public function get_parsed_message_data()
     {
+        print_r($this->c_arr_parsed_message_data);
         return $this->c_arr_parsed_message_data;
     }
 
@@ -115,6 +116,8 @@ class XmlParserModel
     // process data from an element
     private function process_element_data($p_parser, $p_element_data)
     {
+        // echo $this->c_element_name; echo " => "; echo $p_element_data; echo "<br>";
+
         $this->c_arr_parsed_message_data[$this->c_element_name] = $p_element_data;
         if (sizeof($this->c_arr_temporary_attributes) > 0)
         {
@@ -122,6 +125,8 @@ class XmlParserModel
             {
                 $this->c_arr_parsed_message_data[$m_tag_att_name] = $m_tag_att_value;
             }
+
+            print_r($this->c_arr_parsed_message_data);
         }
 
     }

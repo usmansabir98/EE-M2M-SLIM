@@ -111,17 +111,17 @@ class DataStoreModel
     public function do_store_downloaded_message_data()
     {
 
-        echo "<br>First<br>";
-        print_r($this->c_arr_download_message_data);
-        echo "<br><br>";
+        // echo "<br>First<br>";
+        // print_r($this->c_arr_download_message_data);
+        // echo "<br><br>";
 
         $f_result=false;
         //$this->do_filter_message();                                     //Filters infomration
         $this->do_prepare_message_data();                               //prepares the message format
 
-        echo "<br>Second<br>";
-        print_r($this->c_arr_download_message_data);
-        echo "<br><br>";
+        // echo "<br>Second<br>";
+        // print_r($this->c_arr_download_message_data);
+        // echo "<br><br>";
 
         foreach ($this->c_arr_download_message_data as $key => $value)  //for each existing value, store the message into database
         {
