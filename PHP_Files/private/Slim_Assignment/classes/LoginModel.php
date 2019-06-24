@@ -20,11 +20,11 @@
 
  $f_wrapper_path = $app->config('wrappers.path') . DIRSEP;           //requies path information and stores it in variable
 
- require_once $f_wrapper_path . 'MCrypt_Wrapper.php';                //variable information is then used for concatenating with the required
+ require_once $f_wrapper_path . 'OpenSSL_Wrapper.php';                //variable information is then used for concatenating with the required
  require_once $f_wrapper_path . 'SQL_Wrapper.php';                   //php files which are required_once and loaded
 
- //include(__DIR__ . '/../wrappers/MCrypt_Wrapper.php');                 //these include is needed for testing purposes, comment above requires for testing
- //include(__DIR__ . '/../wrappers/SQL_Wrapper.php');
+ include_once(__DIR__ . '/../wrappers/OpenSSL_Wrapper.php'); //Switched to include_once!                 
+ include_once(__DIR__ . '/../wrappers/SQL_Wrapper.php');
 
 class LoginModel
 {
@@ -119,9 +119,8 @@ class LoginModel
     $m_username = $this->c_arr_admin_data['Username'];          //gets the username and password from the previously set fields
     $m_password = $this->c_arr_admin_data['Password'];
     $m_sql_wrapper=new SQL_Wrapper;
-    $m_sql_query_string = $m_sql_wrapper->get_admin_credintials();                  //instantiates SQL_Wrapper() and MCrypt_Wrapper()
-    // $f_obj_mcrypt_wrapper = new MCrypt_Wrapper();
-    // $f_obj_mcrypt_wrapper->initialise_mcrypt_encryption();
+    $m_sql_query_string = $m_sql_wrapper->get_admin_credintials();                  //instantiates SQL_Wrapper() and OpenSSL_Wrapper()
+    $f_obj_openssl_wrapper = new OpenSSLEncr();
     $m_arr_store_boolean = false;           //state represents if user is within the database or not
     $m_error=$this->c_error;
 

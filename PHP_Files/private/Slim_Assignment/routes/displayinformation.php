@@ -22,7 +22,7 @@ require_once $f_class_path . 'DataDisplayModel.php';                      //php 
 require_once $f_class_path . 'ValidateModel.php';
 
 require_once $f_wrapper_path . 'Session_Wrapper.php';
-require_once $f_wrapper_path . 'MCrypt_Wrapper.php';
+require_once $f_wrapper_path . 'OpenSSL_Wrapper.php';
 require_once $f_class_path . 'AppLoggerModel.php';
 
 $app->get('/displayinformation', function() use ($app)
@@ -31,11 +31,9 @@ $app->get('/displayinformation', function() use ($app)
        return $app->response->redirect($app->urlFor('authentication'));        //therefore the page does not get displayed
     }
 
-    // $f_obj_mcrypt_wrapper = new MCrypt_Wrapper();
-    // $f_obj_mcrypt_wrapper->initialise_mcrypt_encryption();
-    // $f_userID = $f_obj_mcrypt_wrapper->decrypt(Session_Wrapper::get_session('username'));
+    $f_obj_openssl_wrapper = new OpenSSLEncr();
+    $f_userID = $f_obj_openssl_wrapper->decrypt(Session_Wrapper::get_session('username'));
     $f_userID = Session_Wrapper::get_session('username');
-
 
     $f_obj_MySQL = new MySQL_Wrapper();
     $f_obj_MySQL->connect_to_database();
@@ -119,6 +117,7 @@ $app->get('/displayinformation', function() use ($app)
             'html_output' => $f_html_output
 
         ];
+        
         $f_obj_logger->do_logging($f_userID,'message displayed');
         $app->render('display_storedmessages.php', $arr);
     }

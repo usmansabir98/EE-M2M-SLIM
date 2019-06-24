@@ -15,10 +15,11 @@
  * @copyright De Montfort University
  */
 
+//  Returns path : .... PHP_Files\private\Slim_Assignment/wrappers\
  $f_wrapper_path = $app->config('wrappers.path') . DIRSEP;
- require_once $f_wrapper_path . 'MCrypt_Wrapper.php';
+ require_once $f_wrapper_path . 'OpenSSL_Wrapper.php';
 
-// include(__DIR__ . '/../wrappers/MCrypt_Wrapper.php');                 //these include is needed for testing purposes, comment above requires for testing
+include_once(__DIR__ . '/../wrappers/OpenSSL_Wrapper.php');  //Switched to include_once()!
 
 class Session_Wrapper
 {
@@ -42,25 +43,24 @@ class Session_Wrapper
 		{
 
       /*
-       * If value not empty then the call to the MCrypt_Wrapper() is
+       * If value not empty then the call to the OpenSSL_Wrapper is
        * which initialises the encyption and sets the current key/value pairs in a encrypted manner.
        */
 
-		// 	$f_obj_mcrypt_wrapper = new MCrypt_Wrapper();
-	    // $f_obj_mcrypt_wrapper->initialise_mcrypt_encryption();
+				$f_obj_openssl_wrapper = new OpenSSLEncr();
 
-			// $_SESSION[$p_session_key] = $f_obj_mcrypt_wrapper->encrypt($p_session_value_to_set);
-			$_SESSION[$p_session_key] = $p_session_value_to_set;
+			$_SESSION[$p_session_key] = $f_obj_openssl_wrapper->encrypt($p_session_value_to_set);
+			// $_SESSION[$p_session_key] = $p_session_value_to_set;
 
       /*
        * If the value stored within the session matches the value passed as a parameter than the
        * session has been set properly else return as false indicating failure.
        */
 
-			// if (strcmp($f_obj_mcrypt_wrapper->decrypt($_SESSION[$p_session_key]), $p_session_value_to_set) == 0)
-			// {
-			// 	$m_session_value_set_successfully = true;
-			// }
+			if (strcmp($f_obj_openssl_wrapper->decrypt($_SESSION[$p_session_key]), $p_session_value_to_set) == 0)
+			{
+				$m_session_value_set_successfully = true;
+			}
 			if (strcmp($_SESSION[$p_session_key], $p_session_value_to_set) == 0)
 			{
 				$m_session_value_set_successfully = true;

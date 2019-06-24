@@ -45,6 +45,10 @@
      $arr_data = review_form();
      $feature = 'display_messageMSISDN.php';
      break;
+     case 'send_ee_message':
+      $arr_data = send_ee_message();
+      $feature = 'display_messageMSISDN.php';
+      break;
      default:
      $arr_data = feature_error();
      $feature ='display_global_error.php';
@@ -163,6 +167,33 @@ function review_form() {
 
  return $arr;
 }
+
+/*
+ * Below is the send_ee_message() function that stores the $app array details for
+ * redirecting to the correct pages and displaying the correct information
+ */
+
+function send_ee_message() {
+
+  $f_script_name = $_SERVER["SCRIPT_NAME"];
+ 
+  $f_app_name = 'EE Send Message Page';
+ 
+  $f_html_wrapper = new HTML_Wrapper();
+ 
+  $f_header = $f_html_wrapper->get_header();
+  $f_html_output = $f_html_wrapper->get_send_message_page();
+ 
+ 
+  $arr = [
+    'landing_page' => $f_script_name,
+    'header' => $f_header,
+    'page_title' => $f_app_name,
+    'html_output' => $f_html_output,
+  ];
+ 
+  return $arr;
+ }
 
 function feature_error(){
     $f_app_name = 'EE Client - ERROR';                                    //title name of the current page

@@ -20,7 +20,7 @@
  $f_wrapper_path = $app->config('wrappers.path') . DIRSEP;              //requies path information and stores it in variable
 
  require_once $f_wrapper_path . 'Session_Wrapper.php';                  //variable information is then used for concatenating with the required
- require_once $f_wrapper_path . 'MCrypt_Wrapper.php';                   //php files which are required_once and loaded
+ require_once $f_wrapper_path . 'OpenSSL_Wrapper.php';                   //php files which are required_once and loaded
  require_once $f_wrapper_path . 'HTML_Wrapper.php';
 
  $app->get('/homepage', function() use ($app)
@@ -30,16 +30,14 @@
    }else {
 
      /*
-      * if the SESSION is available then the MyCrypt_Wrapper() is inistantiated
+      * if the SESSION is available then the OpenSSL_Wrapper() is inistantiated
       * with this, the logged in username is usually encrypted so to display it on the homepage
       * it is first decrypted then passed into the $app array to configure the settings
       */
 
-    //  $f_obj_mcrypt_wrapper = new MCrypt_Wrapper();
-    //  $f_obj_mcrypt_wrapper->initialise_mcrypt_encryption();
+     $f_obj_openssl_wrapper = new OpenSSLEncr();
 
-    //  $f_admin = $f_obj_mcrypt_wrapper->decrypt(Session_Wrapper::get_session('username'));
-     $f_admin = Session_Wrapper::get_session('username');
+     $f_admin = ucfirst($f_obj_openssl_wrapper->decrypt(Session_Wrapper::get_session('username')));
 
      $f_app_name = 'EE Client - Home';                                    //title name of the current page
 
@@ -71,18 +69,17 @@
    }else {
 
      /*
-      * if the SESSION is available then the MyCrypt_Wrapper() is inistantiated
+      * if the SESSION is available then the OpenSSL_Wrapper() is inistantiated
       * with this, the logged in username is usually encrypted so to display it on the homepage
       * it is first decrypted then passed into the $app array to configure the settings
       */
 
-    //  $f_obj_mcrypt_wrapper = new MCrypt_Wrapper();
-    //  $f_obj_mcrypt_wrapper->initialise_mcrypt_encryption();
+     $f_obj_openssl_wrapper = new OpenSSLEncr();
 
-    //  $f_admin = $f_obj_mcrypt_wrapper->decrypt(Session_Wrapper::get_session('username'));
+     $f_admin = $f_obj_openssl_wrapper->decrypt(Session_Wrapper::get_session('username'));
      $f_admin = Session_Wrapper::get_session('username');
 
-     $f_app_name = 'EE Client - Home';                                    //title name of the current page
+     $f_app_name = 'EE-M2M Client';                                    //title name of the current page
 
      $f_script_name = $_SERVER["SCRIPT_NAME"];                            //current scripts path
 

@@ -30,3 +30,10 @@ MySQL - Database
 
 
 
+### Important Commands and Steps
+
+1. Turn on the extension for OpenSSL (the steps are similar to that for PDOs and SOAP). Make sure only one extension is turned on (for OpenSSL), else, an error will come up.
+
+2. 	Important Info: 	+447817814149 (Won't disclose what it is)
+
+3. Run this command to start: php -S localhost:8888 -t PHP_Files/public PHP_Files/public/index.php
