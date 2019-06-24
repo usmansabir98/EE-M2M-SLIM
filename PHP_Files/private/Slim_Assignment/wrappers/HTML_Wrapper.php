@@ -420,16 +420,49 @@ class HTML_Wrapper
     $m_html_output .= '<form method=get action=sendMessage>';
     $m_html_output .= '<h1>Enter the following information correctly to send a message: </h1>';
     $m_html_output .= '<h5>Enter MSISDN:</h5>';
-    $m_html_output .= '<p><input name="message-id" type="text" id="message-id" size="12" value="" maxsize="12"/></p>';
+    $m_html_output .= '<p><input name="message-id" type="text" id="message-id" size="12" value="447817814149" maxsize="12"/></p>';
 
-    $m_html_output .= '<h5>Enter your message:</h5>';
-    $m_html_output .= '<p><input name="main-message" type="text" id="main-message"/></p>';
+    $m_html_output .= '<h5>MESSAGE BODY:</h5>';    
+    
+    $m_html_output .= '<h5>Enter the value of S1:</h5>';
+    $m_html_output .= '<p><input name="s1-val" type="text" id="s1-val"/></p>';
+    
+    $m_html_output .= '<h5>Enter the value of S2:</h5>';
+    $m_html_output .= '<p><input name="s2-val" type="text" id="s2-val"/></p>';
+    
+    $m_html_output .= '<h5>Enter the value of S3:</h5>';
+    $m_html_output .= '<p><input name="s3-val" type="text" id="s3-val"/></p>';
+    
+    $m_html_output .= '<h5>Enter the value of S4:</h5>';
+    $m_html_output .= '<p><input name="s4-val" type="text" id="s4-val"/></p>';
+    
+    $m_html_output .= '<h5>Enter the value of "Fan":</h5>';
+    $m_html_output .= '<p><input name="fan-val" type="text" id="fan-val"/></p>';
+    
+    $m_html_output .= '<h5>Enter the value of FRW:</h5>';
+    $m_html_output .= '<p><input name="frw-val" type="text" id="frw-val"/></p>';
+    
+    $m_html_output .= '<h5>Enter the value of REV:</h5>';
+    $m_html_output .= '<p><input name="rev-val" type="text" id="rev-val"/></p>';
+    
+    $m_html_output .= '<h5>Enter the value of H:</h5>';
+    $m_html_output .= '<p><input name="h-val" type="text" id="h-val"/></p>';
+    
+    $m_html_output .= '<h5>Enter the value of Temp:</h5>';
+    $m_html_output .= '<p><input name="temp-val" type="text" id="temp-val"/></p>';
+    
+    $m_html_output .= '<h5>Enter the value of Key:</h5>';
+    $m_html_output .= '<p><input name="key-val" type="text" id="key-val"/></p>';
+    
+    // $m_html_output .= '<p><input name="main-message" type="text" id="main-message"/></p>';
 
-    $m_html_output .= '<h5>Select your delivery report: </h5>';
+
+
+    $m_html_output .= '<h5>Select your delivery report statud: </h5>';
     $m_html_output .= '<p><input name="deliver-report" type="checkbox" id="deliver-report"/></p>';
 
     $m_html_output .= '<h5>Message Bearer: </h5>';
-    $m_html_output .= '<select><option value="" selected>Default</option><option value="SMS">SMS</option><option value="GPRS">Non-urgent GPRS</option><option value="UGRPS">Urgent GPRS</option></select>';
+    $m_html_output .= '<select name="msg-bearer" id="msg-bearer"><option value="" selected>Default</option><option value="SMS">SMS</option><option value="GPRS">Non-urgent GPRS</option><option value="UGRPS">Urgent GPRS</option></select>';
 
     $m_html_output .= '<p><input type="submit" /></p>';
     $m_html_output .= '</form>';

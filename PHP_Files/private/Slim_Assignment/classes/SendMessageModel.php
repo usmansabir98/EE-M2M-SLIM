@@ -72,16 +72,16 @@ class SendMessageModel
      * do_send_message() does the sending of the messages by connecting to
      * the SOAP client. The SOAP Client handle must be passed before connecting.
      *
-     * @param - None
+     * @param - delivery report, message, and bearer
      * @return - None
      */
 
-    public function do_send_message()
+    public function do_send_message($f_delivery_report, $f_message_body, $f_msg_bearer)
     {
         $m_error=$this->c_error;
         if ($this->c_obj_soap_client_handle!= null)
         {
-            if(!$this->do_send_message_data())
+            if(!$this->do_send_message_data($f_delivery_report, $f_message_body, $f_msg_bearer))
             {
                 return $this->verifyMessageSent();
             }
@@ -102,11 +102,11 @@ class SendMessageModel
     /**
      * do_get_message_data() connects to the SOAP Client and sends the message data
      *
-     * @param - None
+     * @param - delivery report, message, and bearer
      * @return - returns the boolean value to indicate messages return success
      */
 
-    private function do_send_message_data()
+    private function do_send_message_data($f_delivery_report, $f_message_body, $f_msg_bearer)
     {
         $m_soap_server_send_message_result_error = true;
 
@@ -118,7 +118,7 @@ class SendMessageModel
             {
                 if($this->c_message_id != -1)
                 {
-                    $m_arr_messages = $this->c_obj_soap_client_handle->sendMessage('19aus_P2503051', 'Junlinchriss8', '+447817814149', '<message>Hi</message>', 'true', 'SMS');
+                    $m_arr_messages = $this->c_obj_soap_client_handle->sendMessage('19aus_P2503051', 'Junlinchriss8', $this->c_message_id , $f_message_body, $f_delivery_report, $f_msg_bearer);
                 }
 
                 $m_soap_server_send_message_result_error = false;
@@ -128,8 +128,6 @@ class SendMessageModel
                 // Error will already be true i.ie $m_soap_server_sent_message_result_error
             }
 
-            echo $m_arr_messages;
-            exit();
         }
 
         $this->c_arr_sent_message_data = $m_arr_messages;
@@ -139,7 +137,7 @@ class SendMessageModel
 
     public function verifyMessageSent()
     {
-        if(!$this->c_arr_sent_message_data)                            //checks to see if message data is empty or not
+        if($this->c_arr_sent_message_data)                            //checks to see if message data is empty or not
         {
             return true;
         }

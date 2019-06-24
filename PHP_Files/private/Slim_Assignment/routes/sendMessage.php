@@ -36,13 +36,61 @@ $app->get('/sendMessage', function() use ($app)
     //----------------------------------------------
 
 
-    //*********************************************DOWNLOAD*******************************
+    //*********************************************SEND*******************************
 
-    $f_message = $app->request->get('message-id');                        //gets the message id
-    if(!empty($f_message))                                                 //if message id is empty than it downloads all messages
-    {
-        $f_validated_message =$f_obj_validate->validate_phone($f_message);  //if value is provided than it is validated
+    $f_msisdn = $app->request->get('message-id');                       
+    $f_msg_bearer = $app->request->get('msg-bearer');  
+    $f_delivery_report = $app->request->get('delivery-report');
+
+    // Intercept message values
+    $f_s1_val = $app->request->get('s1-val');
+    $f_s2_val = $app->request->get('s2-val');
+    $f_s3_val = $app->request->get('s3-val');
+    $f_s4_val = $app->request->get('s4-val');
+    
+    $f_fan_val = $app->request->get('fav-val');
+    $f_frw_val = $app->request->get('frw-val');
+    $f_rev_val = $app->request->get('rev-val');
+
+    $f_h_val = $app->request->get('h-val');
+    $f_temp_val = $app->request->get('temp-val');
+    $f_key_val = $app->request->get('key-val');
+
+    // Structure a message
+    $f_message_body = '&lts1&gt'. $f_s1_val .'&lt/s1&gt';
+    $f_message_body .= '&lts2&gt'. $f_s2_val .'&lt/s2&gt';
+    $f_message_body .= '&lts3&gt'. $f_s3_val .'&lt/s3&gt';
+    $f_message_body .= '&lts4&gt'. $f_s4_val .'&lt/s4&gt';
+    $f_message_body .= '&ltfan&gt'. $f_s1_val .'&lt/fan&gt';
+    $f_message_body .= '&ltfrw&gt'. $f_s1_val .'&lt/frw&gt';
+    $f_message_body .= '&ltrev&gt'. $f_s1_val .'&lt/rev&gt';
+    $f_message_body .= '&lth&gt'. $f_s1_val .'&lt/h&gt';
+    $f_message_body .= '&lttemp&gt'. $f_s1_val .'&lt/temp&gt';
+    $f_message_body .= '&ltkey&gt'. $f_s1_val .'&lt/key&gt';
+
+    // Fix delivery reports
+    if($f_delivery_report) {
+        $f_delivery_report = 'true';
     }
+    else {
+        $f_delivery_report = 'false';
+    }
+
+    // Set MSG Bearer
+    if(empty($f_msg_bearer)) {
+        $f_msg_bearer = ''; //Set the default mode as the message bearer
+    }
+
+    
+
+
+    if(!empty($f_msisdn))                                                 //if message id is empty than it sends all messages
+    {
+        $f_validated_message =$f_obj_validate->validate_phone($f_msisdn);  //if value is provided than it is validated
+    }
+
+    // Server requires an MSIDN beginning with "+"
+    $f_msisdn = "+" . $f_msisdn;
 
     //If validation fails than the number is not valid
     if($f_validated_message===false)
@@ -51,9 +99,10 @@ $app->get('/sendMessage', function() use ($app)
         return $app->redirect('error');
     }
 
+
     /*
      * sets the message id and the WSDL file along with initialising the SOAP client handle,
-     * once the setup is complete, the messages can be downloaded
+     * once the setup is complete, the messages can be sended
      */
 
     $f_obj_send_model->set_message_id($f_validated_message);
@@ -68,12 +117,12 @@ $app->get('/sendMessage', function() use ($app)
         return $app->redirect('error');
     }
 
+
     $f_obj_send_model->set_soap_client_handle($f_obj_soap_handle);
 
+    // Actual work!
 
-// WORK FROM HEREEEEEEE!
-
-    $f_obj_send_model->do_send_message();
+    $f_obj_send_model->do_send_message($f_delivery_report, $f_message_body, $f_msg_bearer);
     if(!$f_obj_send_model->verifyMessageSent())
     {
         $f_obj_logger->do_logging($f_userID,' Error sending messages. Retry!');
@@ -83,6 +132,7 @@ $app->get('/sendMessage', function() use ($app)
     {
         $f_obj_logger->do_logging($f_userID,'Message sent successfully!');
     }
+
 
     return $app->redirect('homepage');
 

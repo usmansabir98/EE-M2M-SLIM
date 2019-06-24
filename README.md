@@ -28,8 +28,6 @@ MySQL - Database
 6. Format of the message string: XML, Plain Text, Compacted Bit String.
 
 
-
-
 ### Important Commands and Steps
 
 1. Turn on the extension for OpenSSL (the steps are similar to that for PDOs and SOAP). Make sure only one extension is turned on (for OpenSSL), else, an error will come up.
@@ -37,3 +35,6 @@ MySQL - Database
 2. 	Important Info: 	+447817814149 (Won't disclose what it is)
 
 3. Run this command to start: php -S localhost:8888 -t PHP_Files/public PHP_Files/public/index.php
+
+4. Message Format: <s1>1</s1><s2>1</s2><s3>0</s3><s4>1</s4><fan>1</fan><frw>0</frw><rev>1</rev><h>0</h><temp>40.34</temp><key>5</key>
+
