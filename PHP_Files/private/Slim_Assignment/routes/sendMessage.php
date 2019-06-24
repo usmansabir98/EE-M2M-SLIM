@@ -61,12 +61,12 @@ $app->get('/sendMessage', function() use ($app)
     $f_message_body .= '&lts2&gt'. $f_s2_val .'&lt/s2&gt';
     $f_message_body .= '&lts3&gt'. $f_s3_val .'&lt/s3&gt';
     $f_message_body .= '&lts4&gt'. $f_s4_val .'&lt/s4&gt';
-    $f_message_body .= '&ltfan&gt'. $f_s1_val .'&lt/fan&gt';
-    $f_message_body .= '&ltfrw&gt'. $f_s1_val .'&lt/frw&gt';
-    $f_message_body .= '&ltrev&gt'. $f_s1_val .'&lt/rev&gt';
-    $f_message_body .= '&lth&gt'. $f_s1_val .'&lt/h&gt';
-    $f_message_body .= '&lttemp&gt'. $f_s1_val .'&lt/temp&gt';
-    $f_message_body .= '&ltkey&gt'. $f_s1_val .'&lt/key&gt';
+    $f_message_body .= '&ltfan&gt'. $f_fan_val .'&lt/fan&gt';
+    $f_message_body .= '&ltfrw&gt'. $f_frw_val .'&lt/frw&gt';
+    $f_message_body .= '&ltrev&gt'. $f_rev_val .'&lt/rev&gt';
+    $f_message_body .= '&lth&gt'. $f_h_val .'&lt/h&gt';
+    $f_message_body .= '&lttemp&gt'. $f_temp_val .'&lt/temp&gt';
+    $f_message_body .= '&ltkey&gt'. $f_key_val .'&lt/key&gt';
 
     // Fix delivery reports
     if($f_delivery_report) {

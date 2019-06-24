@@ -458,7 +458,7 @@ class HTML_Wrapper
 
 
 
-    $m_html_output .= '<h5>Select your delivery report statud: </h5>';
+    $m_html_output .= '<h5>Select your delivery report status: </h5>';
     $m_html_output .= '<p><input name="deliver-report" type="checkbox" id="deliver-report"/></p>';
 
     $m_html_output .= '<h5>Message Bearer: </h5>';
