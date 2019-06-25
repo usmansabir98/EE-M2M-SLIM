@@ -48,7 +48,7 @@ $app->get('/sendMessage', function() use ($app)
     $f_s3_val = $app->request->get('s3-val');
     $f_s4_val = $app->request->get('s4-val');
     
-    $f_fan_val = $app->request->get('fav-val');
+    $f_fan_val = $app->request->get('fan-val');
     $f_frw_val = $app->request->get('frw-val');
     $f_rev_val = $app->request->get('rev-val');
 
@@ -57,15 +57,15 @@ $app->get('/sendMessage', function() use ($app)
     $f_key_val = $app->request->get('key-val');
 
     // Structure a message
-    $f_message_body = '&lts1&gt'. $f_s1_val .'&lt/s1&gt';
-    $f_message_body .= '&lts2&gt'. $f_s2_val .'&lt/s2&gt';
-    $f_message_body .= '&lts3&gt'. $f_s3_val .'&lt/s3&gt';
-    $f_message_body .= '&lts4&gt'. $f_s4_val .'&lt/s4&gt';
-    $f_message_body .= '&ltfan&gt'. $f_fan_val .'&lt/fan&gt';
-    $f_message_body .= '&ltfrw&gt'. $f_frw_val .'&lt/frw&gt';
-    $f_message_body .= '&ltrev&gt'. $f_rev_val .'&lt/rev&gt';
+    $f_message_body = '&lt1&gt'. $f_s1_val .'&lt/1&gt';
+    $f_message_body .= '&lt2&gt'. $f_s2_val .'&lt/2&gt';
+    $f_message_body .= '&lt3&gt'. $f_s3_val .'&lt/3&gt';
+    $f_message_body .= '&lt4&gt'. $f_s4_val .'&lt/4&gt';
+    $f_message_body .= '&ltf&gt'. $f_fan_val .'&lt/f&gt';
+    $f_message_body .= '&ltw&gt'. $f_frw_val .'&lt/w&gt';
+    $f_message_body .= '&ltr&gt'. $f_rev_val .'&lt/r&gt';
     $f_message_body .= '&lth&gt'. $f_h_val .'&lt/h&gt';
-    $f_message_body .= '&ltt&gt'. $f_temp_val .'&lt/t&gt';
+    $f_message_body .= '&ltp&gt'. $f_temp_val .'&lt/p&gt';
     $f_message_body .= '&ltk&gt'. $f_key_val .'&lt/k&gt';
 
     // Fix delivery reports
