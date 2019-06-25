@@ -40,7 +40,7 @@ $app->get('/sendMessage', function() use ($app)
 
     $f_msisdn = $app->request->get('message-id');                       
     $f_msg_bearer = $app->request->get('msg-bearer');  
-    $f_delivery_report = $app->request->get('delivery-report');
+    $f_delivery_report = $app->request->get('deliver-report');
 
     // Intercept message values
     $f_s1_val = $app->request->get('s1-val');
@@ -65,8 +65,8 @@ $app->get('/sendMessage', function() use ($app)
     $f_message_body .= '&ltfrw&gt'. $f_frw_val .'&lt/frw&gt';
     $f_message_body .= '&ltrev&gt'. $f_rev_val .'&lt/rev&gt';
     $f_message_body .= '&lth&gt'. $f_h_val .'&lt/h&gt';
-    $f_message_body .= '&lttemp&gt'. $f_temp_val .'&lt/temp&gt';
-    $f_message_body .= '&ltkey&gt'. $f_key_val .'&lt/key&gt';
+    $f_message_body .= '&ltt&gt'. $f_temp_val .'&lt/t&gt';
+    $f_message_body .= '&ltk&gt'. $f_key_val .'&lt/k&gt';
 
     // Fix delivery reports
     if($f_delivery_report) {
@@ -82,8 +82,6 @@ $app->get('/sendMessage', function() use ($app)
     }
 
     
-
-
     if(!empty($f_msisdn))                                                 //if message id is empty than it sends all messages
     {
         $f_validated_message =$f_obj_validate->validate_phone($f_msisdn);  //if value is provided than it is validated
