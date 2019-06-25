@@ -177,8 +177,6 @@ class DataDownloadModel
                     $m_arr_messages = $this->c_obj_soap_client_handle->peekMessages('19aus_P2503051','Junlinchriss8',100, 447817814149);
                 }
 
-
-
                 $m_soap_server_get_message_result_error = false;
                 // print_r($m_arr_messages);
 

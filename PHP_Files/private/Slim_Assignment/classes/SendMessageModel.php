@@ -109,6 +109,8 @@ class SendMessageModel
     private function do_send_message_data($f_delivery_report, $f_message_body, $f_msg_bearer)
     {
         $m_soap_server_send_message_result_error = true;
+        // echo $f_message_body;
+        // exit();
 
         $m_arr_messages = array();
 
@@ -118,7 +120,7 @@ class SendMessageModel
             {
                 if($this->c_message_id != -1)
                 {
-                    $m_arr_messages = $this->c_obj_soap_client_handle->sendMessage('19aus_P2503051', 'Junlinchriss8', $this->c_message_id , $f_message_body, $f_delivery_report, $f_msg_bearer);
+                    $m_arr_messages = $this->c_obj_soap_client_handle->sendMessage('19aus_P2503051', 'Junlinchriss8', $this->c_message_id , html_entity_decode($f_message_body), $f_delivery_report, $f_msg_bearer);
                 }
 
                 $m_soap_server_send_message_result_error = false;
