@@ -98,7 +98,7 @@
 	 public function validate_feature($p_type_to_check)
 	 {
 		 $m_checked_server_type = false;                                                                //feature not yet validated
-		 $m_arr_calculation_type = array('login', 'register', 'download_ee_form', 'review_ee_form', 'send_ee_message');    //feature checked against this array
+		 $m_arr_calculation_type = array('login', 'register', 'download_ee_form', 'review_ee_form', 'send_ee_message', 'circuit_board');    //feature checked against this array
 		 if (in_array($p_type_to_check, $m_arr_calculation_type))                                       //if feature in array then it is validated else not validated
 		 {
 			 $m_checked_server_type = $p_type_to_check;

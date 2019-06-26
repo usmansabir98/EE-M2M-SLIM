@@ -178,6 +178,17 @@ class HTML_Wrapper
     return $this->c_send_page;
   }
 
+    /**
+   * get_circuit_board_page() retrieves the form information that is used within tags in the Template.
+   *
+   * @param - None
+   * @return - returns review page information
+   */
+
+  public function get_circuit_board_page() {
+    $this->do_circuit_board_page();
+    return $this->c_send_page;
+  }
 
 
   /**
@@ -414,7 +425,6 @@ class HTML_Wrapper
     $this->c_review_page = $m_html_output;
   }
 
-
   private function do_send_message_page() {
     $m_html_output = '';
     $m_html_output .= '<form method=get action=sendMessage>';
@@ -466,6 +476,34 @@ class HTML_Wrapper
 
     $m_html_output .= '<p><input type="submit" /></p>';
     $m_html_output .= '</form>';
+    $this->c_send_page = $m_html_output;
+  }
+
+
+  private function do_circuit_board_page() {
+    $m_html_output = '';
+    $m_html_output .= '<table id="circuit" style="width:100%">';
+    $m_html_output .= '<tr><th>Board Option</th><th>Status</th></tr>';
+    $m_html_output .= '<tr><td>Device MSISDN</td><td id="DESTINATIONMSISDN"></td></tr>';
+    $m_html_output .= '<tr><td>Last Updated At</td><td id="RECEIVEDTIME"></td></tr>';
+
+    $m_html_output .= '<tr><td>Switch 1</td><td id="S1"></td></tr>';
+    $m_html_output .= '<tr><td>Switch 2</td><td id="S2"></td></tr>';
+    $m_html_output .= '<tr><td>Switch 3</td><td id="S3"></td></tr>';
+    $m_html_output .= '<tr><td>Switch 4</td><td id="S4"></td></tr>';
+
+    $m_html_output .= '<tr><td>Fan</td><td id="F"></td></tr>';
+    $m_html_output .= '<tr><td>Direction</td><td id="D"></td></tr>';
+    $m_html_output .= '<tr><td>Heater</td><td id="H"></td></tr>';
+    $m_html_output .= '<tr><td>Temperature</td><td id="P"></td></tr>';
+    $m_html_output .= '<tr><td>Last Key Pressed</td><td id="K"></td></tr>';
+
+
+    $m_html_output .= '<div ="chart"></div>';
+
+    $m_html_output .= '</table>';
+
+    
     $this->c_send_page = $m_html_output;
   }
 
