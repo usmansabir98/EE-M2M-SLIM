@@ -30,3 +30,4 @@ require 'routes/error.php';
 require 'routes/display_error.php';
 require 'routes/download_error.php';
 require 'routes/sendMessage.php';
+require 'routes/review_logs.php';

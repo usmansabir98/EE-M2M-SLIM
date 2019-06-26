@@ -24,6 +24,8 @@ class DataDisplayModel
 {
     private $c_obj_database_handle;
     private $c_arr_stored_message_data;
+    private $c_log_metadata;
+    private $c_arr_stored_logs;
     private $c_arr_metadata;
     private $c_arr_database_connection_messages;
     private $c_message_id;
@@ -39,8 +41,10 @@ class DataDisplayModel
         $this->c_obj_database_handle = null;
         $this->c_arr_database_connection_messages = array();
         $this->c_arr_stored_message_data = array();
+        $this->c_arr_stored_logs = array();
         $this->c_arr_metadata=array();
         $this->c_message_id='';
+        $this->c_log_metadata=array();
         $this->c_error=0;
     }
 
@@ -103,6 +107,19 @@ class DataDisplayModel
         return $this->c_arr_stored_message_data;
     }
 
+    
+    /**
+     * get_stored_logs() gets the stored messages that were stored on the database
+     *
+     * @param - None
+     * @return - returns stored messages
+     */
+
+    public function get_stored_logs()
+    {
+        return $this->c_arr_stored_logs;
+    }
+
     /**
      * set_metadata() gets the stored metadata information from the database
      *
@@ -113,6 +130,18 @@ class DataDisplayModel
     public function get_metadata()
     {
         return $this->c_arr_metadata;
+    }
+
+    /**
+     * get_log_metadata() gets the stored metadata information from the database
+     *
+     * @param - None
+     * @return - returns metadata information
+     */
+
+    public function get_log_metadata()
+    {
+        return $this->c_log_metadata;
     }
 
     /**
@@ -200,6 +229,76 @@ class DataDisplayModel
 
     }
 
+    // START OF FIX
+
+        /**
+     * do_retrieve_stored_message_data() retrieves message data from the database and loads it within this class
+     * other getter methods are used to retrieve the data provided by this method.
+     *
+     * @param - None
+     * @return - returns the state of the message in boolean, indicating the existence of the message
+     */
+
+    public function do_retrieve_stored_logs()
+    {
+        $m_obj_SQL = new SQL_Wrapper();
+
+        // if($this->c_message_id==-1)
+        // {
+            $m_arr_sql_query_parameters = array();
+            $m_sql_query_string = $m_obj_SQL->get_log_data_all();
+        // }
+        // else
+        // {
+        //     $m_arr_sql_query_parameters = array('sourceMSISDN'=>$this->c_message_id);
+        //     $m_sql_query_string = $m_obj_SQL->get_message_data();
+        // }
+
+        $m_log_data_exist=false;
+        $m_error=$this->c_error;
+        if(!$this->c_arr_database_connection_messages['database-connection-error'])
+        {
+            $m_result = $this->c_obj_database_handle->safe_query($m_sql_query_string, $m_arr_sql_query_parameters);
+            if($m_result!=false)
+            {
+                $m_log_count = $this->c_obj_database_handle->count_rows();
+                if ($m_log_count != 0)
+                {
+                    $m_log_data_exist=true;
+                    $m_log_list = array();
+                    $m_lcv = 0;
+                    while ($m_row = $this->c_obj_database_handle->safe_fetch_row())
+                    {
+                        $m_log_list[$m_lcv] = $m_row;
+                        $m_lcv++;
+
+                    }
+
+                    $this->c_arr_stored_logs = $m_log_list;
+
+                    /*foreach ($this->c_arr_stored_message_data as $key => $value){
+                        foreach ($value as $key2 => $value2)
+                            echo $value2 . '</br>';
+                        echo '</br>';
+                    }*/
+
+
+                }
+            }
+
+
+
+        }
+        else
+        {
+            $m_error++;
+        }
+
+        $this->c_error=$m_error;
+        return $m_log_data_exist;
+
+    }
+
     /**
      * do_retrieve_metadata() retrieves metadata from the database and loads it within this class
      * other getter methods are used to retrieve the data provided by this method.
@@ -243,5 +342,52 @@ class DataDisplayModel
         $this->c_error=$m_error;
         return $m_data_exist;
     }
+
+
+    /**
+     * do_retrieve_log_metadata() retrieves metadata from the database and loads it within this class
+     * other getter methods are used to retrieve the data provided by this method.
+     *
+     * @param - None
+     * @return - returns the state of the metadata in boolean, indicating the existence of the metadata
+     */
+
+    public function do_retrieve_log_metadata()
+    {
+        $m_obj_SQL = new SQL_Wrapper();
+        $m_sql_query_string = $m_obj_SQL->get_log_metadata();
+        $m_arr_sql_query_parameters = array();
+        $m_data_exist=false;
+        $m_error=$this->c_error;
+        if(!$this->c_arr_database_connection_messages['database-connection-error']) {
+            $m_result = $this->c_obj_database_handle->safe_query($m_sql_query_string, $m_arr_sql_query_parameters);
+            if($m_result!=false)
+            {
+                $m_columns_count = $this->c_obj_database_handle->count_rows();
+                if ($m_columns_count != 0) {
+                    $m_data_exist = true;
+                    $m_column_list = array();
+                    while ($m_row = $this->c_obj_database_handle->safe_fetch_row()) {
+
+                        $m_column_list[] = $m_row['0'];
+
+                    }
+                    $this->c_error=false;
+                    $this->c_log_metadata = $m_column_list;
+
+                }
+            }
+
+        }
+        else
+        {
+            $m_error++;
+        }
+
+        $this->c_error=$m_error;
+        return $m_data_exist;
+    }
+
+
 
 }

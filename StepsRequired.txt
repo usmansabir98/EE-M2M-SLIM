@@ -1,6 +1,6 @@
-1. Added to the array, 'send_ee_message' 101
-2. Added a case to process.php 48
-3. Added new function send_ee_message 171
+1. Added to the array, 'send_ee_message' 101 - validateModel.php (classes)
+2. Added a case to process.php 48 - make a feature case
+3. Added new function send_ee_message 171 - process.php
 4. Added new wrapper in HTMLWrapper send_ee_message_page
 5. Added new wrapper in HTMLWRapper get_ee_message_page
 6. Fixed route in routes.php
