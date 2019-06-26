@@ -108,11 +108,11 @@ class SessionModel
 		$m_store_result_password = $this->c_obj_wrapper_session->set_session('password', $this->c_password);
 
 		if ($m_store_result_username !== false && $m_store_result_password !== false)	{																					//if the values are set sucessfully then the state is represented as true
-			$m_store_result = true;																																																//and a text file is created
-			$m_session_file = fopen("sessionfile.txt", "w");
-			$m_session_details =  "Session Details - " . $this->c_obj_wrapper_session->get_session('username') . "  " . $this->c_obj_wrapper_session->get_session('password');
-			fputs($m_session_file, $m_session_details);
-			fclose($m_session_file);
+			// $m_store_result = true;																																																//and a text file is created
+			// $m_session_file = fopen("sessionfile.txt", "w");
+			// $m_session_details =  "Session Details - " . $this->c_obj_wrapper_session->get_session('username') . "  " . $this->c_obj_wrapper_session->get_session('password');
+			// fputs($m_session_file, $m_session_details);
+			// fclose($m_session_file);
 		}
 		return $m_store_result;
 	}
