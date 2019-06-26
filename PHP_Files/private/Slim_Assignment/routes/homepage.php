@@ -51,7 +51,7 @@
 
      $arr = [
        'landing_page' => $f_script_name,                                 //all values initialised are stored in this array and passed into
-       'admin' => 'Hello, ' . $f_admin,                                  //the render function along with the php file needed for render
+       'admin' => 'Hi there, ' . $f_admin,                                  //the render function along with the php file needed for render
        'header' => $f_header,
        'page_title' => $f_app_name,
        'html_output' => $f_html_output,
@@ -91,7 +91,7 @@
 
      $arr = [
        'landing_page' => $f_script_name,                                 //all values initialised are stored in this array and passed into
-       'admin' => 'Hello, ' . $f_admin,                                  //the render function along with the php file needed for render
+       'admin' => 'Hi there, ' . $f_admin,                                  //the render function along with the php file needed for render
        'header' => $f_header,
        'page_title' => $f_app_name,
        'html_output' => $f_html_output,
