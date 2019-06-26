@@ -320,7 +320,7 @@ class HTML_Wrapper
           $i = 0;
           $arr[] = array();
           $tab_output = '
-            <table class="table table-dark table-responsive table-hover">
+            <table id="table" class="table table-bordered table-responsive table-hover">
               <thead>
                 <tr>
           ';
@@ -372,7 +372,7 @@ class HTML_Wrapper
         $i = 0;
         $arr[] = array();
         $tab_output = '
-          <table class="table table-dark table-responsive table-hover">
+          <table id="table" class="table table-bordered table-hover">
             <thead>
               <tr>
         ';
