@@ -95,7 +95,7 @@ class SQL_Wrapper
                                                  forward, reverse, heater, temperature, keypad)";
         $m_sql_query_string .= "VALUES (:SOURCEMSISDN,:DESTINATIONMSISDN,:RECEIVEDTIME,
                                     :BEARER,:MESSAGEREF,:ID,:S1,:S2,:S3,:S4,
-                                    :FAN,:FRW,:REV,:H,:TEMP,:KEY);";
+                                    :F,:W,:R,:H,:P,:K);";
         return $m_sql_query_string;
     }
 

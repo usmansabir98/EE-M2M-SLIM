@@ -175,7 +175,10 @@
                )),
            'BEARER' => FILTER_SANITIZE_STRING,
            'MESSAGEREF' => FILTER_VALIDATE_INT,
-            'ID' => FILTER_SANITIZE_STRING,
+            'ID' => array('filter'=>FILTER_VALIDATE_REGEXP,
+                'options'=>array(
+                    'regexp'=>'~^abc123$~'
+                )),
            'S1' => array('filter'=>FILTER_VALIDATE_INT,
                'options'=>array(
                    'default'=>-1,
@@ -200,19 +203,19 @@
                    'min_range' => 0,
                    'max_range' => 1
                )),
-           'FAN' => array('filter'=>FILTER_VALIDATE_INT,
+           'F' => array('filter'=>FILTER_VALIDATE_INT,
                'options'=>array(
                    'default'=>-1,
                    'min_range' => 0,
                    'max_range' => 1
                )),
-           'FRW' => array('filter'=>FILTER_VALIDATE_INT,
+           'W' => array('filter'=>FILTER_VALIDATE_INT,
                'options'=>array(
                    'default'=>-1,
                    'min_range' => 0,
                    'max_range' => 1
                )),
-           'REV' => array('filter'=>FILTER_VALIDATE_INT,
+           'R' => array('filter'=>FILTER_VALIDATE_INT,
                'options'=>array(
                    'default'=>-1,
                    'min_range' => 0,
@@ -224,8 +227,8 @@
                    'min_range' => 0,
                    'max_range' => 1
                )),
-           'TEMP' => FILTER_VALIDATE_FLOAT,
-           'KEY' => FILTER_VALIDATE_INT
+           'P' => FILTER_VALIDATE_FLOAT,
+           'K' => FILTER_VALIDATE_INT
        );
 
        foreach ($p_array_to_check as $key => $value)                                           //for each value, it gets validated if success return else failure return

@@ -57,16 +57,32 @@ $app->get('/sendMessage', function() use ($app)
     $f_key_val = $app->request->get('key-val');
 
     // Structure a message
-    $f_message_body = '&lt1&gt'. $f_s1_val .'&lt/1&gt';
-    $f_message_body .= '&lt2&gt'. $f_s2_val .'&lt/2&gt';
-    $f_message_body .= '&lt3&gt'. $f_s3_val .'&lt/3&gt';
-    $f_message_body .= '&lt4&gt'. $f_s4_val .'&lt/4&gt';
+    $f_message_body = '&lts1&gt'. $f_s1_val .'&lt/s1&gt';
+    $f_message_body .= '&lts2&gt'. $f_s2_val .'&lt/s2&gt';
+    $f_message_body .= '&lts3&gt'. $f_s3_val .'&lt/s3&gt';
+    $f_message_body .= '&lts4&gt'. $f_s4_val .'&lt/s4&gt';
     $f_message_body .= '&ltf&gt'. $f_fan_val .'&lt/f&gt';
     $f_message_body .= '&ltw&gt'. $f_frw_val .'&lt/w&gt';
     $f_message_body .= '&ltr&gt'. $f_rev_val .'&lt/r&gt';
     $f_message_body .= '&lth&gt'. $f_h_val .'&lt/h&gt';
     $f_message_body .= '&ltp&gt'. $f_temp_val .'&lt/p&gt';
     $f_message_body .= '&ltk&gt'. $f_key_val .'&lt/k&gt';
+    
+    // testing
+    // $f_message_body = 'This is a very big text message intended to test the maximum length the API can handle. It is to ensure that if the problem exists in message size or is it something else. We want to fix this issue as soon as possible';
+    
+    // $f_message_body = '<s1>1</s1><s2>1</s2><s3>0</s3><s4>1</s4><f>1</f><w>0</w><r>1</r><h>0</h><p>40.34</p><k>5</k>';
+    $f_message_body = '<id>abc123</id>';
+    $f_message_body .= '<s1>'. $f_s1_val .'</s1>';
+    $f_message_body .= '<s2>'. $f_s2_val .'</s2>';
+    $f_message_body .= '<s3>'. $f_s3_val .'</s3>';
+    $f_message_body .= '<s4>'. $f_s4_val .'</s4>';
+    $f_message_body .= '<f>'. $f_fan_val .'</f>';
+    $f_message_body .= '<w>'. $f_frw_val .'</w>';
+    $f_message_body .= '<r>'. $f_rev_val .'</r>';
+    $f_message_body .= '<h>'. $f_h_val .'</h>';
+    $f_message_body .= '<p>'. $f_temp_val .'</p>';
+    $f_message_body .= '<k>'. $f_key_val .'</k>';
 
     // Fix delivery reports
     if($f_delivery_report) {
