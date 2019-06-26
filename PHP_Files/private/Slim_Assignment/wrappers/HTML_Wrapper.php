@@ -276,32 +276,45 @@ class HTML_Wrapper
 
       if(empty($p_messages))
       {
-          $m_string = 'There are no message stored';
+          $m_string = 'No messages are stored.';
       }
       else
       {
           $i = 0;
           $arr[] = array();
+          $tab_output = '
+            <table class="table table-dark table-responsive table-hover">
+              <thead>
+                <tr>
+          ';
           foreach ($p_metadata as $key1 => $value1) {
               $arr[$i] = $value1;
+              $tab_output .= '<th scope="col">'. $value1 .'</th>';
               $i++;
           }
 
+          $tab_output .= '</tr></thead><tbody>';
           $i = 0;
-          $m_string = '';
+          // $m_string = '';
+
           foreach ($p_messages as $key => $value) {
-              $m_string .= '<div class="messageContainer">';
+              $tab_output .= '<tr>';
               foreach ($value as $key2 => $value2){
-                  $m_string .= '<p class="lead" class="messages">' . $arr[$i] . ' ' . $value2 . '</p>';
+                  $tab_output .= '<td>' . $value2 . '</td>';
                   $i++;
               }
-              $m_string .= '</div> <br />';
+              $tab_output .= '</tr>';
               $i = 0;
           }
+          $tab_output .= '</tbody></table><br /><br />';
+          // echo $tab_output;
+          // exit();
+
+
       }
 
 
-      $this->c_display_page_processed = $m_string;
+      $this->c_display_page_processed = $tab_output;
 
   }
 

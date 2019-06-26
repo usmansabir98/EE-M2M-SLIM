@@ -103,7 +103,7 @@ $app->get('/displayinformation', function() use ($app)
 
         $f_script_name = $_SERVER["SCRIPT_NAME"];                             //current scripts path
 
-        $f_app_name = 'EE Client - Review Stored Data';
+        $f_app_name = '';
 
         $f_header = $f_html_wrapper->get_header();
         $f_html_wrapper->do_display_page_processing($f_metadata, $f_stored_messages);
