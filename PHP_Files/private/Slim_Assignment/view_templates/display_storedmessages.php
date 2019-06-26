@@ -13,3 +13,4 @@
 include 'header.html';
 include 'body_header.html';
 include 'stored_messages.html';
+include 'end_body.html';
