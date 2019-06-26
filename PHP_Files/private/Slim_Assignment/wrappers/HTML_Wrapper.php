@@ -307,10 +307,6 @@ class HTML_Wrapper
               $i = 0;
           }
           $tab_output .= '</tbody></table><br /><br />';
-          // echo $tab_output;
-          // exit();
-
-
       }
 
 

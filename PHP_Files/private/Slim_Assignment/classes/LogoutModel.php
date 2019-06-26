@@ -47,11 +47,12 @@ class LogoutModel
     $m_password_not_set = Session_Wrapper::unset_session('password');
 
     if($m_username_not_set !==false && $m_password_not_set !==false) {    //if values are not set then the state is changed to true indicating the user has logged out and
-      // $m_result = true;                                                   //information stored in sessionfile.txt is cleared
-      // $m_session_file = fopen("sessionfile.txt", "w");
-			// $m_session_details =  "";
-			// fputs($m_session_file, $m_session_details);
-			// fclose($m_session_file);
+      $m_result = true;                                                   //information stored in sessionfile.txt is cleared
+      $m_session_file = fopen("sessionfile.txt", "w");
+			$m_session_details =  "";
+			fputs($m_session_file, $m_session_details);
+      fclose($m_session_file);
+      echo "logged out!";
     }
 
     return $m_result;

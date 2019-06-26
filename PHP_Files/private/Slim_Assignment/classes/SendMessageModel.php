@@ -109,8 +109,6 @@ class SendMessageModel
     private function do_send_message_data($f_delivery_report, $f_message_body, $f_msg_bearer)
     {
         $m_soap_server_send_message_result_error = true;
-        // echo $f_message_body;
-        // exit();
 
         $m_arr_messages = array();
 

@@ -33,7 +33,6 @@ $app->get('/displayinformation', function() use ($app)
 
     $f_obj_openssl_wrapper = new OpenSSLEncr();
     $f_userID = $f_obj_openssl_wrapper->decrypt(Session_Wrapper::get_session('username'));
-    $f_userID = Session_Wrapper::get_session('username');
 
     $f_obj_MySQL = new MySQL_Wrapper();
     $f_obj_MySQL->connect_to_database();

@@ -27,7 +27,6 @@ $app->get('/sendMessage', function() use ($app)
     //------------------Logger
     $f_obj_openssl_wrapper = new OpenSSLEncr();
     $f_userID = $f_obj_openssl_wrapper->decrypt(Session_Wrapper::get_session('username'));
-    $f_userID = Session_Wrapper::get_session('username');
 
     $f_obj_logger= new AppLoggerModel();
     $f_obj_logger->set_database_handle($f_obj_MySQL);
