@@ -51,7 +51,8 @@ class LogoutModel
       $m_session_file = fopen("sessionfile.txt", "w");
 			$m_session_details =  "";
 			fputs($m_session_file, $m_session_details);
-			fclose($m_session_file);
+      fclose($m_session_file);
+      echo "logged out!";
     }
 
     return $m_result;

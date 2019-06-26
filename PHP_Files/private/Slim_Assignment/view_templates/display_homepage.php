@@ -13,3 +13,4 @@
 include 'header.html';
 include 'body_header.html';
 include 'select_option_page.html';
+include 'end_body.html';

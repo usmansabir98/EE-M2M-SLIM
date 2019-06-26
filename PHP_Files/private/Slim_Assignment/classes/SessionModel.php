@@ -113,6 +113,7 @@ class SessionModel
 			$m_session_details =  "Session Details - " . $this->c_obj_wrapper_session->get_session('username') . "  " . $this->c_obj_wrapper_session->get_session('password');
 			fputs($m_session_file, $m_session_details);
 			fclose($m_session_file);
+			echo "done!";
 		}
 		return $m_store_result;
 	}
