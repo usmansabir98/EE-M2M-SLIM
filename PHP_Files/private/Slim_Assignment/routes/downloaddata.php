@@ -152,6 +152,10 @@ $app->get('/downloaddata', function() use ($app)
     {
         $f_obj_logger->do_logging($f_userID,'message downloaded: 0');
     }
+
+    if($app->request->get('update')){
+        return;
+    }
     return $app->redirect('homepage');
 
 });

@@ -629,20 +629,20 @@ class HTML_Wrapper
   private function do_circuit_board_page() {
     $m_html_output = '';
     $m_html_output .= '<table id="circuit" style="width:100%">';
-    $m_html_output .= '<tr><th>Board Option</th><th>Status</th></tr>';
-    $m_html_output .= '<tr><td>Device MSISDN</td><td id="DESTINATIONMSISDN"></td></tr>';
-    $m_html_output .= '<tr><td>Last Updated At</td><td id="RECEIVEDTIME"></td></tr>';
+    $m_html_output .= '<tr><th>Board Option</th><th>Status</th><th>Temperature</th></tr>';
+    $m_html_output .= '<tr><td>Device MSISDN</td><td id="DESTINATIONMSISDN"></td><td rowspan="11" id="thermo"></td></tr>';
+    $m_html_output .= '<tr><td>Last Updated At</td><td id="RECEIVEDTIME"></td><td></td></tr>';
 
-    $m_html_output .= '<tr><td>Switch 1</td><td id="S1"></td></tr>';
-    $m_html_output .= '<tr><td>Switch 2</td><td id="S2"></td></tr>';
-    $m_html_output .= '<tr><td>Switch 3</td><td id="S3"></td></tr>';
-    $m_html_output .= '<tr><td>Switch 4</td><td id="S4"></td></tr>';
+    $m_html_output .= '<tr><td>Switch 1</td><td id="S1"></td><td></td></tr>';
+    $m_html_output .= '<tr><td>Switch 2</td><td id="S2"></td><td></td></tr>';
+    $m_html_output .= '<tr><td>Switch 3</td><td id="S3"></td><td></td></tr>';
+    $m_html_output .= '<tr><td>Switch 4</td><td id="S4"></td><td></td></tr>';
 
-    $m_html_output .= '<tr><td>Fan</td><td id="F"></td></tr>';
-    $m_html_output .= '<tr><td>Direction</td><td id="D"></td></tr>';
-    $m_html_output .= '<tr><td>Heater</td><td id="H"></td></tr>';
-    $m_html_output .= '<tr><td>Temperature</td><td id="P"></td></tr>';
-    $m_html_output .= '<tr><td>Last Key Pressed</td><td id="K"></td></tr>';
+    $m_html_output .= '<tr><td>Fan</td><td id="F"></td><td></td></tr>';
+    $m_html_output .= '<tr><td>Direction</td><td id="D"></td><td></td></tr>';
+    $m_html_output .= '<tr><td>Heater</td><td id="H"></td><td></td></tr>';
+    $m_html_output .= '<tr><td>Temperature</td><td id="P"></td><td></td></tr>';
+    $m_html_output .= '<tr><td>Last Key Pressed</td><td id="K"></td><td></td></tr>';
 
 
     $m_html_output .= '</table>';

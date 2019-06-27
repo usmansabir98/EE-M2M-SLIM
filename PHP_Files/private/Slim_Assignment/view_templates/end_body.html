@@ -26,24 +26,50 @@ $(document).ready( function () {
         let p = document.getElementById('P');
         let k = document.getElementById('K');
 
-        fetch("../displayinformation?message-id=447817814149&update=1")
-        .then(res => res.json())
-        .then(data => {
-            console.log(data);
-            destMSISDN.innerText = data[1];
-            receivedTime.innerText = data[2];
-            s1.innerText = data[6]==='1'?'ON':'OFF';
-            s2.innerText = data[7]==='1'?'ON':'OFF';
-            s3.innerText = data[8]==='1'?'ON':'OFF';
-            s4.innerText = data[9]==='1'?'ON':'OFF';
-            f.innerText = data[10]==='1'?'ON':'OFF';
-            d.innerText = data[11]==='1'?'Forward':'Reverse';
-            h.innerText = data[13]==='1'?'ON':'OFF';
-            p.innerText = data[14];
-            k.innerText = data[15];
+        fetch("../downloaddata?message-id=447817814149&update=1")
+        .then(res => {
+            console.log(res.status);
 
+            if(res.status==200){
+                fetch("../displayinformation?message-id=447817814149&update=1")
+                .then(res => {
+                    return res.json();
+                })
+                .then(data => {
+                    destMSISDN.innerText = data[1];
+                    receivedTime.innerText = data[2];
+                    s1.innerText = data[6]==='1'?'ON':'OFF';
+                    s2.innerText = data[7]==='1'?'ON':'OFF';
+                    s3.innerText = data[8]==='1'?'ON':'OFF';
+                    s4.innerText = data[9]==='1'?'ON':'OFF';
+                    f.innerText = data[10]==='1'?'ON':'OFF';
+                    d.innerText = data[11]==='1'?'Forward':'Reverse';
+                    h.innerText = data[13]==='1'?'ON':'OFF';
+                    p.innerText = data[14];
+                    k.innerText = data[15];
+
+                    let chartOutput = `
+                <div class="donation-meter">
+                    <span class="glass">
+                        <strong class="total" style="bottom: ${p.innerHTML}%">${p.innerHTML}&degC</strong>
+                        <span class="amount" style="height: ${p.innerHTML}%"></span>
+                    </span>
+                    <div class="bulb">
+                        <span class="red-circle"></span>
+                        <span class="filler">
+                            <span></span>
+                        </span>
+                    </div>
+                    </div>  
+                `;
+                document.getElementById('thermo').innerHTML = chartOutput;
+
+
+                });
+            }
 
         });
+        
 
         let btn = document.getElementById('btn');
         btn.addEventListener('click', function(e){
