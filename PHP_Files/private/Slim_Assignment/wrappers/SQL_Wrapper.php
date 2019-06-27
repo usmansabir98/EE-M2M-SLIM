@@ -184,4 +184,10 @@ class SQL_Wrapper
         return $m_sql_query_string;
     }
 
+    public function get_last_message(){
+        $m_sql_query_string  = "SELECT * FROM message ";
+        $m_sql_query_string .= "ORDER BY receivedDate DESC LIMIT 1";
+        return $m_sql_query_string;
+    }
+
 }

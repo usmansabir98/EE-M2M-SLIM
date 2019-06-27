@@ -200,6 +200,82 @@ class DataDisplayModel
 
     }
 
+
+    /**
+     * do_retrieve_last_stored_message_data() retrieves message data from the database and loads it within this class
+     * other getter methods are used to retrieve the data provided by this method.
+     *
+     * @param - None
+     * @return - returns the state of the message in boolean, indicating the existence of the message
+     */
+
+    public function do_retrieve_last_stored_message_data()
+    {
+        $m_obj_SQL = new SQL_Wrapper();
+
+        // if($this->c_message_id==-1)
+        // {
+        //     $m_arr_sql_query_parameters = array();
+        //     $m_sql_query_string = $m_obj_SQL->get_message_data_all();
+        // }
+        // else
+        // {
+        //     $m_arr_sql_query_parameters = array('sourceMSISDN'=>$this->c_message_id);
+        //     $m_sql_query_string = $m_obj_SQL->get_message_data();
+        // }
+        // //
+
+        $m_arr_sql_query_parameters = array();
+        $m_sql_query_string = $m_obj_SQL->get_last_message();
+
+        $m_message_data_exist=false;
+        $m_error=$this->c_error;
+        if(!$this->c_arr_database_connection_messages['database-connection-error'])
+        {
+            $m_result = $this->c_obj_database_handle->safe_query($m_sql_query_string, $m_arr_sql_query_parameters);
+            if($m_result!=false)
+            {
+                $m_message_count = $this->c_obj_database_handle->count_rows();
+
+                if ($m_message_count != 0)
+                {
+                    $m_message_data_exist=true;
+                    $m_message_list = array();
+                    $m_lcv = 0;
+                    // while ($m_row = $this->c_obj_database_handle->safe_fetch_row())
+                    // {
+                    //     $m_message_list[$m_lcv] = $m_row;
+                    //     $m_lcv++;
+
+                    // }
+
+                    $m_row = $this->c_obj_database_handle->safe_fetch_row();
+
+                    $this->c_arr_stored_message_data = $m_row;
+                    /*foreach ($this->c_arr_stored_message_data as $key => $value){
+                        foreach ($value as $key2 => $value2)
+                            echo $value2 . '</br>';
+                        echo '</br>';
+                    }*/
+
+
+                }
+            }
+
+
+
+        }
+        else
+        {
+            $m_error++;
+        }
+
+        $this->c_error=$m_error;
+        return $m_message_data_exist;
+
+    }
+
+
     /**
      * do_retrieve_metadata() retrieves metadata from the database and loads it within this class
      * other getter methods are used to retrieve the data provided by this method.

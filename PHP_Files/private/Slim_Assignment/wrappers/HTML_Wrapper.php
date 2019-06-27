@@ -548,9 +548,13 @@ class HTML_Wrapper
     $m_html_output .= '<tr><td>Last Key Pressed</td><td id="K"></td></tr>';
 
 
-    $m_html_output .= '<div ="chart"></div>';
-
     $m_html_output .= '</table>';
+
+    $m_html_output .= '<div id="btn-wrapper"><button id="btn" class="btn btn-warning">Update Circuit</button></div>';
+
+    $m_html_output .= '<div id="chart"></div>';
+
+    $m_html_output .= '<div id="message-form"></div>';
 
     
     $this->c_send_page = $m_html_output;

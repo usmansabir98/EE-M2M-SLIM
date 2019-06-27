@@ -37,24 +37,47 @@ $app->get('/sendMessage', function() use ($app)
 
     //*********************************************SEND*******************************
 
-    $f_msisdn = $app->request->get('message-id');                       
-    $f_msg_bearer = $app->request->get('msg-bearer');  
-    $f_delivery_report = $app->request->get('deliver-report');
+    if($app->request->get('update')){
+        $f_msisdn = '447817814149';                       
+        $f_msg_bearer = 'SMS';  
+        $f_delivery_report = '';
+        
+        // Intercept message values
+        $f_s1_val = $app->request->get('s1')=='on'?1:0;
+        $f_s2_val = $app->request->get('s2')=='on'?1:0;
+        $f_s3_val = $app->request->get('s3')=='on'?1:0;
+        $f_s4_val = $app->request->get('s4')=='on'?1:0;
+        
+        $f_fan_val = $app->request->get('f')=='on'?1:0;
+        $f_frw_val = $app->request->get('d')=='w'?1:0;
+        $f_rev_val = $app->request->get('d')=='r'?1:0;
 
-    // Intercept message values
-    $f_s1_val = $app->request->get('s1-val');
-    $f_s2_val = $app->request->get('s2-val');
-    $f_s3_val = $app->request->get('s3-val');
-    $f_s4_val = $app->request->get('s4-val');
+        $f_h_val = $app->request->get('h')=='on'?1:0;
+        $f_temp_val = $app->request->get('p');
+        $f_key_val = $app->request->get('k');
+    }
+
+    else{
+        $f_msisdn = $app->request->get('message-id');                       
+        $f_msg_bearer = $app->request->get('msg-bearer');  
+        $f_delivery_report = $app->request->get('deliver-report');
+
+        // Intercept message values
+        $f_s1_val = $app->request->get('s1-val');
+        $f_s2_val = $app->request->get('s2-val');
+        $f_s3_val = $app->request->get('s3-val');
+        $f_s4_val = $app->request->get('s4-val');
+        
+        $f_fan_val = $app->request->get('fan-val');
+        $f_frw_val = $app->request->get('frw-val');
+        $f_rev_val = $app->request->get('rev-val');
+
+        $f_h_val = $app->request->get('h-val');
+        $f_temp_val = $app->request->get('temp-val');
+        $f_key_val = $app->request->get('key-val');
+    }
+
     
-    $f_fan_val = $app->request->get('fan-val');
-    $f_frw_val = $app->request->get('frw-val');
-    $f_rev_val = $app->request->get('rev-val');
-
-    $f_h_val = $app->request->get('h-val');
-    $f_temp_val = $app->request->get('temp-val');
-    $f_key_val = $app->request->get('key-val');
-
     // Structure a message
     $f_message_body = '&lts1&gt'. $f_s1_val .'&lt/s1&gt';
     $f_message_body .= '&lts2&gt'. $f_s2_val .'&lt/s2&gt';

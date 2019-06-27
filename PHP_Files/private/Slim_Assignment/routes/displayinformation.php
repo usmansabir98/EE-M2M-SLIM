@@ -46,8 +46,8 @@ $app->get('/displayinformation', function() use ($app)
 
     $f_obj_validate = new ValidateModel();                                //instantiates new ValidateModel()
     $f_message = $app->request->get('message-id');                        //returns the message id
-
-
+    $f_update = $app->request->get('update');                        //returns the message id
+    
 
 
     if(empty($f_message))                                                 //if message id is empty than it displays all messages
@@ -87,8 +87,18 @@ $app->get('/displayinformation', function() use ($app)
         $f_obj_display_model->set_database_handle($f_obj_MySQL);
         $f_obj_display_model->do_get_database_connection_result();
 
-        $f_obj_display_model->do_retrieve_stored_message_data();
-        $f_stored_messages = $f_obj_display_model->get_stored_message_data();
+        if($f_update){
+            $f_obj_display_model->do_retrieve_last_stored_message_data();
+            $f_stored_messages = $f_obj_display_model->get_stored_message_data();
+            echo json_encode($f_stored_messages);
+            return;
+        }
+        else{
+            $f_obj_display_model->do_retrieve_stored_message_data();
+            $f_stored_messages = $f_obj_display_model->get_stored_message_data(); 
+        }
+        // $f_obj_display_model->do_retrieve_stored_message_data();
+        // $f_stored_messages = $f_obj_display_model->get_stored_message_data();
         $f_obj_display_model->do_retrieve_metadata();
         $f_metadata = $f_obj_display_model->get_metadata();
 

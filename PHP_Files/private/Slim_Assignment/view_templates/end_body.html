@@ -4,5 +4,110 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+<script>
+    if(document.getElementById('circuit')){
+        // console.log('found');
+
+        let destMSISDN = document.getElementById('DESTINATIONMSISDN');
+        let receivedTime = document.getElementById('RECEIVEDTIME');
+        let s1 = document.getElementById('S1');
+        let s2 = document.getElementById('S2');
+        let s3 = document.getElementById('S3');
+        let s4 = document.getElementById('S4');
+        let f = document.getElementById('F');
+        let d = document.getElementById('D');
+        let h = document.getElementById('H');
+        let p = document.getElementById('P');
+        let k = document.getElementById('K');
+
+        fetch("../displayinformation?message-id=447817814149&update=1")
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            destMSISDN.innerText = data[1];
+            receivedTime.innerText = data[2];
+            s1.innerText = data[6]==='1'?'ON':'OFF';
+            s2.innerText = data[7]==='1'?'ON':'OFF';
+            s3.innerText = data[8]==='1'?'ON':'OFF';
+            s4.innerText = data[9]==='1'?'ON':'OFF';
+            f.innerText = data[10]==='1'?'ON':'OFF';
+            d.innerText = data[11]==='1'?'Forward':'Reverse';
+            h.innerText = data[13]==='1'?'ON':'OFF';
+            p.innerText = data[14];
+            k.innerText = data[15];
+
+
+        });
+
+        let btn = document.getElementById('btn');
+        btn.addEventListener('click', function(e){
+            let htmlOutput = ``;
+            htmlOutput = `
+                <form method=GET action=sendMessage>
+                    <h1>Update Board State</h1>
+                    <h4>Switches:</h4>
+                    <span>Switch 1:</span>
+                    <label class="switch">
+                        <input type="checkbox" name="s1" checked=${s1.innerText==='ON'?true:false}>
+                        <span class="slider round"></span>
+                    </label>
+
+                    <span>Switch 2:</span>
+                    <label class="switch">
+                        <input type="checkbox" name="s2" checked=${s2.innerText==='ON'?true:false}>
+                        <span class="slider round"></span>
+                    </label>
+
+                    <span>Switch 3:</span>
+                    <label class="switch">
+                        <input type="checkbox" name="s3" checked=${s3.innerText==='ON'?true:false}>
+                        <span class="slider round"></span>
+                    </label>
+
+                    <span>Switch 4:</span>
+                    <label class="switch">
+                        <input type="checkbox" name="s4" checked=${s4.innerText==='ON'?true:false}>
+                        <span class="slider round"></span>
+                    </label>
+
+                    <h4>Fan:</h4>
+                    <span>Fan:</span>
+                    <label class="switch">
+                        <input type="checkbox" name="f" checked=${f.innerText==='ON'?true:false}>
+                        <span class="slider round"></span>
+                    </label>
+
+                    <span>Direction:</span>
+                    <select name="d">
+                        <option value="w" ${d.innerText=='Forward'?'selected':''}>Forward</option>
+                        <option value="r" ${d.innerText=='Reverse'?'selected':''}>Reverse</option>
+                    </select>
+
+                    <h4>Heater:</h4>
+                    <span>Heater:</span>
+                    <label class="switch">
+                        <input type="checkbox" name="h" checked=${h.innerText==='ON'?true:false}>
+                        <span class="slider round"></span>
+                    </label>
+
+                    <span>Temperature:</span>
+                    <input type="number" placeholder="Enter a float" step="0.01" name="p" value=${p.innerText}></input>
+
+                    <h4>Key:</h4>
+                    <span>Last Key Pressed:</span>                
+                    <input type="number" placeholder="Enter an integer" name="k" value=${k.innerText}></input>
+
+                    <input type="hidden" name="update" value="1"></input>                    
+
+                    <div style="padding: 20px 0; text-align:center">
+                        <button class="btn btn-success" type="submit">Send Update</button>                    
+                    </div>
+                </form>
+            `;
+
+            document.getElementById('message-form').innerHTML = htmlOutput;
+        });
+    }
+</script>
 </body>
 </html>
