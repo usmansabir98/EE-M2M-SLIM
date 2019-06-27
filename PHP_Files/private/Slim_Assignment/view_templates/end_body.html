@@ -54,32 +54,32 @@ $(document).ready( function () {
                     <h4>Switches:</h4>
                     <span>Switch 1:</span>
                     <label class="switch">
-                        <input type="checkbox" name="s1" checked=${s1.innerText==='ON'?true:false}>
+                        <input type="checkbox" name="s1" ${s1.innerText==='ON'?'checked':''}>
                         <span class="slider round"></span>
                     </label>
 
                     <span>Switch 2:</span>
                     <label class="switch">
-                        <input type="checkbox" name="s2" checked=${s2.innerText==='ON'?true:false}>
+                        <input type="checkbox" name="s2" ${s2.innerText==='ON'?'checked':''}>
                         <span class="slider round"></span>
                     </label>
 
                     <span>Switch 3:</span>
                     <label class="switch">
-                        <input type="checkbox" name="s3" checked=${s3.innerText==='ON'?true:false}>
+                        <input type="checkbox" name="s3" ${s3.innerText==='ON'?'checked':''}>
                         <span class="slider round"></span>
                     </label>
 
                     <span>Switch 4:</span>
                     <label class="switch">
-                        <input type="checkbox" name="s4" checked=${s4.innerText==='ON'?true:false}>
+                        <input type="checkbox" name="s4" ${s4.innerText==='ON'?'checked':''}>
                         <span class="slider round"></span>
                     </label>
 
                     <h4>Fan:</h4>
                     <span>Fan:</span>
                     <label class="switch">
-                        <input type="checkbox" name="f" checked=${f.innerText==='ON'?true:false}>
+                        <input type="checkbox" name="f" ${f.innerText==='ON'?'checked':''}>
                         <span class="slider round"></span>
                     </label>
 
@@ -92,7 +92,7 @@ $(document).ready( function () {
                     <h4>Heater:</h4>
                     <span>Heater:</span>
                     <label class="switch">
-                        <input type="checkbox" name="h" checked=${h.innerText==='ON'?true:false}>
+                        <input type="checkbox" name="h" ${h.innerText==='ON'?'checked':''}>
                         <span class="slider round"></span>
                     </label>
 
