@@ -155,6 +155,22 @@ class SQL_Wrapper
         return $m_sql_query_string;
     }
 
+
+    /**
+     * get_log_data_all() gets the entire stored downloaded message from the database - assignmentdb
+     *
+     * @param - None
+     * @return - returns the results of the  query
+     */
+    public function get_log_data_all()
+    {
+        $m_sql_query_string  = "SELECT ID, date, userID, msg ";
+        $m_sql_query_string .= "FROM log ";
+        $m_sql_query_string .= "ORDER BY date";
+        return $m_sql_query_string;
+    }
+
+
     /**
      * get_metadata() gets the information of the meta data of the stored downloaded messages
      * from the database - assignmentdb.
@@ -166,6 +182,22 @@ class SQL_Wrapper
     public function get_metadata(){
         $m_sql_query_string  = "SHOW columns ";
         $m_sql_query_string .= "FROM message ";
+        return $m_sql_query_string;
+
+    }
+
+
+    /**
+     * get_log_metadata() gets the information of the meta data of the stored  logs
+     * from the database - assignmentdb.
+     *
+     * @param - None
+     * @return - returns the results of the meta data
+     */
+
+    public function get_log_metadata(){
+        $m_sql_query_string  = "SHOW columns ";
+        $m_sql_query_string .= "FROM log ";
         return $m_sql_query_string;
 
     }

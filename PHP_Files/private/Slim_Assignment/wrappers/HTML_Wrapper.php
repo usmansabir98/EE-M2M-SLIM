@@ -27,6 +27,7 @@ class HTML_Wrapper
   private $c_download_error_page;                 //download error page form
   private $c_review_error_page;                   //review error page form
   private $c_arr_login_field_empty_form;          //error login form
+  private $c_review_logs;
   private $c_arr_login_wrong_input_form;
   private $c_arr_register_field_empty_form;       //error register form
   private $c_arr_register_user_exists_form;
@@ -49,6 +50,7 @@ class HTML_Wrapper
     $this->c_review_page = null;
     $this->c_download_error_page = null;
     $this->c_review_error_page = null;
+    $this->c_review_logs = null;
     $this->c_arr_login_field_empty_form = null;
     $this->c_arr_login_wrong_input_form = null;
     $this->c_arr_register_field_empty_form = null;
@@ -274,6 +276,30 @@ class HTML_Wrapper
     return $this->c_display_page_processed;
   }
 
+    /**
+   * get_display_page_processed() retrieves the form information that is used within tags in the Template.
+   *
+   * @param - None
+   * @return - returns information on the returned queries stored in database and displays it
+   */
+
+  public function get_review_logs() {
+    return $this->c_review_logs;
+  }
+
+  /**
+   * get_logs() retrieves the form information that is used within logs in the Template.
+   *
+   * @param - None
+   * @return - returns information on the returned queries stored in database and displays it
+   */
+
+  public function get_logs() {
+    $this->do_log_page();
+    return $this->c_review_page;
+  }
+
+
   /**
    * do_display_page_processing($p_metadata, $p_messages) sets meta and message information and does display processing which
    * is shown through the getter method as the results.
@@ -294,7 +320,7 @@ class HTML_Wrapper
           $i = 0;
           $arr[] = array();
           $tab_output = '
-            <table class="table table-dark table-responsive table-hover">
+            <table id="table" class="table table-bordered table-responsive table-hover">
               <thead>
                 <tr>
           ';
@@ -324,6 +350,58 @@ class HTML_Wrapper
       $this->c_display_page_processed = $tab_output;
 
   }
+
+  
+  /**
+   * do_review_logs($p_metadata, $p_messages) sets meta and message information and does display processing which
+   * is shown through the getter method as the results.
+   *
+   * @param - $p_metadata - passes the meta information
+   * @param - $p_messages - passes the message information
+   * @return - None
+   */
+
+  public function do_review_logs($p_metadata, $p_messages) {
+
+    if(empty($p_messages))
+    {
+        $m_string = 'No logs are stored at the moment.';
+    }
+    else
+    {
+        $i = 0;
+        $arr[] = array();
+        $tab_output = '
+          <table id="table" class="table table-bordered table-hover">
+            <thead>
+              <tr>
+        ';
+        foreach ($p_metadata as $key1 => $value1) {
+            $arr[$i] = $value1;
+            $tab_output .= '<th scope="col">'. $value1 .'</th>';
+            $i++;
+        }
+
+        $tab_output .= '</tr></thead><tbody>';
+        $i = 0;
+        // $m_string = '';
+
+        foreach ($p_messages as $key => $value) {
+            $tab_output .= '<tr>';
+            foreach ($value as $key2 => $value2){
+                $tab_output .= '<td>' . $value2 . '</td>';
+                $i++;
+            }
+            $tab_output .= '</tr>';
+            $i = 0;
+        }
+        $tab_output .= '</tbody></table><br /><br />';
+    }
+
+
+    $this->c_review_logs = $tab_output;
+
+}
 
   /*
    * Everything below are the content that makes up the HTML markup and is used within the getter methods
@@ -387,12 +465,16 @@ class HTML_Wrapper
     $m_html_output2 = '';
     $m_html_output2 .= '<form method=get action=process>';
     $m_html_output2 .= '<h5 class="display-4">Welcome to the  EE-M2M Connect Client!</h5>';
-    $m_html_output2 .= '<p class="lead">There are three options presented below. Kindly select one: </p>';
+    $m_html_output2 .= '<p class="lead">There are five options presented below. Kindly select one: </p>';
     $m_html_output2 .= '<button class="btn btn-success extend" name="feature" value="download_ee_form">Download content from the EE-Connect Server</button> &nbsp;&nbsp;';
     $m_html_output2 .= '<p class="lead">OR</p>';
     $m_html_output2 .= '<button class="btn btn-success extend"  name="feature" value="review_ee_form">Review Content from the EE-Connect Server</button>';
     $m_html_output2 .= '<p class="lead">OR </p>';
     $m_html_output2 .= '<button class="btn btn-success extend"  name="feature" value="send_ee_message">Send Message VIA EE-Connect</button>';
+    $m_html_output2 .= '<p class="lead">OR </p>';
+    $m_html_output2 .= '<button class="btn btn-success extend"  name="feature" value="review_logs">Review Logs</button>';
+    $m_html_output2 .= '<p class="lead">OR </p>';
+    $m_html_output2 .= '<button class="btn btn-success extend"  name="feature" value="circuit_board">Circuit Board</button>';
     $m_html_output2 .= '</form>';
     $this->c_arr_homepage_page_form = array('html_output' => $m_html_output, 'html_output2' => $m_html_output2);
   }
@@ -410,12 +492,17 @@ class HTML_Wrapper
     </div>';
     $m_html_output2 .= '<form method=get action=process>';
     $m_html_output2 .= '<h5 class="display-4">Welcome to the  EE-M2M Connect Client!</h5>';
-    $m_html_output2 .= '<p class="lead">There are three options presented below. Kindly select one: </p>';
+    $m_html_output2 .= '<p class="lead">There are five options presented below. Kindly select one: </p>';
     $m_html_output2 .= '<button class="btn btn-success extend" name="feature" value="download_ee_form">Download content from the EE-Connect Server</button> &nbsp;&nbsp;';
     $m_html_output2 .= '<p class="lead">OR</p>';
     $m_html_output2 .= '<button class="btn btn-success extend"  name="feature" value="review_ee_form">Review Content from the EE-Connect Server</button>';
     $m_html_output2 .= '<p class="lead">OR </p>';
     $m_html_output2 .= '<button class="btn btn-success extend"  name="feature" value="send_ee_message">Send Message VIA EE-Connect</button>';
+    $m_html_output2 .= '<p class="lead">OR </p>';
+    $m_html_output2 .= '<button class="btn btn-success extend"  name="feature" value="review_logs">Review Logs</button>';
+    $m_html_output2 .= '<p class="lead">OR </p>';
+    $m_html_output2 .= '<button class="btn btn-success extend"  name="feature" value="circuit_board">Circuit Board</button>';
+
     $m_html_output2 .= '</form>';
     $this->c_arr_homepage_page_error_form = array('html_output' => $m_html_output, 'html_output2' => $m_html_output2);
   }
@@ -440,6 +527,16 @@ class HTML_Wrapper
     $m_html_output .= '</form>';
     $this->c_review_page = $m_html_output;
   }
+
+  private function do_log_page() {
+    $m_html_output = '';
+    $m_html_output .= '<form method=get action=reviewLogs>';
+    $m_html_output .= '<h1 class="display-4">Load Logs</h1>';
+    $m_html_output .= '<p class="lead"><button class="btn btn-success" type="submit" class="btn btn-primary">Review Stored Logs</button</p>';
+    $m_html_output .= '</form>';
+    $this->c_review_page = $m_html_output;
+  }
+
 
   private function do_send_message_page() {
     $m_html_output = '<div class="container">';
