@@ -1,10 +1,7 @@
 <?php
 
 /**
- * Created by PhpStorm and Atom Editors.
- * Users: P14184295 and P14166609
- * Date: 20/11/2016
- *
+ * 
  * DataStoredModel.php
  *
  * One of the class files used by the system is the DataStoreModel.php file.
@@ -14,10 +11,7 @@
  * to set the required data as well as using do'er methods to store, filter, check
  * or add new messages from and to the database.
  *
- * @author CF Ingrams <cfi@dmu.ac.uk> - Modified by Users: P14184295 and P14166609
- * @copyright De Montfort University
- *
- * @package stock-quotes
+ * 
  */
 
 $f_wrapper_path = $app->config('wrappers.path') . DIRSEP;               //requies path information and stores it in variable
@@ -111,17 +105,9 @@ class DataStoreModel
     public function do_store_downloaded_message_data()
     {
 
-        // echo "<br>First<br>";
-        // print_r($this->c_arr_download_message_data);
-        // echo "<br><br>";
-
         $f_result=false;
         //$this->do_filter_message();                                     //Filters infomration
         $this->do_prepare_message_data();                               //prepares the message format
-
-        // echo "<br>Second<br>";
-        // print_r($this->c_arr_download_message_data);
-        // echo "<br><br>";
 
         foreach ($this->c_arr_download_message_data as $key => $value)  //for each existing value, store the message into database
         {

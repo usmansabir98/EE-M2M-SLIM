@@ -1,9 +1,7 @@
 <?php
 
 /**
- * Created by PhpStorm and Atom Editors.
- * Users: P14184295 and P14166609
- * Date: 20/11/2016
+ * 
  *
  * DataDownloadModel.php
  *
@@ -15,10 +13,7 @@
  * setters and do'ers allows the intialising of the handles and message data as well
  * performing tasks to retrieve information from the SOAP client.
  *
- * @author CF Ingrams <cfi@dmu.ac.uk> - Modified by Users: P14184295 and P14166609
- * @copyright De Montfort University
- *
- * @package stock-quotes
+ * 
  */
 
 
@@ -178,7 +173,6 @@ class DataDownloadModel
                 }
 
                 $m_soap_server_get_message_result_error = false;
-                // print_r($m_arr_messages);
 
             }
             catch (SoapFault $m_obj_exception)
@@ -213,7 +207,6 @@ class DataDownloadModel
             }
         }
 
-        // print_r($this->c_arr_download_message_data);
     }
 
 }

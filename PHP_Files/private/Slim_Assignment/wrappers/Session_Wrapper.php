@@ -1,9 +1,7 @@
 <?php
 
 /**
- * Created by PhpStorm and Atom Editors.
- * Users: P14184295 and P14166609
- * Date: 26/11/2016
+ * 
  *
  * Session_Wrapper.php
  *
@@ -11,8 +9,7 @@
  * sessions directly for each instance, parameters can be passed to the methods
  * defined below, which will automatically set, get or unset the sessions securely.
  *
- * @author CF Ingrams <cfi@dmu.ac.uk> - Modified by Users: P14184295 and P14166609
- * @copyright De Montfort University
+ * 
  */
 
 //  Returns path : .... PHP_Files\private\Slim_Assignment/wrappers\

@@ -1,10 +1,7 @@
 <?php
 
 /**
- * Created by PhpStorm and Atom Editors.
- * Users: P14184295 and P14166609
- * Date: 20/11/2016
- *
+ * 
  * download_error.php
  *
  * One of the files loaded by routes is download_error.php file.

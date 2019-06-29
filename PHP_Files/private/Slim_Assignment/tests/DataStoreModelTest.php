@@ -1,11 +1,6 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: Rajatt
- * Date: 19/12/2016
- * Time: 17:15
- */
+
 $f_dir = __DIR__ . '\..\\';
 
 include_once($f_dir . 'classes\DataStoreModel.php');

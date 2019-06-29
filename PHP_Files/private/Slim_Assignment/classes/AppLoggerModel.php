@@ -1,10 +1,9 @@
 <?php
 
 /**
- * Created by PhpStorm.
- * User: Rajatt
- * Date: 28/12/2016
- * Time: 20:13
+ * 
+ * App logger model. 
+ * 
  */
 
 $f_wrapper_path = $app->config('wrappers.path') . DIRSEP;               //requies path information and stores it in variable

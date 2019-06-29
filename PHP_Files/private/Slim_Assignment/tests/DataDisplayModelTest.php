@@ -1,11 +1,6 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: Rajatt
- * Date: 19/12/2016
- * Time: 12:28
- */
+
 $f_dir = __DIR__ . '\..\\';
 include_once($f_dir . 'classes\DataDisplayModel.php');
 include_once($f_dir . 'wrappers\MySQL_Wrapper.php');

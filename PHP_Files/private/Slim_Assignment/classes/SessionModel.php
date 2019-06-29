@@ -1,9 +1,7 @@
 <?php
 
 /**
- * Created by PhpStorm and Atom Editors.
- * Users: P14184295 and P14166609
- * Date: 26/11/2016
+ * 
  *
  * SessionModel1.php
  *
@@ -15,8 +13,7 @@
  * the getter and setter methods to manage the sessions values being passed to this class
  * and in return makes the current sessions and stores them in a text file on the local desktop.
  *
- * @author CF Ingrams <cfi@dmu.ac.uk> - Modified by Users: P14184295 and P14166609
- * @copyright De Montfort University
+ * 
  */
 
 class SessionModel

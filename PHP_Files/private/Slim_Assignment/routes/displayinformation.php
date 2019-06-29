@@ -1,10 +1,7 @@
 <?php
 
 /**
- * Created by PhpStorm and Atom Editors.
- * Users: P14184295 and P14166609
- * Date: 20/11/2016
- *
+ * 
  * displayinformation.php
  *
  * One of the files the route loads is this displayinformation.php file

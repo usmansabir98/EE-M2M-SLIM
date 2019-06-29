@@ -1,9 +1,7 @@
 <?php
 
 /**
- * Created by PhpStorm and Atom Editors.
- * Users: P14184295 and P14166609
- * Date: 26/11/2016
+ * 
  *
  * HTML_Wrapper.php
  *
@@ -319,7 +317,8 @@ class HTML_Wrapper
       {
           $i = 0;
           $arr[] = array();
-          $tab_output = '
+    $tab_output = '<p class="lead" id="ret_home"><a href="homepage">&#8592; Return Home</a></p>';
+          $tab_output .= '
             <table id="table" class="table table-bordered table-responsive table-hover">
               <thead>
                 <tr>
@@ -356,9 +355,7 @@ class HTML_Wrapper
    * do_review_logs($p_metadata, $p_messages) sets meta and message information and does display processing which
    * is shown through the getter method as the results.
    *
-   * @param - $p_metadata - passes the meta information
-   * @param - $p_messages - passes the message information
-   * @return - None
+   * 
    */
 
   public function do_review_logs($p_metadata, $p_messages) {
@@ -371,7 +368,8 @@ class HTML_Wrapper
     {
         $i = 0;
         $arr[] = array();
-        $tab_output = '
+        $tab_output = '<p class="lead" id="ret_home"><a href="homepage">&#8592; Return Home</a></p>';
+        $tab_output .= '
           <table id="table" class="table table-bordered table-hover">
             <thead>
               <tr>
@@ -509,6 +507,7 @@ class HTML_Wrapper
 
   private function do_download_page() {
     $m_html_output = '';
+    $m_html_output .= '<p class="lead" id="ret_home"><a href="homepage">&#8592; Return Home</a></p>';
     $m_html_output .= '<form method=get action=downloaddata>';
     $m_html_output .= '<h1 class="display-4">Download Messages</h1>';
     $m_html_output .= '<p class="lead">Enter MSISDN: </p>';
@@ -520,6 +519,7 @@ class HTML_Wrapper
 
   private function do_review_page() {
     $m_html_output = '';
+    $m_html_output .= '<p class="lead" id="ret_home"><a href="homepage">&#8592; Return Home</a></p>';
     $m_html_output .= '<form method=get action=displayinformation>';
     $m_html_output .= '<h1 class="display-4">Enter MSISDN:</h1>';
     $m_html_output .= '<p class="lead"><input class="form-control" name="message-id" type="text" id="message-id" size="12" value="" maxsize="12"/></p>';
@@ -530,6 +530,7 @@ class HTML_Wrapper
 
   private function do_log_page() {
     $m_html_output = '';
+    $m_html_output .= '<p class="lead" id="ret_home"><a href="homepage">&#8592; Return Home</a></p>';
     $m_html_output .= '<form method=get action=reviewLogs>';
     $m_html_output .= '<h1 class="display-4">Load Logs</h1>';
     $m_html_output .= '<p class="lead"><button class="btn btn-success" type="submit" class="btn btn-primary">Review Stored Logs</button</p>';
@@ -539,7 +540,9 @@ class HTML_Wrapper
 
 
   private function do_send_message_page() {
-    $m_html_output = '<div class="container">';
+    $m_html_output = '<p class="lead" id="ret_home"><a href="homepage">&#8592; Return Home</a></p>';
+
+    $m_html_output .= '<div class="container">';
     $m_html_output .= '<form method=get action=sendMessage>';
     $m_html_output .= '<h1 class="display-4">Enter the following information correctly to send a message: </h1>';
     $m_html_output .= '<div class="form-group">';
@@ -628,6 +631,7 @@ class HTML_Wrapper
 
   private function do_circuit_board_page() {
     $m_html_output = '';
+    $m_html_output .= '<p class="lead" id="ret_home"><a href="homepage">&#8592; Return Home</a></p>';
     $m_html_output .= '<table id="circuit" style="width:100%">';
     $m_html_output .= '<tr><th>Board Option</th><th>Status</th><th>Temperature</th></tr>';
     $m_html_output .= '<tr><td>Device MSISDN</td><td id="DESTINATIONMSISDN"></td><td rowspan="11" id="thermo"></td></tr>';
@@ -685,6 +689,7 @@ class HTML_Wrapper
 
   private function do_global_error_page() {
     $m_html_output = '';
+    $m_html_output .= '<p class="lead" id="ret_home"><a href="' . $this->c_path . '">&#8592; Return Home</a></p>';
     $m_html_output .= '<div class="alert alert-danger" role="alert">
         Something bad just happened and the system couldn\'t figure it out. Retry please.
         </div>';

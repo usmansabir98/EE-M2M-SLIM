@@ -1,11 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: Rajatt
- * Date: 30/12/2016
- * Time: 15:59
- */
 $f_dir = __DIR__ . '\..\\';
 include_once($f_dir . 'classes\AppLoggerModel.php');
 include_once($f_dir . 'wrappers\MySQL_Wrapper.php');

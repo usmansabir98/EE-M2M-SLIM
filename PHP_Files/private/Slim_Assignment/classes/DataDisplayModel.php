@@ -1,9 +1,7 @@
 <?php
 
 /**
- * Created by PhpStorm and Atom Editors.
- * Users: P14184295 and P14166609
- * Date: 20/11/2016
+ * 
  *
  * DataDisplayModel.php
  *
@@ -242,18 +240,6 @@ class DataDisplayModel
     {
         $m_obj_SQL = new SQL_Wrapper();
 
-        // if($this->c_message_id==-1)
-        // {
-        //     $m_arr_sql_query_parameters = array();
-        //     $m_sql_query_string = $m_obj_SQL->get_message_data_all();
-        // }
-        // else
-        // {
-        //     $m_arr_sql_query_parameters = array('sourceMSISDN'=>$this->c_message_id);
-        //     $m_sql_query_string = $m_obj_SQL->get_message_data();
-        // }
-        // //
-
         $m_arr_sql_query_parameters = array();
         $m_sql_query_string = $m_obj_SQL->get_last_message();
 
@@ -281,11 +267,7 @@ class DataDisplayModel
                     $m_row = $this->c_obj_database_handle->safe_fetch_row();
 
                     $this->c_arr_stored_message_data = $m_row;
-                    /*foreach ($this->c_arr_stored_message_data as $key => $value){
-                        foreach ($value as $key2 => $value2)
-                            echo $value2 . '</br>';
-                        echo '</br>';
-                    }*/
+                   
 
 
                 }

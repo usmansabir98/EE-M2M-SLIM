@@ -1,12 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: Rajatt
- * Date: 20/12/2016
- * Time: 11:19
- */
-
 $f_dir = __DIR__ . '\..\\';
 include_once($f_dir . 'classes\XMLparserModel.php');
 

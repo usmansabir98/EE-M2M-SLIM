@@ -1,10 +1,7 @@
 <?php
 
 /**
- * Created by PhpStorm and Atom Editors.
- * Users: P14184295 and P14166609
- * Date: 28/11/2016
- *
+ * 
  * ValidateModel.php
  *
  * Here the Validate Model can be reused for handling any user information,
@@ -14,8 +11,7 @@
  *
  * It uses different sanitisation and validation techniques to filter out incoming data
  *
- * @author CF Ingrams <cfi@dmu.ac.uk> - Modified by Users: P14184295 and P14166609
- * @copyright De Montfort University
+ * 
  */
 
 

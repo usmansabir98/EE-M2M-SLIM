@@ -1,9 +1,7 @@
 <?php
 
 /**
- * Created by PhpStorm and Atom Editors.
- * Users: P14184295 and P14166609
- * Date: 26/11/2016
+ * 
  *
  * SQL_Wrapper.php
  *

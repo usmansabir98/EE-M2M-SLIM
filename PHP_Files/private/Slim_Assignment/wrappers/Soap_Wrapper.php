@@ -1,9 +1,7 @@
 <?php
 
 /**
- * Created by PhpStorm and Atom Editors.
- * Users: P14184295 and P14166609
- * Date: 14/12/2016
+ * 
  *
  * Soap_Wrapper.php
  *

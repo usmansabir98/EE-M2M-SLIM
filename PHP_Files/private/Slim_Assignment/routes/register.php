@@ -1,10 +1,7 @@
 <?php
 
 /**
-* Created by PhpStorm and Atom Editors.
-* Users: P14184295 and (add your pnumber here RAJ)
-* Date: 20/11/2016
-*
+* 
 * register.php
 *
 * One of the files the routes load is this register.php file.
